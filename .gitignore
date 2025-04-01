@@ -13,9 +13,9 @@
 ./SocialAggregatorAPI/appsettings.Development.json
 ./SocialAggregatorAPI/appsettings.Production.json
 
-# Build results
-./SocialAggregatorAPI/bin/
-./SocialAggregatorAPI/obj/
+# Ignore build output directories
+bin/
+obj/
 
 # .NET Core
 project.lock.json

@@ -1,0 +1,777 @@
+2025-03-31 13:06:58.899 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 13:06:58.936 +02:00 [INF] Creating key {52d56a67-42a8-4229-90c7-feb92e24fc97} with creation date 2025-03-31 11:06:58Z, activation date 2025-03-31 11:06:58Z, and expiration date 2025-06-29 11:06:58Z.
+2025-03-31 13:06:58.942 +02:00 [WRN] No XML encryptor configured. Key {52d56a67-42a8-4229-90c7-feb92e24fc97} may be persisted to storage in unencrypted form.
+2025-03-31 13:06:58.944 +02:00 [INF] Writing data to file '/Users/sandortoth/.aspnet/DataProtection-Keys/key-52d56a67-42a8-4229-90c7-feb92e24fc97.xml'.
+2025-03-31 13:06:59.116 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 13:06:59.116 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 13:06:59.118 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 13:06:59.118 +02:00 [INF] Hosting environment: Development
+2025-03-31 13:06:59.118 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 13:06:59.327 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 13:06:59.382 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 56.2689ms
+2025-03-31 13:06:59.385 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 13:07:05.205 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 13:07:05.252 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 46.897ms
+2025-03-31 13:07:05.273 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 13:07:05.273 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/swagger-ui-bundle.js - null null
+2025-03-31 13:07:05.274 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.6484ms
+2025-03-31 13:07:05.303 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-31 13:07:05.304 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 31.1507ms
+2025-03-31 13:07:05.385 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 13:07:05.441 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.6228ms
+2025-03-31 13:13:37.590 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 13:13:37.591 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 1.3401ms
+2025-03-31 13:13:37.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 13:13:37.607 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 0.4284ms
+2025-03-31 13:13:37.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 13:13:37.695 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.6782ms
+kets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-03-31 13:44:52.777 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 13:44:52.976 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 13:44:52.977 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 13:44:52.979 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 13:44:52.979 +02:00 [INF] Hosting environment: Development
+2025-03-31 13:44:52.979 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 13:44:53.218 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 13:44:53.272 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 55.0724ms
+2025-03-31 13:44:53.281 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 13:44:58.055 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 13:44:58.111 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 56.0188ms
+2025-03-31 13:44:58.134 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 13:44:58.135 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.1129ms
+2025-03-31 13:44:58.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 13:44:58.295 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.641ms
+2025-03-31 13:45:52.516 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 13:45:52.706 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 13:45:52.706 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 13:45:52.708 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 13:45:52.708 +02:00 [INF] Hosting environment: Development
+2025-03-31 13:45:52.708 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 13:45:52.856 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 13:45:52.896 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 41.0841ms
+2025-03-31 13:45:52.899 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 13:45:57.220 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 13:45:57.286 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 66.3445ms
+2025-03-31 13:45:57.314 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 13:45:57.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 3.091ms
+2025-03-31 13:45:57.364 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 13:45:57.418 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.0327ms
+2025-03-31 13:48:27.633 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/register - application/json 86
+2025-03-31 13:48:27.649 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 13:48:27.669 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 13:48:29.176 +02:00 [INF] Executed DbCommand (90ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Username` = @__user_Username_0)
+2025-03-31 13:48:29.739 +02:00 [ERR] Failed executing DbCommand (66ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Password`, `PasswordHash`, `Username`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-31 13:48:29.840 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'Password' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'Password' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-31 13:48:29.850 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI) in 2177.2903ms
+2025-03-31 13:48:29.850 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 13:48:29.851 +02:00 [ERR] An error occurred: An error occurred while saving the entity changes. See the inner exception for details.
+2025-03-31 13:48:29.856 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/register - 500 null null 2223.2655ms
+2025-03-31 13:50:49.616 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 13:50:49.805 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 13:50:49.805 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 13:50:49.807 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 13:50:49.808 +02:00 [INF] Hosting environment: Development
+2025-03-31 13:50:49.808 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 13:50:49.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 13:50:49.956 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: v1
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)
+   at Program.<>c.<ConfigureServices>b__2_0(SwaggerGenOptions c) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Program.cs:line 113
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.<>c__DisplayClass6_0.<CreateMiddleware>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 13:50:49.995 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 500 null text/html; charset=utf-8 60.2692ms
+2025-03-31 13:50:50.043 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/favicon.ico - null null
+2025-03-31 13:50:50.045 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: v1
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)
+   at Program.<>c.<ConfigureServices>b__2_0(SwaggerGenOptions c) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Program.cs:line 113
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at InvokeStub_ConfigureSwaggerGeneratorOptions..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.<>c__DisplayClass6_0.<CreateMiddleware>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 13:50:50.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/favicon.ico - 500 null text/plain; charset=utf-8 40.3575ms
+2025-03-31 13:52:35.077 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 13:52:35.277 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 13:52:35.278 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 13:52:35.279 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 13:52:35.280 +02:00 [INF] Hosting environment: Development
+2025-03-31 13:52:35.280 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 13:52:35.417 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 13:52:35.467 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 50.3075ms
+2025-03-31 13:52:35.469 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 13:52:38.244 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 13:52:38.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 56.0564ms
+2025-03-31 13:52:38.315 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 13:52:38.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.5046ms
+2025-03-31 13:52:38.359 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 13:52:38.413 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.3236ms
+2025-03-31 13:53:15.110 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/register - application/json 86
+2025-03-31 13:53:15.115 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 13:53:15.132 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 13:53:16.510 +02:00 [INF] Executed DbCommand (80ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Username` = @__user_Username_0)
+2025-03-31 13:53:17.017 +02:00 [ERR] Failed executing DbCommand (56ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Password`, `PasswordHash`, `Username`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-31 13:53:17.107 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'Password' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'Password' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-31 13:53:17.116 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI) in 1981.6632ms
+2025-03-31 13:53:17.116 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 13:53:17.117 +02:00 [ERR] An error occurred: An error occurred while saving the entity changes. See the inner exception for details.
+2025-03-31 13:53:17.122 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/register - 500 null null 2012.3117ms
+2025-03-31 13:53:36.107 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 13:53:36.405 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 13:53:36.405 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 13:53:36.407 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 13:53:36.407 +02:00 [INF] Hosting environment: Development
+2025-03-31 13:53:36.407 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 13:53:36.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 13:53:36.671 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 65.3876ms
+2025-03-31 13:53:36.674 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 13:53:39.255 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 13:53:39.355 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 100.5965ms
+2025-03-31 13:53:39.378 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 13:53:39.380 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.4777ms
+2025-03-31 13:53:39.476 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 13:53:39.542 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.3002ms
+2025-03-31 13:54:06.627 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/register - application/json 86
+2025-03-31 13:54:06.637 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 13:54:06.664 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 13:54:08.163 +02:00 [INF] Executed DbCommand (81ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Username` = @__user_Username_0)
+2025-03-31 13:54:47.995 +02:00 [ERR] Failed executing DbCommand (54ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Password`, `PasswordHash`, `Username`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-31 13:54:48.075 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'Password' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'Password' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-31 13:54:48.134 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI) in 41467.0972ms
+2025-03-31 13:54:48.134 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 13:56:35.842 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-03-31 13:56:36.432 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-03-31 13:56:36.567 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-03-31 13:56:36.587 +02:00 [INF] No migrations were applied. The database is already up to date.
+2025-03-31 13:59:32.913 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-03-31 13:59:33.566 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-03-31 13:59:33.715 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-03-31 13:59:33.734 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-03-31 13:59:34.081 +02:00 [INF] Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-03-31 13:59:34.153 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-03-31 13:59:34.237 +02:00 [INF] Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-03-31 13:59:34.301 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-03-31 14:04:38.407 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 14:04:38.617 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 14:04:38.618 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 14:04:38.619 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 14:04:38.620 +02:00 [INF] Hosting environment: Development
+2025-03-31 14:04:38.620 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 14:04:38.747 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 14:04:38.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 51.6917ms
+2025-03-31 14:04:38.802 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 14:04:42.011 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 14:04:42.072 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 60.6625ms
+2025-03-31 14:04:42.087 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 14:04:42.088 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.3397ms
+2025-03-31 14:04:42.131 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 14:04:42.184 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.6384ms
+2025-03-31 14:05:08.530 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/register - application/json 86
+2025-03-31 14:05:08.536 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 14:05:08.554 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:05:09.999 +02:00 [INF] Executed DbCommand (82ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Username` = @__user_Username_0)
+2025-03-31 14:05:10.512 +02:00 [ERR] Failed executing DbCommand (60ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Password`, `PasswordHash`, `Username`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-31 14:05:10.594 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Password' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Password' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-31 14:05:10.601 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI) in 2045.3248ms
+2025-03-31 14:05:10.602 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 14:05:10.603 +02:00 [ERR] An error occurred: An error occurred while saving the entity changes. See the inner exception for details.
+2025-03-31 14:05:10.607 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/register - 500 null null 2077.1645ms
+2025-03-31 14:05:53.119 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 14:05:53.309 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 14:05:53.309 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 14:05:53.311 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 14:05:53.311 +02:00 [INF] Hosting environment: Development
+2025-03-31 14:05:53.311 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 14:05:53.520 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 14:05:53.565 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 46.4732ms
+2025-03-31 14:05:53.568 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 14:06:01.945 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/register - application/json 86
+2025-03-31 14:06:01.953 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 14:06:01.987 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:06:03.451 +02:00 [INF] Executed DbCommand (85ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Username` = @__user_Username_0)
+2025-03-31 14:06:03.961 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Users` (`Email`, `Password`, `PasswordHash`, `Username`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Users`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-31 14:06:04.061 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-03-31 14:06:04.068 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI) in 2078.2382ms
+2025-03-31 14:06:04.068 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 14:06:04.073 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/register - 200 null text/plain; charset=utf-8 2128.4745ms
+2025-03-31 14:06:12.298 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 14:06:12.340 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 42.2694ms
+2025-03-31 14:06:12.355 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 14:06:12.356 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 0.841ms
+2025-03-31 14:06:12.399 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 14:06:12.442 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.0905ms
+2025-03-31 14:06:29.802 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/register - application/json 86
+2025-03-31 14:06:29.808 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 14:06:29.809 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:06:30.441 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[@__user_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`
+    WHERE `u`.`Username` = @__user_Username_0)
+2025-03-31 14:06:30.444 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-03-31 14:06:30.445 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI) in 635.6271ms
+2025-03-31 14:06:30.445 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Register (SocialAggregatorAPI)'
+2025-03-31 14:06:30.446 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/register - 400 null text/plain; charset=utf-8 644.0187ms
+2025-03-31 14:07:21.534 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:07:21.535 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:07:21.539 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:07:22.174 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:07:22.179 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 639.9085ms
+2025-03-31 14:07:22.179 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:07:22.180 +02:00 [ERR] An error occurred: Value cannot be null. (Parameter 'inputKey')
+2025-03-31 14:07:22.181 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 646.7521ms
+2025-03-31 14:07:38.839 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:07:38.844 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:07:38.845 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:07:39.402 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:07:39.403 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 558.7475ms
+2025-03-31 14:07:39.404 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:07:39.404 +02:00 [ERR] An error occurred: Value cannot be null. (Parameter 'inputKey')
+2025-03-31 14:07:39.404 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 565.587ms
+2025-03-31 14:08:57.869 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 14:08:58.121 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 14:08:58.122 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 14:08:58.124 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 14:08:58.124 +02:00 [INF] Hosting environment: Development
+2025-03-31 14:08:58.124 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 14:08:58.349 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 14:08:58.419 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 70.726ms
+2025-03-31 14:08:58.423 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 14:09:20.586 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 14:09:20.702 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 115.9787ms
+2025-03-31 14:09:20.719 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 14:09:20.745 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 25.2901ms
+2025-03-31 14:09:20.775 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 14:09:20.858 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.0435ms
+2025-03-31 14:09:38.027 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:09:38.034 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:09:38.052 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:09:39.551 +02:00 [INF] Executed DbCommand (90ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:09:39.638 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 1583.9864ms
+2025-03-31 14:09:39.638 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:09:39.673 +02:00 [ERR] An error occurred: Value cannot be null. (Parameter 'inputKey')
+2025-03-31 14:09:39.677 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 1650.3006ms
+2025-03-31 14:09:48.713 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:09:48.741 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:09:48.741 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:09:52.060 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:10:13.964 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 25222.0193ms
+2025-03-31 14:10:13.964 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:10:13.987 +02:00 [ERR] An error occurred: Value cannot be null. (Parameter 'inputKey')
+2025-03-31 14:10:13.987 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 25274.0263ms
+2025-03-31 14:10:27.809 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:10:27.857 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:10:27.857 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:10:29.322 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:12:23.442 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 14:12:23.648 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 14:12:23.648 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 14:12:23.650 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 14:12:23.650 +02:00 [INF] Hosting environment: Development
+2025-03-31 14:12:23.650 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 14:12:23.957 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 14:12:24.003 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 46.9541ms
+2025-03-31 14:12:24.006 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 14:12:27.413 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 14:12:27.472 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 58.5012ms
+2025-03-31 14:12:27.486 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 14:12:27.487 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.0754ms
+2025-03-31 14:12:27.530 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 14:12:27.584 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.343ms
+2025-03-31 14:12:42.581 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:12:42.588 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:12:42.608 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:12:44.074 +02:00 [INF] Executed DbCommand (80ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:12:44.345 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 1735.3655ms
+2025-03-31 14:12:44.345 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:12:44.346 +02:00 [ERR] An error occurred: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '208' bits. (Parameter 'keyBytes')
+2025-03-31 14:12:44.349 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 1768.2493ms
+2025-03-31 14:13:07.313 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 14:13:07.548 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 14:13:07.549 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 14:13:07.552 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 14:13:07.553 +02:00 [INF] Hosting environment: Development
+2025-03-31 14:13:07.553 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 14:13:07.689 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 14:13:07.758 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 69.6613ms
+2025-03-31 14:13:07.762 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 14:13:10.149 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 14:13:10.212 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 62.8229ms
+2025-03-31 14:13:10.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 14:13:10.250 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.1562ms
+2025-03-31 14:13:10.304 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 14:13:10.369 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.1922ms
+2025-03-31 14:13:24.559 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:13:24.568 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:13:24.588 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:13:30.757 +02:00 [INF] Executed DbCommand (80ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:13:40.000 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 15409.6418ms
+2025-03-31 14:13:40.001 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:13:40.033 +02:00 [ERR] An error occurred: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '208' bits. (Parameter 'keyBytes')
+2025-03-31 14:13:40.038 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 15478.5367ms
+2025-03-31 14:13:43.543 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:13:43.549 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:13:43.550 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:13:50.058 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:14:12.778 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 29227.6485ms
+2025-03-31 14:14:12.778 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:14:12.802 +02:00 [ERR] An error occurred: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '208' bits. (Parameter 'keyBytes')
+2025-03-31 14:14:12.802 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 29259.4708ms
+2025-03-31 14:14:27.205 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:14:27.208 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:14:27.208 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:14:28.484 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:16:54.695 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 147485.2263ms
+2025-03-31 14:16:54.697 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:16:54.721 +02:00 [ERR] An error occurred: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '208' bits. (Parameter 'keyBytes')
+2025-03-31 14:16:54.722 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 147515.8721ms
+2025-03-31 14:18:31.471 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 14:18:31.662 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 14:18:31.662 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 14:18:31.664 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 14:18:31.664 +02:00 [INF] Hosting environment: Development
+2025-03-31 14:18:31.664 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 14:18:31.937 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 14:18:31.979 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 42.8257ms
+2025-03-31 14:18:31.981 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 14:18:34.436 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 14:18:34.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 59.6136ms
+2025-03-31 14:18:34.510 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 14:18:34.511 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.1989ms
+2025-03-31 14:18:34.554 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 14:18:34.608 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.9344ms
+2025-03-31 14:18:48.606 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:18:48.613 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:18:48.632 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:18:50.112 +02:00 [INF] Executed DbCommand (91ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:18:50.383 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 1749.312ms
+2025-03-31 14:18:50.384 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:18:50.384 +02:00 [ERR] An error occurred: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '208' bits. (Parameter 'keyBytes')
+2025-03-31 14:18:50.388 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 500 null null 1781.8923ms
+2025-03-31 14:23:34.126 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 14:23:34.319 +02:00 [INF] Now listening on: https://localhost:7085
+2025-03-31 14:23:34.319 +02:00 [INF] Now listening on: http://localhost:5062
+2025-03-31 14:23:34.321 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 14:23:34.321 +02:00 [INF] Hosting environment: Development
+2025-03-31 14:23:34.321 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-03-31 14:23:34.533 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-03-31 14:23:34.580 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 47.1705ms
+2025-03-31 14:23:34.583 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-03-31 14:23:37.262 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.html - null null
+2025-03-31 14:23:37.321 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.html - 200 null text/html;charset=utf-8 59.613ms
+2025-03-31 14:23:37.334 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/index.js - null null
+2025-03-31 14:23:37.335 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/index.js - 200 null application/javascript;charset=utf-8 1.5337ms
+2025-03-31 14:23:37.379 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - null null
+2025-03-31 14:23:37.431 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.5749ms
+2025-03-31 14:23:51.113 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7085/api/auth/login - application/json 73
+2025-03-31 14:23:51.121 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:23:51.140 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(User) on controller SocialAggregatorAPI.Controllers.AuthController (SocialAggregatorAPI).
+2025-03-31 14:23:52.588 +02:00 [INF] Executed DbCommand (82ms) [Parameters=[@__loginUser_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Email`, `u`.`Password`, `u`.`PasswordHash`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__loginUser_Username_0
+LIMIT 1
+2025-03-31 14:23:52.860 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-31 14:23:52.870 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI) in 1728.7516ms
+2025-03-31 14:23:52.871 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.AuthController.Login (SocialAggregatorAPI)'
+2025-03-31 14:23:52.874 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7085/api/auth/login - 200 null application/json; charset=utf-8 1761.0615ms

@@ -1,0 +1,24 @@
+2025-03-31 21:22:36.861 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 21:22:36.930 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/content/trending - null null
+2025-03-31 21:22:36.967 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/content/trending - 404 null null 38.0678ms
+2025-03-31 21:22:36.970 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/content/trending, Response status code: 404
+2025-03-31 21:22:37.031 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 21:22:37.038 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/content/news - null null
+2025-03-31 21:22:37.040 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/content/news - 404 null null 2.0604ms
+2025-03-31 21:22:37.040 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/content/news, Response status code: 404
+2025-03-31 21:23:33.672 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 21:23:33.741 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/content/trending - null null
+2025-03-31 21:23:33.780 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/content/trending - 404 null null 39.8262ms
+2025-03-31 21:23:33.782 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/content/trending, Response status code: 404
+2025-03-31 21:23:33.844 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 21:23:33.850 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/content/news - null null
+2025-03-31 21:23:33.852 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/content/news - 404 null null 2.0254ms
+2025-03-31 21:23:33.852 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/content/news, Response status code: 404
+2025-03-31 21:23:47.394 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 21:23:47.464 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/content/trending - null null
+2025-03-31 21:23:47.501 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/content/trending - 404 null null 38.0873ms
+2025-03-31 21:23:47.503 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/content/trending, Response status code: 404
+2025-03-31 21:23:47.564 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 21:23:47.570 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/content/news - null null
+2025-03-31 21:23:47.573 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/content/news - 404 null null 2.1564ms
+2025-03-31 21:23:47.573 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/content/news, Response status code: 404

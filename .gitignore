@@ -9,9 +9,9 @@
 
 
 # Ignore the appsettings files containing sensitive information
-./socialAggregatorAPI/appsettings.json
-./socialAggregatorAPI/appsettings.Development.json
-./socialAggregatorAPI/appsettings.Production.json
+./SocialAggregatorAPI/appsettings.json
+./SocialAggregatorAPI/appsettings.Development.json
+./SocialAggregatorAPI/appsettings.Production.json
 
 # Build results
 [Dd]ebug/

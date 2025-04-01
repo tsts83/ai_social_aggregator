@@ -9,9 +9,9 @@
 
 
 # Ignore the appsettings files containing sensitive information
-./SocialAggregatorAPI/appsettings.json
-./SocialAggregatorAPI/appsettings.Development.json
-./SocialAggregatorAPI/appsettings.Production.json
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
 
 # Ignore build output directories
 bin/

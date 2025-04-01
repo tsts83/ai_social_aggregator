@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocialAggregatorAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+462238c106d3e88fcd62e1bb81008af069ed8e36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+612a8b8f1e369f67f96998d80f56efbe6a11292d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocialAggregatorAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocialAggregatorAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

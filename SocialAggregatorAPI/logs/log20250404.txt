@@ -1,0 +1,284 @@
+2025-04-04 11:06:32.630 +02:00 [INF] Executed DbCommand (595ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `defaultdb`;
+2025-04-04 11:06:38.465 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE `defaultdb`;
+2025-04-04 11:06:39.685 +02:00 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2025-04-04 11:06:40.360 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-04 11:06:40.502 +02:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-04 11:06:40.526 +02:00 [INF] Applying migration '20250331083955_InitialCreate'.
+2025-04-04 11:06:40.785 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2025-04-04 11:06:40.854 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `NewsArticles` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Content` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Source` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PublishedAt` datetime(6) NOT NULL,
+    `IsProcessed` tinyint(1) NOT NULL,
+    CONSTRAINT `PK_NewsArticles` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-04 11:06:40.919 +02:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331083955_InitialCreate', '8.0.13');
+2025-04-04 11:06:40.982 +02:00 [INF] Applying migration '20250331085740_AddUsersTable'.
+2025-04-04 11:06:41.248 +02:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-04 11:06:41.308 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331085740_AddUsersTable', '8.0.13');
+2025-04-04 11:06:41.368 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-04-04 11:06:41.676 +02:00 [INF] Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:06:41.751 +02:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-04-04 11:06:41.828 +02:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:06:41.894 +02:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-04-04 11:06:41.954 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-04 11:06:42.223 +02:00 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:06:42.284 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403083131_UpdateNewsArticles', '8.0.13');
+2025-04-04 11:06:42.343 +02:00 [INF] Applying migration '20250403091634_AddThumbnailUrlToNewsArticles'.
+2025-04-04 11:06:42.606 +02:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `ThumbnailUrl` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:06:42.668 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403091634_AddThumbnailUrlToNewsArticles', '8.0.13');
+2025-04-04 11:17:53.031 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-04 11:17:53.084 +02:00 [INF] News Fetcher Service is starting...
+2025-04-04 11:17:53.744 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-04 11:17:53.749 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-04 11:17:53.751 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-04 11:17:53.800 +02:00 [INF] Now listening on: http://localhost:5062
+2025-04-04 11:17:53.800 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-04 11:17:53.800 +02:00 [INF] Hosting environment: Development
+2025-04-04 11:17:53.800 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-04 11:17:54.562 +02:00 [INF] Received HTTP response headers after 808.7176ms - 200
+2025-04-04 11:17:54.566 +02:00 [INF] End processing HTTP request after 819.8476ms - 200
+2025-04-04 11:17:55.537 +02:00 [ERR] Failed executing DbCommand (86ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-04 11:17:55.554 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+MySqlConnector.MySqlException (0x80004005): Unknown column 'n.AiSummary' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Unknown column 'n.AiSummary' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-04-04 11:17:55.558 +02:00 [ERR] Error occurred while fetching news.
+MySqlConnector.MySqlException (0x80004005): Unknown column 'n.AiSummary' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsApiFetcher.FetchNewsDataApiNews(AppDbContext dbContext, HttpClient httpClient) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsApiFetcher.cs:line 70
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 57
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 37
+2025-04-04 11:25:43.670 +02:00 [INF] Application is shutting down...
+eters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `defaultdb`;
+2025-04-04 11:22:47.797 +02:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-04 11:22:48.450 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2025-04-04 11:22:49.011 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-04 11:22:49.135 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-04 11:22:49.155 +02:00 [INF] Applying migration '20250331083955_InitialCreate'.
+2025-04-04 11:22:49.407 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2025-04-04 11:22:49.477 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `NewsArticles` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Content` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Source` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PublishedAt` datetime(6) NOT NULL,
+    `IsProcessed` tinyint(1) NOT NULL,
+    CONSTRAINT `PK_NewsArticles` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-04 11:22:49.536 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331083955_InitialCreate', '8.0.13');
+2025-04-04 11:22:49.603 +02:00 [INF] Applying migration '20250331085740_AddUsersTable'.
+2025-04-04 11:22:49.850 +02:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-04 11:22:49.913 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331085740_AddUsersTable', '8.0.13');
+2025-04-04 11:22:49.971 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-04-04 11:22:50.223 +02:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:22:50.296 +02:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-04-04 11:22:50.369 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:22:50.427 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-04-04 11:22:50.486 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-04 11:22:50.738 +02:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:22:50.800 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403083131_UpdateNewsArticles', '8.0.13');
+2025-04-04 11:22:50.857 +02:00 [INF] Applying migration '20250403091634_AddThumbnailUrlToNewsArticles'.
+2025-04-04 11:22:51.109 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `ThumbnailUrl` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:22:51.168 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403091634_AddThumbnailUrlToNewsArticles', '8.0.13');
+2025-04-04 11:24:46.441 +02:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-04 11:24:46.995 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-04 11:24:47.128 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-04 11:24:47.148 +02:00 [INF] Applying migration '20250404092438_AddNewFields'.
+2025-04-04 11:24:47.404 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `AiSummary` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-04 11:24:47.468 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `IsPosted` tinyint(1) NOT NULL DEFAULT FALSE;
+2025-04-04 11:24:47.524 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250404092438_AddNewFields', '8.0.13');
+2025-04-04 11:25:47.250 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-04 11:25:47.301 +02:00 [INF] News Fetcher Service is starting...
+2025-04-04 11:25:47.924 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-04 11:25:47.929 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-04 11:25:47.931 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-04 11:25:47.979 +02:00 [INF] Now listening on: http://localhost:5062
+2025-04-04 11:25:47.979 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-04 11:25:47.979 +02:00 [INF] Hosting environment: Development
+2025-04-04 11:25:47.980 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-04 11:25:48.681 +02:00 [INF] Received HTTP response headers after 748.1156ms - 200
+2025-04-04 11:25:48.686 +02:00 [INF] End processing HTTP request after 759.7326ms - 200
+2025-04-04 11:25:49.669 +02:00 [INF] Executed DbCommand (85ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-04 11:25:49.713 +02:00 [INF] Added new article: Trump’s tariff shock: Global economies brace for impact
+2025-04-04 11:25:49.831 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-04 11:25:49.833 +02:00 [INF] Added new article: Tariff confusion reigns as Trump triggers biggest change to global trade in a century
+2025-04-04 11:25:49.950 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-04 11:25:49.951 +02:00 [INF] Added new article: UNH, state colleges could lose tens of millions of dollars in budget cuts
+2025-04-04 11:25:50.068 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-04 11:25:50.068 +02:00 [INF] Added new article: Trump tariffs threaten Japan auto sector
+2025-04-04 11:25:50.186 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-04 11:25:50.186 +02:00 [INF] Added new article: Trump’s tariffs aim to reset global trade — and boost America’s workers
+2025-04-04 11:25:50.186 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-04 11:25:50.466 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = DateTime), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = Boolean), @p31='?' (DbType = DateTime), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (Size = 4000), @p37='?' (Size = 4000), @p38='?' (DbType = Boolean), @p39='?' (DbType = Boolean), @p40='?' (DbType = DateTime), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (Size = 4000), @p44='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-04 11:26:01.854 +02:00 [INF] Application is shutting down...

@@ -1,0 +1,21 @@
+{
+    "NewsAggregation": {
+      "FetchIntervalMinutes": 60,
+      "MaxArticlesPerFetch": 5,
+      "Filters": {
+        "Language": "en",
+        "Keywords": ["Economy", "World News"]
+      },
+      "SourcePreferences": {
+        "Reddit": false,
+        "NewsDataAPI": true,
+        "HackerNews": false,
+        "Nitter": false
+      },
+      "PostSettings": {
+        "PostIntervalMinutes": 60,
+        "MaxPostsPerDay": 5
+      }
+    }
+  }
+  

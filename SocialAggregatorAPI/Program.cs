@@ -3,8 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using SocialAggregatorAPI;
 using SocialAggregatorAPI.Data;
 using SocialAggregatorAPI.Helpers;
+using SocialAggregatorAPI.Models;
 using System.Text;
 
 public partial class Program
@@ -103,7 +105,25 @@ public partial class Program
                 ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
             )
         );
-    }
+
+        // Load newsaggregation.json into the builder's configuration
+        builder.Configuration.AddJsonFile("newsaggregation.json", optional: false, reloadOnChange: true);
+
+        // Bind to settings class
+        services.Configure<NewsAggregationSettings>(builder.Configuration.GetSection("NewsAggregation"));
+
+        // Register the config service as a singleton
+        services.AddSingleton<NewsAggregationConfigReader>();
+
+        // Register IHttpClientFactory
+        services.AddHttpClient();
+
+        // Register NewsFetcherService as a hosted service
+        services.AddHostedService<NewsFetcherService>();
+
+        builder.Services.AddHttpClient<IContentFetcher, NewsApiFetcher>();
+        // Register the NewsApiFetcher
+        services.AddSingleton<NewsApiFetcher>();}
 
     private static void ConfigureMiddleware(WebApplication app)
     {

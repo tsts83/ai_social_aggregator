@@ -17,8 +17,16 @@ namespace SocialAggregatorAPI.Models
 
         public string? Source { get; set; }  // Where the news came from (e.g., API name)
 
+        public string? Url { get; set; }  // Link to the news article
+
         public DateTime PublishedAt { get; set; }  // When the news was published
 
         public bool IsProcessed { get; set; } = false;  // If the AI has generated a post from it
+        
+        public bool IsPosted { get; set; } = false;  // If the article has been posted  
+
+        public string? ThumbnailUrl { get; set; }  // URL of the thumbnail image
+
+        public string? AiSummary { get; set; }  // AI-generated summary  
     }
 }

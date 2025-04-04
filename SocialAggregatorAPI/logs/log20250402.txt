@@ -1,0 +1,78 @@
+2025-04-02 22:26:53.385 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-02 22:26:55.559 +02:00 [INF] News Fetcher Service is starting...
+2025-04-02 22:27:05.331 +02:00 [INF] Fetching news from Reddit...
+2025-04-02 22:27:05.336 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:27:05.338 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:27:05.509 +02:00 [INF] Received HTTP response headers after 169.7041ms - 403
+2025-04-02 22:27:05.511 +02:00 [INF] End processing HTTP request after 178.4088ms - 403
+2025-04-02 22:27:11.868 +02:00 [ERR] Error occurred while fetching news.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 403 (Blocked).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchRedditNews(AppDbContext dbContext, HttpClient httpClient) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 66
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 52
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 33
+2025-04-02 22:27:14.001 +02:00 [INF] Now listening on: https://localhost:7085
+2025-04-02 22:27:14.002 +02:00 [INF] Now listening on: http://localhost:5062
+2025-04-02 22:27:14.002 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-02 22:27:14.003 +02:00 [INF] Hosting environment: Development
+2025-04-02 22:27:14.003 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-02 22:27:14.232 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-04-02 22:27:30.035 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 15803.711ms
+2025-04-02 22:27:30.037 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-04-02 22:29:27.470 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-02 22:29:28.237 +02:00 [INF] News Fetcher Service is starting...
+2025-04-02 22:29:34.533 +02:00 [INF] Fetching news from Reddit...
+2025-04-02 22:29:34.538 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:29:34.540 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:29:34.704 +02:00 [INF] Received HTTP response headers after 163.1987ms - 403
+2025-04-02 22:29:34.707 +02:00 [INF] End processing HTTP request after 172.6559ms - 403
+2025-04-02 22:29:36.517 +02:00 [ERR] Error occurred while fetching news.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 403 (Blocked).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchRedditNews(AppDbContext dbContext, HttpClient httpClient) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 66
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 52
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 33
+2025-04-02 22:30:03.422 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-02 22:30:04.918 +02:00 [INF] News Fetcher Service is starting...
+2025-04-02 22:30:17.649 +02:00 [INF] Fetching news from Reddit...
+2025-04-02 22:30:18.825 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:30:18.828 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:30:18.981 +02:00 [INF] Received HTTP response headers after 151.6435ms - 403
+2025-04-02 22:30:18.984 +02:00 [INF] End processing HTTP request after 164.1282ms - 403
+2025-04-02 22:30:19.047 +02:00 [ERR] Error occurred while fetching news.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 403 (Blocked).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchRedditNews(AppDbContext dbContext, HttpClient httpClient) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 66
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 52
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 33
+2025-04-02 22:30:19.149 +02:00 [INF] Now listening on: https://localhost:7085
+2025-04-02 22:30:19.149 +02:00 [INF] Now listening on: http://localhost:5062
+2025-04-02 22:30:19.150 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-02 22:30:19.150 +02:00 [INF] Hosting environment: Development
+2025-04-02 22:30:19.151 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-02 22:30:19.313 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null
+2025-04-02 22:30:43.641 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7085/ - 404 0 null 24328.1468ms
+2025-04-02 22:30:43.642 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7085/, Response status code: 404
+2025-04-02 22:31:01.033 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-02 22:31:02.328 +02:00 [INF] News Fetcher Service is starting...
+2025-04-02 22:31:05.997 +02:00 [INF] Fetching news from Reddit...
+2025-04-02 22:31:16.172 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:31:16.176 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-02 22:31:16.413 +02:00 [INF] Received HTTP response headers after 235.5234ms - 403
+2025-04-02 22:31:16.415 +02:00 [INF] End processing HTTP request after 249.0584ms - 403
+2025-04-02 22:31:16.481 +02:00 [ERR] Error occurred while fetching news.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 403 (Blocked).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchRedditNews(AppDbContext dbContext, HttpClient httpClient) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 66
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 52
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 33
+2025-04-02 22:31:16.580 +02:00 [INF] Now listening on: https://localhost:7085
+2025-04-02 22:31:16.580 +02:00 [INF] Now listening on: http://localhost:5062
+2025-04-02 22:31:16.581 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-02 22:31:16.581 +02:00 [INF] Hosting environment: Development
+2025-04-02 22:31:16.581 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-02 22:31:16.742 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7085/ - null null

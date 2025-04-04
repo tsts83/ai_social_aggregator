@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SocialAggregatorAPI.Data;
 
@@ -11,9 +12,11 @@ using SocialAggregatorAPI.Data;
 namespace SocialAggregatorAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250403091634_AddThumbnailUrlToNewsArticles")]
+    partial class AddThumbnailUrlToNewsArticles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,15 +33,9 @@ namespace SocialAggregatorAPI.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AiSummary")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("longtext");
-
-                    b.Property<bool>("IsPosted")
-                        .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("IsProcessed")
                         .HasColumnType("tinyint(1)");

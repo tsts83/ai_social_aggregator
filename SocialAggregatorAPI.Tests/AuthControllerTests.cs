@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Moq;
 using SocialAggregatorAPI.Controllers;
 using SocialAggregatorAPI.Data;
 
@@ -11,7 +10,6 @@ namespace SocialAggregatorAPI.Tests
     {
         private readonly AuthController _controller;
         private readonly AppDbContext _dbContext;
-        private readonly Mock<IConfiguration> _mockConfig;
 
         public AuthControllerTests()
         {

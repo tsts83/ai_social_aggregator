@@ -1,0 +1,46 @@
+2025-04-01 18:22:28.695 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-01 18:22:28.788 +02:00 [INF] Now listening on: http://localhost:5062
+2025-04-01 18:22:28.789 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-01 18:22:28.789 +02:00 [INF] Hosting environment: Development
+2025-04-01 18:22:28.790 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-01 18:23:01.170 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api-docs/ - null null
+2025-04-01 18:23:01.231 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api-docs/ - 404 0 null 61.5393ms
+2025-04-01 18:23:01.236 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/api-docs/, Response status code: 404
+2025-04-01 18:23:03.880 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api-docs/ - null null
+2025-04-01 18:23:03.883 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api-docs/ - 404 0 null 3.1903ms
+2025-04-01 18:23:03.883 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/api-docs/, Response status code: 404
+2025-04-01 18:23:07.018 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/ - null null
+2025-04-01 18:23:07.023 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/ - 404 0 null 4.1569ms
+2025-04-01 18:23:07.023 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/, Response status code: 404
+2025-04-01 18:23:24.184 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/ - null null
+2025-04-01 18:23:24.185 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/ - 404 0 null 0.9532ms
+2025-04-01 18:23:24.186 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/, Response status code: 404
+2025-04-01 18:24:29.103 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2025-04-01 18:24:29.179 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.1625ms
+2025-04-01 18:24:29.221 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/favicon.ico - null null
+2025-04-01 18:24:29.221 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/favicon.ico - 404 0 null 0.5168ms
+2025-04-01 18:24:29.221 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/favicon.ico, Response status code: 404
+2025-04-01 18:24:32.340 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/ - null null
+2025-04-01 18:24:32.342 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/ - 301 0 null 2.3772ms
+2025-04-01 18:24:32.345 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.html - null null
+2025-04-01 18:24:32.416 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.html - 200 null text/html;charset=utf-8 70.8227ms
+2025-04-01 18:24:32.440 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui.css - null null
+2025-04-01 18:24:32.441 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.css - null null
+2025-04-01 18:24:32.442 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.js - null null
+2025-04-01 18:24:32.442 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-bundle.js - null null
+2025-04-01 18:24:32.442 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-01 18:24:32.443 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.js - 200 null application/javascript;charset=utf-8 0.7842ms
+2025-04-01 18:24:32.457 +02:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-01 18:24:32.457 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.css - 200 202 text/css 16.1685ms
+2025-04-01 18:24:32.461 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-01 18:24:32.461 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-01 18:24:32.461 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 19.4403ms
+2025-04-01 18:24:32.461 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui.css - 200 154948 text/css 21.0342ms
+2025-04-01 18:24:32.464 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-01 18:24:32.464 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 22.3796ms
+2025-04-01 18:24:32.542 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2025-04-01 18:24:32.543 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.5193ms
+2025-04-01 18:24:32.552 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/favicon-32x32.png - null null
+2025-04-01 18:24:32.553 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-01 18:24:32.553 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/favicon-32x32.png - 200 628 image/png 1.2117ms
+2025-04-01 18:24:44.723 +02:00 [INF] Application is shutting down...

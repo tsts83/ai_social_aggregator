@@ -49,7 +49,7 @@ namespace SocialAggregatorAPI.Controllers
         public async Task<IActionResult> Login([FromBody] User loginUser)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == loginUser.Username);
-            if (user == null || !BCrypt.Net.BCrypt.Verify(loginUser.Password, user.PasswordHash))
+            if (user == null || string.IsNullOrEmpty(user.Username) || !BCrypt.Net.BCrypt.Verify(loginUser.Password, user.PasswordHash))
                 return Unauthorized("Invalid credentials");
 
             var token = GenerateJwtToken(user);
@@ -61,7 +61,7 @@ namespace SocialAggregatorAPI.Controllers
 
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Username),
+            new Claim(JwtRegisteredClaimNames.Sub, user.Username ?? string.Empty),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Exp, 
                 new DateTimeOffset(DateTime.UtcNow.AddHours(2)).ToUnixTimeSeconds().ToString()) // Fix expiration

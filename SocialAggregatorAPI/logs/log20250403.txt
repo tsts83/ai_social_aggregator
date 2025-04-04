@@ -1,0 +1,1696 @@
+2025-04-03 10:04:22.959 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 10:04:25.086 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 10:04:29.114 +02:00 [INF] Fetching news from Reddit...
+2025-04-03 10:04:29.903 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:04:29.905 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:04:30.188 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 10:04:30.189 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:04:30.189 +02:00 [INF] Hosting environment: Development
+2025-04-03 10:04:30.189 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 10:04:30.378 +02:00 [INF] Received HTTP response headers after 471.1567ms - 200
+2025-04-03 10:04:30.381 +02:00 [INF] End processing HTTP request after 481.9238ms - 200
+2025-04-03 10:04:33.469 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 10:07:18.684 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 10:07:22.631 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 10:07:30.891 +02:00 [INF] Fetching news from Reddit...
+2025-04-03 10:07:31.644 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:07:31.646 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:07:31.934 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 10:07:31.956 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:07:31.957 +02:00 [INF] Hosting environment: Development
+2025-04-03 10:07:31.957 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 10:07:32.111 +02:00 [INF] Received HTTP response headers after 464.0001ms - 200
+2025-04-03 10:07:32.114 +02:00 [INF] End processing HTTP request after 473.2185ms - 200
+2025-04-03 10:08:19.549 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 10:15:23.957 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 10:15:24.016 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 10:15:27.281 +02:00 [INF] Fetching news from Reddit...
+2025-04-03 10:15:27.791 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:15:27.793 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:15:28.051 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 10:15:28.051 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:15:28.052 +02:00 [INF] Hosting environment: Development
+2025-04-03 10:15:28.052 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 10:15:28.258 +02:00 [INF] Received HTTP response headers after 463.8597ms - 200
+2025-04-03 10:15:28.264 +02:00 [INF] End processing HTTP request after 477.7037ms - 200
+2025-04-03 10:21:06.404 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 10:21:06.455 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 10:21:07.088 +02:00 [INF] Fetching news from Reddit...
+2025-04-03 10:21:07.093 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:21:07.095 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:21:07.250 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 10:21:07.251 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:21:07.251 +02:00 [INF] Hosting environment: Development
+2025-04-03 10:21:07.251 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 10:21:07.431 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 10:21:07.479 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 48.3762ms
+2025-04-03 10:21:07.481 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 10:21:07.543 +02:00 [INF] Received HTTP response headers after 446.7995ms - 200
+2025-04-03 10:21:07.544 +02:00 [INF] End processing HTTP request after 453.7069ms - 200
+2025-04-03 10:21:07.785 +02:00 [INF] Fetching news from NewsAPI...
+2025-04-03 10:21:07.785 +02:00 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=technology&apiKey=YOUR_API_KEY
+2025-04-03 10:21:07.785 +02:00 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=technology&apiKey=YOUR_API_KEY
+2025-04-03 10:21:08.316 +02:00 [INF] Received HTTP response headers after 530.6601ms - 401
+2025-04-03 10:21:08.317 +02:00 [INF] End processing HTTP request after 531.7974ms - 401
+2025-04-03 10:21:08.324 +02:00 [ERR] Error occurred while fetching news.
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchNewsApiNews(AppDbContext dbContext, HttpClient httpClient) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 91
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 56
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 33
+2025-04-03 10:23:33.274 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 10:23:33.334 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 10:23:41.080 +02:00 [INF] Fetching news from Reddit...
+2025-04-03 10:23:41.499 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:23:41.502 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:23:41.739 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 10:23:41.740 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:23:41.765 +02:00 [INF] Hosting environment: Development
+2025-04-03 10:23:41.765 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 10:23:41.986 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 10:23:46.974 +02:00 [INF] Received HTTP response headers after 5012.927ms - 200
+2025-04-03 10:23:46.995 +02:00 [INF] End processing HTTP request after 5501.4034ms - 200
+2025-04-03 10:23:57.603 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 15617.1486ms
+2025-04-03 10:23:57.604 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 10:31:41.032 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 10:31:41.647 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 10:31:41.784 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-03 10:31:41.803 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-03 10:31:42.089 +02:00 [ERR] Failed executing DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 10:33:21.113 +02:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `defaultdb`;
+2025-04-03 10:33:26.719 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 10:33:27.482 +02:00 [INF] Executed DbCommand (131ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 10:33:28.046 +02:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 10:33:28.168 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-03 10:33:28.186 +02:00 [INF] Applying migration '20250331083955_InitialCreate'.
+2025-04-03 10:33:28.435 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2025-04-03 10:33:28.510 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `NewsArticles` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Content` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Source` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PublishedAt` datetime(6) NOT NULL,
+    `IsProcessed` tinyint(1) NOT NULL,
+    CONSTRAINT `PK_NewsArticles` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 10:33:28.583 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331083955_InitialCreate', '8.0.13');
+2025-04-03 10:33:28.644 +02:00 [INF] Applying migration '20250331085740_AddUsersTable'.
+2025-04-03 10:33:28.885 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 10:33:28.943 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331085740_AddUsersTable', '8.0.13');
+2025-04-03 10:33:28.999 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-04-03 10:33:29.263 +02:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 10:33:29.335 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-04-03 10:33:29.415 +02:00 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 10:33:29.476 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-04-03 10:33:29.535 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-03 10:33:29.787 +02:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 10:33:29.846 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403083131_UpdateNewsArticles', '8.0.13');
+2025-04-03 10:35:36.618 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 10:35:36.680 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 10:35:39.316 +02:00 [INF] Fetching news from Reddit...
+2025-04-03 10:35:39.692 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:35:39.695 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:35:39.936 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 10:35:39.937 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:35:39.937 +02:00 [INF] Hosting environment: Development
+2025-04-03 10:35:39.937 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 10:35:40.158 +02:00 [INF] Received HTTP response headers after 459.1566ms - 200
+2025-04-03 10:35:40.163 +02:00 [INF] End processing HTTP request after 473.3269ms - 200
+2025-04-03 10:35:44.364 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 10:35:49.838 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 5474.5445ms
+2025-04-03 10:35:49.839 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 10:38:06.832 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 10:38:06.893 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 10:38:18.399 +02:00 [INF] Fetching news from Reddit...
+2025-04-03 10:38:27.834 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:38:27.838 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/technology/top.json?limit=5
+2025-04-03 10:38:28.117 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 10:38:28.117 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:38:28.118 +02:00 [INF] Hosting environment: Development
+2025-04-03 10:38:28.118 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 10:38:28.418 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 10:38:28.457 +02:00 [INF] Received HTTP response headers after 616.9365ms - 200
+2025-04-03 10:38:28.459 +02:00 [INF] End processing HTTP request after 629.292ms - 200
+2025-04-03 10:38:33.885 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 5467.8381ms
+2025-04-03 10:38:33.886 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 10:38:44.188 +02:00 [ERR] Failed executing DbCommand (83ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (DbType = DateTime), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (DbType = DateTime), @p21='?' (Size = 4000), @p22='?' (Size = 4000), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (DbType = Boolean), @p26='?' (DbType = DateTime), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `Title`, `Url`)
+VALUES (@p6, @p7, @p8, @p9, @p10, @p11);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `Title`, `Url`)
+VALUES (@p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `Title`, `Url`)
+VALUES (@p18, @p19, @p20, @p21, @p22, @p23);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `Title`, `Url`)
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 10:38:44.279 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-04-03 10:38:44.386 +02:00 [ERR] Error occurred while fetching news.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 61
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 33
+2025-04-03 11:06:43.874 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 11:06:43.935 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 11:06:46.738 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 11:06:46.745 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:06:46.748 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:06:46.988 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 11:06:46.989 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 11:06:46.989 +02:00 [INF] Hosting environment: Development
+2025-04-03 11:06:46.989 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 11:06:47.308 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 11:06:49.824 +02:00 [INF] Received HTTP response headers after 2577.3362ms - 200
+2025-04-03 11:06:50.984 +02:00 [INF] End processing HTTP request after 4242.7535ms - 200
+2025-04-03 11:06:53.778 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 6470.7985ms
+2025-04-03 11:06:53.780 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 11:07:42.186 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 11:07:42.250 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 11:07:44.927 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 11:07:44.933 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:07:44.935 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:07:45.155 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 11:07:45.155 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 11:07:45.156 +02:00 [INF] Hosting environment: Development
+2025-04-03 11:07:45.156 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 11:07:45.432 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 11:07:47.866 +02:00 [INF] Received HTTP response headers after 2284.4076ms - 200
+2025-04-03 11:07:47.878 +02:00 [INF] End processing HTTP request after 2947.826ms - 200
+2025-04-03 11:07:48.809 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 3377.7011ms
+2025-04-03 11:07:48.810 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 11:08:22.705 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 11:08:24.550 +02:00 [ERR] Failed executing DbCommand (78ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = DateTime), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (DbType = Boolean), @p37='?' (DbType = DateTime), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (DbType = Boolean), @p44='?' (DbType = DateTime), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (Size = 4000), @p48='?' (Size = 4000), @p49='?' (Size = 4000), @p50='?' (DbType = Boolean), @p51='?' (DbType = DateTime), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?' (Size = 4000), @p57='?' (DbType = Boolean), @p58='?' (DbType = DateTime), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (Size = 4000), @p62='?' (Size = 4000), @p63='?' (Size = 4000), @p64='?' (DbType = Boolean), @p65='?' (DbType = DateTime), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (Size = 4000), @p69='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p35, @p36, @p37, @p38, @p39, @p40, @p41);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p42, @p43, @p44, @p45, @p46, @p47, @p48);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p49, @p50, @p51, @p52, @p53, @p54, @p55);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p56, @p57, @p58, @p59, @p60, @p61, @p62);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p63, @p64, @p65, @p66, @p67, @p68, @p69);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 11:08:24.637 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'ThumbnailUrl' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'ThumbnailUrl' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-04-03 11:08:24.742 +02:00 [ERR] Error occurred while fetching news.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'ThumbnailUrl' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 63
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 35
+2025-04-03 11:08:46.654 +02:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `defaultdb`;
+2025-04-03 11:08:51.898 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 11:08:52.574 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 11:08:53.114 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 11:08:53.234 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-03 11:08:53.254 +02:00 [INF] Applying migration '20250331083955_InitialCreate'.
+2025-04-03 11:08:53.487 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2025-04-03 11:08:53.550 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `NewsArticles` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Content` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Source` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PublishedAt` datetime(6) NOT NULL,
+    `IsProcessed` tinyint(1) NOT NULL,
+    CONSTRAINT `PK_NewsArticles` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 11:08:53.604 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331083955_InitialCreate', '8.0.13');
+2025-04-03 11:08:53.663 +02:00 [INF] Applying migration '20250331085740_AddUsersTable'.
+2025-04-03 11:08:53.887 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 11:08:53.940 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331085740_AddUsersTable', '8.0.13');
+2025-04-03 11:08:53.993 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-04-03 11:08:54.224 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 11:08:54.292 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-04-03 11:08:54.363 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 11:08:54.416 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-04-03 11:08:54.469 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-03 11:08:54.701 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 11:08:54.761 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403083131_UpdateNewsArticles', '8.0.13');
+2025-04-03 11:09:03.467 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 11:09:03.528 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 11:09:05.525 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 11:09:05.532 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:09:05.534 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:09:05.743 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 11:09:05.743 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 11:09:05.744 +02:00 [INF] Hosting environment: Development
+2025-04-03 11:09:05.744 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 11:09:05.965 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 11:09:07.320 +02:00 [INF] Received HTTP response headers after 1472.9545ms - 200
+2025-04-03 11:09:08.211 +02:00 [INF] End processing HTTP request after 2682.7823ms - 200
+2025-04-03 11:09:12.151 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 6186.5263ms
+2025-04-03 11:09:12.153 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 11:09:30.747 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 11:09:34.491 +02:00 [ERR] Failed executing DbCommand (85ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = DateTime), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (DbType = Boolean), @p37='?' (DbType = DateTime), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (DbType = Boolean), @p44='?' (DbType = DateTime), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (Size = 4000), @p48='?' (Size = 4000), @p49='?' (Size = 4000), @p50='?' (DbType = Boolean), @p51='?' (DbType = DateTime), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?' (Size = 4000), @p57='?' (DbType = Boolean), @p58='?' (DbType = DateTime), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (Size = 4000), @p62='?' (Size = 4000), @p63='?' (Size = 4000), @p64='?' (DbType = Boolean), @p65='?' (DbType = DateTime), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (Size = 4000), @p69='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p35, @p36, @p37, @p38, @p39, @p40, @p41);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p42, @p43, @p44, @p45, @p46, @p47, @p48);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p49, @p50, @p51, @p52, @p53, @p54, @p55);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p56, @p57, @p58, @p59, @p60, @p61, @p62);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p63, @p64, @p65, @p66, @p67, @p68, @p69);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 11:09:34.586 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'ThumbnailUrl' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'ThumbnailUrl' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-04-03 11:09:34.690 +02:00 [ERR] Error occurred while fetching news.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'ThumbnailUrl' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 63
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 35
+2025-04-03 11:11:26.831 +02:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `defaultdb`;
+2025-04-03 11:11:32.843 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE `defaultdb`;
+2025-04-03 11:11:33.994 +02:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 11:11:34.640 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 11:11:34.769 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-03 11:11:34.790 +02:00 [INF] Applying migration '20250331083955_InitialCreate'.
+2025-04-03 11:11:35.046 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2025-04-03 11:11:35.125 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `NewsArticles` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Content` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Source` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PublishedAt` datetime(6) NOT NULL,
+    `IsProcessed` tinyint(1) NOT NULL,
+    CONSTRAINT `PK_NewsArticles` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 11:11:35.186 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331083955_InitialCreate', '8.0.13');
+2025-04-03 11:11:35.248 +02:00 [INF] Applying migration '20250331085740_AddUsersTable'.
+2025-04-03 11:11:35.501 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 11:11:35.562 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331085740_AddUsersTable', '8.0.13');
+2025-04-03 11:11:35.622 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-04-03 11:11:35.909 +02:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 11:11:35.983 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-04-03 11:11:36.059 +02:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 11:11:36.120 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-04-03 11:11:36.180 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-03 11:11:36.439 +02:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 11:11:36.501 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403083131_UpdateNewsArticles', '8.0.13');
+2025-04-03 11:16:41.206 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 11:16:41.808 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 11:16:41.932 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-03 11:16:41.938 +02:00 [INF] Applying migration '20250403091634_AddThumbnailUrlToNewsArticles'.
+2025-04-03 11:16:42.199 +02:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `ThumbnailUrl` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 11:16:42.257 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403091634_AddThumbnailUrlToNewsArticles', '8.0.13');
+2025-04-03 11:17:52.949 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 11:17:53.049 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 11:17:59.640 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 11:17:59.645 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:17:59.648 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=example&language=en
+2025-04-03 11:17:59.925 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 11:17:59.926 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 11:17:59.926 +02:00 [INF] Hosting environment: Development
+2025-04-03 11:17:59.926 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 11:18:00.188 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 11:18:03.742 +02:00 [INF] Received HTTP response headers after 3802.3438ms - 200
+2025-04-03 11:18:04.032 +02:00 [INF] End processing HTTP request after 4389.506ms - 200
+2025-04-03 11:18:08.470 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 8282.1882ms
+2025-04-03 11:18:08.472 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 11:18:26.373 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 11:18:29.099 +02:00 [INF] Executed DbCommand (152ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = DateTime), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = -1), @p36='?' (DbType = Boolean), @p37='?' (DbType = DateTime), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (DbType = Boolean), @p44='?' (DbType = DateTime), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (Size = 4000), @p48='?' (Size = 4000), @p49='?' (Size = -1), @p50='?' (DbType = Boolean), @p51='?' (DbType = DateTime), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?' (Size = 4000), @p57='?' (DbType = Boolean), @p58='?' (DbType = DateTime), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (Size = 4000), @p62='?' (Size = 4000), @p63='?' (Size = 4000), @p64='?' (DbType = Boolean), @p65='?' (DbType = DateTime), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (Size = 4000), @p69='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p35, @p36, @p37, @p38, @p39, @p40, @p41);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p42, @p43, @p44, @p45, @p46, @p47, @p48);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p49, @p50, @p51, @p52, @p53, @p54, @p55);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p56, @p57, @p58, @p59, @p60, @p61, @p62);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p63, @p64, @p65, @p66, @p67, @p68, @p69);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 12:56:04.774 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 12:56:04.826 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 12:56:05.783 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 12:56:05.783 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 12:56:05.783 +02:00 [INF] Hosting environment: Development
+2025-04-03 12:56:05.783 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 12:56:05.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 12:56:06.024 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 55.7559ms
+2025-04-03 12:56:06.028 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 12:56:15.716 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 12:56:15.774 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 12:56:37.311 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 12:56:37.372 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 12:57:15.522 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 12:57:15.585 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 12:57:18.297 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 12:57:25.307 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=en
+2025-04-03 12:57:25.310 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=en
+2025-04-03 12:57:25.540 +02:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5062: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 12:57:59.154 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 12:57:59.223 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 12:58:01.150 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 12:58:37.617 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=en
+2025-04-03 12:58:37.621 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=en
+2025-04-03 12:58:37.877 +02:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5062: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 13:03:35.787 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:03:35.880 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:03:38.498 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:03:39.670 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=en
+2025-04-03 13:03:39.672 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=en
+2025-04-03 13:03:39.874 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:03:39.875 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:03:39.875 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:03:39.876 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:03:40.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:03:40.178 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 66.1917ms
+2025-04-03 13:03:40.180 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:03:40.340 +02:00 [INF] Received HTTP response headers after 665.077ms - 200
+2025-04-03 13:03:40.340 +02:00 [INF] End processing HTTP request after 673.0968ms - 200
+2025-04-03 13:04:14.360 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:04:16.556 +02:00 [ERR] Failed executing DbCommand (136ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = -1), @p29='?' (DbType = Boolean), @p30='?' (DbType = DateTime), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (DbType = Boolean), @p37='?' (DbType = DateTime), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (DbType = Boolean), @p44='?' (DbType = DateTime), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (Size = 4000), @p48='?' (Size = 4000), @p49='?' (Size = 4000), @p50='?' (DbType = Boolean), @p51='?' (DbType = DateTime), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?' (Size = 4000), @p57='?' (DbType = Boolean), @p58='?' (DbType = DateTime), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (Size = 4000), @p62='?' (Size = 4000), @p63='?' (Size = 4000), @p64='?' (DbType = Boolean), @p65='?' (DbType = DateTime), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (Size = 4000), @p69='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p35, @p36, @p37, @p38, @p39, @p40, @p41);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p42, @p43, @p44, @p45, @p46, @p47, @p48);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p49, @p50, @p51, @p52, @p53, @p54, @p55);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p56, @p57, @p58, @p59, @p60, @p61, @p62);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p63, @p64, @p65, @p66, @p67, @p68, @p69);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 13:04:16.648 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-04-03 13:04:16.748 +02:00 [ERR] Error occurred while fetching news.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 57
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 35
+2025-04-03 13:05:16.407 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:05:16.469 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:05:18.404 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:05:20.320 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=hu
+2025-04-03 13:05:20.324 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=AI%20AND%20Machine%20Learning%20AND%20Blockchain&language=hu
+2025-04-03 13:05:20.556 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:05:20.581 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:05:20.582 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:05:20.582 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:05:20.803 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:05:20.867 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 64.7403ms
+2025-04-03 13:05:20.869 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:05:21.050 +02:00 [INF] Received HTTP response headers after 723.1507ms - 200
+2025-04-03 13:05:21.051 +02:00 [INF] End processing HTTP request after 735.2357ms - 200
+2025-04-03 13:07:57.924 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:07:57.986 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:08:00.058 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:08:04.461 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:08:04.464 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:08:04.752 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:08:04.752 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:08:04.753 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:08:04.753 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:08:04.912 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:08:04.972 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 60.648ms
+2025-04-03 13:08:04.975 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:08:05.112 +02:00 [INF] Received HTTP response headers after 645.6866ms - 200
+2025-04-03 13:08:05.113 +02:00 [INF] End processing HTTP request after 657.5037ms - 200
+2025-04-03 13:11:49.008 +02:00 [ERR] An error occurred using the connection to database 'defaultdb' on server 'mysql-1a4c0f28-tsts83-a097.j.aivencloud.com'.
+2025-04-03 13:11:49.068 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+System.Threading.ThreadAbortException: System error.
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 453
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken)
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.Threading.ThreadAbortException: System error.
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 453
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken)
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-04-03 13:12:16.906 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:12:16.966 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:12:19.664 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:12:24.512 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:12:24.515 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:12:24.793 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:12:24.793 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:12:24.794 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:12:24.794 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:12:24.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:12:25.032 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 62.5345ms
+2025-04-03 13:12:25.034 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:12:25.180 +02:00 [INF] Received HTTP response headers after 662.8902ms - 200
+2025-04-03 13:12:25.180 +02:00 [INF] End processing HTTP request after 674.1958ms - 200
+2025-04-03 13:13:54.939 +02:00 [ERR] An error occurred using the connection to database 'defaultdb' on server 'mysql-1a4c0f28-tsts83-a097.j.aivencloud.com'.
+2025-04-03 13:13:54.998 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+System.Threading.ThreadAbortException: System error.
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 453
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken)
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.Threading.ThreadAbortException: System error.
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 453
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken)
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-04-03 13:14:39.656 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:14:42.281 +02:00 [ERR] An error occurred using the connection to database 'defaultdb' on server 'mysql-1a4c0f28-tsts83-a097.j.aivencloud.com'.
+2025-04-03 13:14:42.283 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+System.InvalidOperationException: Cannot Open when State is Connecting.
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 392
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: Cannot Open when State is Connecting.
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 392
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-04-03 13:14:42.308 +02:00 [ERR] Error occurred while fetching news.
+System.InvalidOperationException: Cannot Open when State is Connecting.
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 392
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 57
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 35
+2025-04-03 13:17:47.585 +02:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `defaultdb`;
+2025-04-03 13:17:56.540 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE `defaultdb`;
+2025-04-03 13:17:57.715 +02:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 13:17:58.368 +02:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 13:17:58.498 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-03 13:17:58.521 +02:00 [INF] Applying migration '20250331083955_InitialCreate'.
+2025-04-03 13:17:58.780 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2025-04-03 13:17:58.850 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `NewsArticles` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Content` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Source` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PublishedAt` datetime(6) NOT NULL,
+    `IsProcessed` tinyint(1) NOT NULL,
+    CONSTRAINT `PK_NewsArticles` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 13:17:58.911 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331083955_InitialCreate', '8.0.13');
+2025-04-03 13:17:58.972 +02:00 [INF] Applying migration '20250331085740_AddUsersTable'.
+2025-04-03 13:17:59.231 +02:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 13:17:59.292 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331085740_AddUsersTable', '8.0.13');
+2025-04-03 13:17:59.353 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-04-03 13:17:59.622 +02:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:17:59.696 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-04-03 13:17:59.776 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:17:59.837 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-04-03 13:17:59.897 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-03 13:18:00.157 +02:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:18:00.219 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403083131_UpdateNewsArticles', '8.0.13');
+2025-04-03 13:18:00.280 +02:00 [INF] Applying migration '20250403091634_AddThumbnailUrlToNewsArticles'.
+2025-04-03 13:18:00.542 +02:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `ThumbnailUrl` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:18:00.603 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403091634_AddThumbnailUrlToNewsArticles', '8.0.13');
+2025-04-03 13:18:21.494 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:18:21.557 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:18:23.100 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:18:23.533 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:18:23.535 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:18:23.788 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:18:23.789 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:18:23.789 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:18:23.789 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:18:23.976 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:18:24.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 64.8652ms
+2025-04-03 13:18:24.043 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:18:24.262 +02:00 [INF] Received HTTP response headers after 725.3985ms - 200
+2025-04-03 13:18:24.262 +02:00 [INF] End processing HTTP request after 733.3892ms - 200
+2025-04-03 13:18:32.318 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:18:38.177 +02:00 [INF] Executed DbCommand (81ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = DateTime), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 13:26:20.984 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE `defaultdb`;
+2025-04-03 13:26:26.940 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE `defaultdb`;
+2025-04-03 13:26:28.047 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 13:26:28.627 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='defaultdb' AND TABLE_NAME='__EFMigrationsHistory';
+2025-04-03 13:26:28.740 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+2025-04-03 13:26:28.760 +02:00 [INF] Applying migration '20250331083955_InitialCreate'.
+2025-04-03 13:26:28.988 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;
+2025-04-03 13:26:29.051 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `NewsArticles` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Title` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Content` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Source` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PublishedAt` datetime(6) NOT NULL,
+    `IsProcessed` tinyint(1) NOT NULL,
+    CONSTRAINT `PK_NewsArticles` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 13:26:29.106 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331083955_InitialCreate', '8.0.13');
+2025-04-03 13:26:29.159 +02:00 [INF] Applying migration '20250331085740_AddUsersTable'.
+2025-04-03 13:26:29.383 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE `Users` (
+    `Id` int NOT NULL AUTO_INCREMENT,
+    `Username` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `Email` longtext CHARACTER SET utf8mb4 NOT NULL,
+    `PasswordHash` longtext CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK_Users` PRIMARY KEY (`Id`)
+) CHARACTER SET=utf8mb4;
+2025-04-03 13:26:29.437 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331085740_AddUsersTable', '8.0.13');
+2025-04-03 13:26:29.490 +02:00 [INF] Applying migration '20250331115925_AddPasswordField'.
+2025-04-03 13:26:29.728 +02:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` MODIFY COLUMN `PasswordHash` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:26:29.799 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `Users` ADD `Password` longtext CHARACTER SET utf8mb4 NOT NULL;
+2025-04-03 13:26:29.870 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` MODIFY COLUMN `Source` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:26:29.925 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250331115925_AddPasswordField', '8.0.13');
+2025-04-03 13:26:29.979 +02:00 [INF] Applying migration '20250403083131_UpdateNewsArticles'.
+2025-04-03 13:26:30.231 +02:00 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `Url` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:26:30.285 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403083131_UpdateNewsArticles', '8.0.13');
+2025-04-03 13:26:30.338 +02:00 [INF] Applying migration '20250403091634_AddThumbnailUrlToNewsArticles'.
+2025-04-03 13:26:30.567 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `NewsArticles` ADD `ThumbnailUrl` longtext CHARACTER SET utf8mb4 NULL;
+2025-04-03 13:26:30.624 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250403091634_AddThumbnailUrlToNewsArticles', '8.0.13');
+2025-04-03 13:33:17.441 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:33:17.500 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:33:21.033 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:33:21.039 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:33:21.041 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:33:21.272 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:33:21.272 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:33:21.273 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:33:21.273 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:33:21.522 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:33:21.588 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 67.0662ms
+2025-04-03 13:33:21.590 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:33:21.728 +02:00 [INF] Received HTTP response headers after 685.4976ms - 200
+2025-04-03 13:33:21.729 +02:00 [INF] End processing HTTP request after 693.0967ms - 200
+2025-04-03 13:33:22.513 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:22.557 +02:00 [INF] Added new article: Musk Denies Report That He and Trump Are Headed for a Breakup
+2025-04-03 13:33:22.667 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:22.668 +02:00 [INF] Added new article: Trump marks ‘Liberation Day’ with bizarre rant, conspiracies—and lame props
+2025-04-03 13:33:22.770 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:22.771 +02:00 [INF] Added new article: CNBC Daily Open: Trump's merciless tariffs could reshape the global economy and markets
+2025-04-03 13:33:22.874 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:22.875 +02:00 [INF] Added new article: Donald Trump hits Canada with 25 per cent auto tariffs and threats remain
+2025-04-03 13:33:22.981 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:22.981 +02:00 [INF] Added new article: Mark Carney vows to fight as Donald Trump hits Canada with 25 per cent auto tariffs and more threats loom
+2025-04-03 13:33:22.981 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:33:25.068 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = -1), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = DateTime), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 13:33:46.040 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:33:46.099 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:33:48.345 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:33:48.351 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:33:48.353 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:33:48.597 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:33:48.598 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:33:48.598 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:33:48.598 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:33:48.806 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:33:48.869 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 63.2922ms
+2025-04-03 13:33:48.872 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:33:48.915 +02:00 [INF] Received HTTP response headers after 560.8429ms - 200
+2025-04-03 13:33:48.916 +02:00 [INF] End processing HTTP request after 567.8425ms - 200
+2025-04-03 13:33:49.739 +02:00 [INF] Executed DbCommand (87ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:49.776 +02:00 [INF] Article with title 'Musk Denies Report That He and Trump Are Headed for a Breakup' already exists in the database.
+2025-04-03 13:33:49.904 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:49.906 +02:00 [INF] Article with title 'Trump marks ‘Liberation Day’ with bizarre rant, conspiracies—and lame props' already exists in the database.
+2025-04-03 13:33:50.030 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:50.031 +02:00 [INF] Article with title 'CNBC Daily Open: Trump's merciless tariffs could reshape the global economy and markets' already exists in the database.
+2025-04-03 13:33:50.154 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:50.154 +02:00 [INF] Article with title 'Donald Trump hits Canada with 25 per cent auto tariffs and threats remain' already exists in the database.
+2025-04-03 13:33:50.276 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:33:50.276 +02:00 [INF] Article with title 'Mark Carney vows to fight as Donald Trump hits Canada with 25 per cent auto tariffs and more threats loom' already exists in the database.
+2025-04-03 13:33:50.276 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:42:36.922 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:42:36.982 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:42:40.262 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:42:40.268 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:42:40.271 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:42:40.493 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:42:40.493 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:42:40.494 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:42:40.494 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:42:40.713 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:42:40.784 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 72.2546ms
+2025-04-03 13:42:40.787 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:42:41.019 +02:00 [INF] Received HTTP response headers after 746.5185ms - 200
+2025-04-03 13:42:41.020 +02:00 [INF] End processing HTTP request after 754.8357ms - 200
+2025-04-03 13:42:41.864 +02:00 [INF] Executed DbCommand (89ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:42:41.909 +02:00 [INF] Added new article: Leaders react to Trump tariffs with caution, criticism
+2025-04-03 13:42:42.032 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:42:42.033 +02:00 [INF] Added new article: Leaders react to Trump tariffs with caution, criticism
+2025-04-03 13:42:42.152 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:42:42.153 +02:00 [INF] Added new article: Senate rebukes Trump’s tariffs as some Republicans vote to halt taxes on Canadian imports
+2025-04-03 13:42:42.273 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:42:42.274 +02:00 [INF] Added new article: Senate rebukes Trump’s tariffs as some Republicans vote to halt taxes on Canadian imports
+2025-04-03 13:42:42.393 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:42:42.393 +02:00 [INF] Added new article: Senate rebukes Trump’s tariffs as some Republicans vote to halt taxes on Canadian imports
+2025-04-03 13:42:42.393 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:42:43.570 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = DateTime), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p28, @p29, @p30, @p31, @p32, @p33, @p34);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-03 13:42:43.677 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'SocialAggregatorAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 90
+   at MySqlConnector.MySqlDataReader.NextResultAsync(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 49
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 90
+   at MySqlConnector.MySqlDataReader.NextResultAsync(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 49
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-04-03 13:42:43.818 +02:00 [ERR] Error occurred while fetching news.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'Content' cannot be null
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 90
+   at MySqlConnector.MySqlDataReader.NextResultAsync(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 49
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SocialAggregatorAPI.NewsFetcherService.FetchAndStoreNews() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 59
+   at SocialAggregatorAPI.NewsFetcherService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsAggregatorBackgroundService.cs:line 37
+2025-04-03 13:43:25.335 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:43:25.397 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:43:28.076 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:43:28.082 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:43:28.084 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:43:28.343 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:43:28.344 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:43:28.345 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:43:28.345 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:43:28.516 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:43:28.580 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 64.5312ms
+2025-04-03 13:43:28.583 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:43:28.773 +02:00 [INF] Received HTTP response headers after 687.2797ms - 200
+2025-04-03 13:43:28.774 +02:00 [INF] End processing HTTP request after 695.6822ms - 200
+2025-04-03 13:43:29.627 +02:00 [INF] Executed DbCommand (88ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:43:29.671 +02:00 [INF] Added new article: Key details on Trump’s market-shaking tariffs
+2025-04-03 13:43:29.793 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:43:29.794 +02:00 [INF] Added new article: Key Details On Trump's Market-shaking Tariffs
+2025-04-03 13:43:29.914 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:43:29.916 +02:00 [INF] Added new article: Leaders react to Trump tariffs with caution, criticism
+2025-04-03 13:43:30.036 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:43:30.036 +02:00 [INF] Added new article: Leaders react to Trump tariffs with caution, criticism
+2025-04-03 13:43:30.155 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:43:30.156 +02:00 [INF] Added new article: Senate rebukes Trump’s tariffs as some Republicans vote to halt taxes on Canadian imports
+2025-04-03 13:43:30.156 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:49:15.817 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-03 13:49:15.879 +02:00 [INF] News Fetcher Service is starting...
+2025-04-03 13:49:18.891 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-03 13:49:18.899 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:49:18.901 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-03 13:49:19.134 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-03 13:49:19.134 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 13:49:19.135 +02:00 [INF] Hosting environment: Development
+2025-04-03 13:49:19.135 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-03 13:49:19.441 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-03 13:49:19.507 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 67.3986ms
+2025-04-03 13:49:19.510 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-03 13:49:19.674 +02:00 [INF] Received HTTP response headers after 771.181ms - 200
+2025-04-03 13:49:19.674 +02:00 [INF] End processing HTTP request after 780.2548ms - 200
+2025-04-03 13:49:25.774 +02:00 [INF] Executed DbCommand (80ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:49:44.605 +02:00 [INF] Added new article: Minister due to face MPs after Trump tariffs unveiled
+2025-04-03 13:49:52.779 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:49:54.833 +02:00 [INF] Added new article: AP Business SummaryBrief at 7:46 p.m. EDT
+2025-04-03 13:50:00.879 +02:00 [INF] Skipping article with title 'Canada to fight Trump tariffs with ‘purpose’ and ‘force,’ Carney says. Live updates here.' because description is null or empty.
+2025-04-03 13:50:04.177 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:50:05.498 +02:00 [INF] Added new article: The Latest: Business leaders warn Trump tariffs will raise prices for US consumers
+2025-04-03 13:50:08.063 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-03 13:50:09.644 +02:00 [INF] Added new article: Trump Tariffs Put Federal Reserve In Tough Spot, Raise Growth And Price Fears
+2025-04-03 13:50:11.092 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-03 13:50:12.947 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTime), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = DateTime), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p14, @p15, @p16, @p17, @p18, @p19, @p20);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`Content`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();

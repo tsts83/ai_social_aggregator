@@ -1,0 +1,245 @@
+2025-04-05 00:10:01.527 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-05 00:52:09.999 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-05 00:57:42.617 +02:00 [INF] Executed DbCommand (510ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-05 01:49:20.155 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-05 02:40:56.505 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-05 02:45:14.541 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-05 02:45:14.543 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-05 02:45:14.544 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-05 02:45:15.216 +02:00 [INF] Received HTTP response headers after 672.671ms - 200
+2025-04-05 02:45:15.217 +02:00 [INF] End processing HTTP request after 674.0658ms - 200
+2025-04-05 02:45:15.908 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 02:45:15.911 +02:00 [INF] Added new article: Unparalleled Research on Cloud FinOps Market With Current and Future Growth Analysis by Forecast From 2025 to 2032 | AWS, Microsoft, IBM, Google, Oracle, Hitachi
+2025-04-05 02:45:16.020 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 02:45:16.021 +02:00 [INF] Added new article: Healthcare Revenue Cycle Management Market Size and Outlook by Application, Type, and Geographic Scope
+2025-04-05 02:45:16.130 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 02:45:16.131 +02:00 [INF] Added new article: Sorbitol Market Deep Research Report with Forecast by 2032 | American International Foods, Inc., ADM, Cargill Incorporated
+2025-04-05 02:45:16.241 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 02:45:16.241 +02:00 [INF] Added new article: Sheinbaum says good relationship with U.S. resulted in preferential status
+2025-04-05 02:45:16.351 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 02:45:16.353 +02:00 [INF] Added new article: Davy: Tariff threats will slow Irish economy but not derail it
+2025-04-05 02:45:16.353 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-05 02:45:17.954 +02:00 [INF] Executed DbCommand (216ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = DateTime), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = Boolean), @p31='?' (DbType = DateTime), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (Size = 4000), @p37='?' (Size = 4000), @p38='?' (DbType = Boolean), @p39='?' (DbType = Boolean), @p40='?' (DbType = DateTime), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (Size = 4000), @p44='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-05 02:46:27.679 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-05 02:47:00.520 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-05 02:47:00.520 +02:00 [WRN] Failed to summarize article 'Unparalleled Research on Cloud FinOps Market With Current and Future Growth Analysis by Forecast From 2025 to 2032 | AWS, Microsoft, IBM, Google, Oracle, Hitachi'
+2025-04-05 02:47:07.630 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-05 02:47:07.630 +02:00 [WRN] Failed to summarize article 'Healthcare Revenue Cycle Management Market Size and Outlook by Application, Type, and Geographic Scope'
+2025-04-05 02:47:14.909 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-05 02:47:14.909 +02:00 [WRN] Failed to summarize article 'Sorbitol Market Deep Research Report with Forecast by 2032 | American International Foods, Inc., ADM, Cargill Incorporated'
+2025-04-05 02:47:21.962 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-05 02:47:21.962 +02:00 [WRN] Failed to summarize article 'Sheinbaum says good relationship with U.S. resulted in preferential status'
+2025-04-05 03:35:04.221 +02:00 [ERR] BackgroundService failed
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (89): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at SocialAggregatorAPI.NewsSummarizationService.GenerateFunnySummaryAsync(String title, String content) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsSummarizationService.cs:line 92
+   at SocialAggregatorAPI.NewsSummarizationService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsSummarizationService.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-04-05 03:35:04.242 +02:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+ ---> System.TimeoutException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (89): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at SocialAggregatorAPI.NewsSummarizationService.GenerateFunnySummaryAsync(String title, String content) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsSummarizationService.cs:line 92
+   at SocialAggregatorAPI.NewsSummarizationService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/NewsSummarizationService.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2025-04-05 03:35:04.245 +02:00 [INF] Application is shutting down...
+2025-04-05 08:44:19.771 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-05 08:44:19.826 +02:00 [INF] News Fetcher Service is starting...
+2025-04-05 08:44:20.454 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-05 08:44:20.458 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-05 08:44:20.460 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-05 08:44:20.470 +02:00 [INF] NewsSummarizationService started.
+2025-04-05 08:44:21.134 +02:00 [INF] Received HTTP response headers after 672.6746ms - 200
+2025-04-05 08:44:21.137 +02:00 [INF] End processing HTTP request after 681.5222ms - 200
+2025-04-05 08:44:21.404 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-05 08:44:21.404 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-05 08:44:21.404 +02:00 [INF] Hosting environment: Development
+2025-04-05 08:44:21.404 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-05 08:44:21.571 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-05 08:44:21.618 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 47.7142ms
+2025-04-05 08:44:21.619 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-05 08:44:21.687 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-05 08:44:21.772 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 08:44:21.782 +02:00 [INF] Added new article: China hits back at U.S. tariffs with export restrictions on rare earths
+2025-04-05 08:44:21.783 +02:00 [INF] Skipping article with title 'US President Donald Trump goads China as global trade war escalates' because description is null or empty.
+2025-04-05 08:44:21.899 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 08:44:21.900 +02:00 [INF] Added new article: How Trump's latest tariffs could affect your wallet
+2025-04-05 08:44:22.013 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 08:44:22.014 +02:00 [INF] Added new article: How Trump's latest tariffs could affect your wallet
+2025-04-05 08:44:22.128 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-05 08:44:22.128 +02:00 [INF] Added new article: How Trump's latest tariffs could affect your wallet
+2025-04-05 08:44:22.128 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-05 08:44:22.414 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = DateTime), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = Boolean), @p31='?' (DbType = DateTime), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-05 08:44:27.890 +02:00 [INF] Summarized article 'Unparalleled Research on Cloud FinOps Market With Current and Future Growth Analysis by Forecast From 2025 to 2032 | AWS, Microsoft, IBM, Google, Oracle, Hitachi'
+2025-04-05 08:44:32.589 +02:00 [INF] Summarized article 'Healthcare Revenue Cycle Management Market Size and Outlook by Application, Type, and Geographic Scope'
+2025-04-05 08:44:37.513 +02:00 [INF] Summarized article 'Sorbitol Market Deep Research Report with Forecast by 2032 | American International Foods, Inc., ADM, Cargill Incorporated'
+2025-04-05 08:44:41.563 +02:00 [INF] Summarized article 'Sheinbaum says good relationship with U.S. resulted in preferential status'
+2025-04-05 08:44:46.020 +02:00 [INF] Summarized article 'Davy: Tariff threats will slow Irish economy but not derail it'
+2025-04-05 08:44:46.303 +02:00 [INF] Executed DbCommand (99ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p8='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p11='?' (DbType = Int32), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p14='?' (DbType = Int32), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `IsProcessed` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p3, `IsProcessed` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p6, `IsProcessed` = @p7
+WHERE `Id` = @p8;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p9, `IsProcessed` = @p10
+WHERE `Id` = @p11;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p12, `IsProcessed` = @p13
+WHERE `Id` = @p14;
+SELECT ROW_COUNT();

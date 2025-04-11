@@ -1,0 +1,481 @@
+2025-04-06 11:00:06.932 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-06 11:00:27.003 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-06 11:00:27.005 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-06 11:00:27.112 +02:00 [INF] News Fetcher Service is starting...
+2025-04-06 11:00:36.247 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-06 11:00:36.249 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-06 11:00:36.249 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-06 11:00:36.250 +02:00 [INF] Received HTTP response headers after 9242.5375ms - 200
+2025-04-06 11:00:36.258 +02:00 [INF] NewsSummarizationService started.
+2025-04-06 11:00:36.259 +02:00 [INF] End processing HTTP request after 9259.2717ms - 200
+2025-04-06 11:00:37.019 +02:00 [INF] Received HTTP response headers after 769.0055ms - 200
+2025-04-06 11:00:37.043 +02:00 [INF] End processing HTTP request after 794.7867ms - 200
+2025-04-06 11:00:37.123 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-06 11:00:37.124 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-06 11:00:37.124 +02:00 [INF] Hosting environment: Development
+2025-04-06 11:00:37.124 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-06 11:00:37.408 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-06 11:00:37.470 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 63.9684ms
+2025-04-06 11:00:37.471 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-06 11:00:37.498 +02:00 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-06 11:00:37.533 +02:00 [INF] Executed DbCommand (129ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-06 11:00:37.547 +02:00 [INF] Start processing HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/04/265020.jpg
+2025-04-06 11:00:37.547 +02:00 [INF] Sending HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/04/265020.jpg
+2025-04-06 11:00:37.626 +02:00 [INF] Executed DbCommand (85ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:00:37.640 +02:00 [INF] Added new article: US starts collecting Trump’s new 10% tariff on all imports
+2025-04-06 11:00:37.738 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:00:37.739 +02:00 [INF] Added new article: New coal capacity hit 20-year low in 2024: report
+2025-04-06 11:00:37.839 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:00:37.840 +02:00 [INF] Added new article: Protesters tee off against Trump and Musk in 'Hands Off!' rallies across the US
+2025-04-06 11:00:37.862 +02:00 [INF] Received HTTP response headers after 314.7515ms - 200
+2025-04-06 11:00:37.862 +02:00 [INF] End processing HTTP request after 315.0843ms - 200
+2025-04-06 11:00:37.935 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:00:37.936 +02:00 [INF] Added new article: Protesters tee off against Trump and Musk in 'Hands Off!' rallies across the US
+2025-04-06 11:00:38.035 +02:00 [INF] Executed DbCommand (50ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:00:38.036 +02:00 [INF] Added new article: Chevron ordered to pay more than $740 million to restore Louisiana coast in landmark trial
+2025-04-06 11:00:38.036 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-06 11:00:39.296 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:00:39.296 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:00:39.507 +02:00 [INF] Executed DbCommand (185ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = DateTime), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = Boolean), @p31='?' (DbType = DateTime), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (Size = 4000), @p37='?' (Size = 4000), @p38='?' (DbType = Boolean), @p39='?' (DbType = Boolean), @p40='?' (DbType = DateTime), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (Size = 4000), @p44='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-06 11:00:40.472 +02:00 [INF] Received HTTP response headers after 1176.5701ms - 201
+2025-04-06 11:00:40.505 +02:00 [INF] End processing HTTP request after 1208.8968ms - 201
+2025-04-06 11:00:57.372 +02:00 [INF] Summarized article 'China hits back at U.S. tariffs with export restrictions on rare earths'
+2025-04-06 11:00:58.222 +02:00 [INF] Article posted: Trump’s tariff shock: Global economies brace for impact
+2025-04-06 11:01:05.795 +02:00 [INF] Start processing HTTP request GET https://ca-times.brightspotcdn.com/dims4/default/cf4c8c1/2147483647/strip/true/crop/3834x2013+0+272/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F48%2F3f4a0c564d17a74dd8cdfc8faed0%2F1500907-0402-me-port-tariffs-ajs-jpg-002.jpg
+2025-04-06 11:01:05.796 +02:00 [INF] Sending HTTP request GET https://ca-times.brightspotcdn.com/dims4/default/cf4c8c1/2147483647/strip/true/crop/3834x2013+0+272/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F48%2F3f4a0c564d17a74dd8cdfc8faed0%2F1500907-0402-me-port-tariffs-ajs-jpg-002.jpg
+2025-04-06 11:01:05.982 +02:00 [INF] Received HTTP response headers after 185.8235ms - 200
+2025-04-06 11:01:05.982 +02:00 [INF] End processing HTTP request after 186.6677ms - 200
+2025-04-06 11:01:07.337 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:01:07.337 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:01:08.390 +02:00 [INF] Received HTTP response headers after 1052.7229ms - 201
+2025-04-06 11:01:08.391 +02:00 [INF] End processing HTTP request after 1054.0299ms - 201
+2025-04-06 11:02:20.007 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-06 11:02:20.087 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-06 11:02:20.089 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-06 11:02:20.098 +02:00 [INF] News Fetcher Service is starting...
+2025-04-06 11:02:20.618 +02:00 [INF] Received HTTP response headers after 528.0692ms - 200
+2025-04-06 11:02:20.620 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-06 11:02:20.621 +02:00 [INF] End processing HTTP request after 537.091ms - 200
+2025-04-06 11:02:20.621 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-06 11:02:20.622 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-06 11:02:20.623 +02:00 [INF] NewsSummarizationService started.
+2025-04-06 11:02:21.179 +02:00 [INF] Received HTTP response headers after 556.9571ms - 200
+2025-04-06 11:02:21.179 +02:00 [INF] End processing HTTP request after 557.4078ms - 200
+2025-04-06 11:02:21.419 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-06 11:02:21.420 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-06 11:02:21.420 +02:00 [INF] Hosting environment: Development
+2025-04-06 11:02:21.420 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-06 11:02:21.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-06 11:02:21.650 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 44.8394ms
+2025-04-06 11:02:21.650 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-06 11:02:21.729 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-06 11:02:21.738 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:02:21.761 +02:00 [INF] Article with title 'US starts collecting Trump’s new 10% tariff on all imports' already exists in the database.
+2025-04-06 11:02:21.772 +02:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-06 11:02:21.779 +02:00 [INF] Start processing HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/04/265020.jpg
+2025-04-06 11:02:21.779 +02:00 [INF] Sending HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/04/265020.jpg
+2025-04-06 11:02:21.859 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:02:21.859 +02:00 [INF] Article with title 'New coal capacity hit 20-year low in 2024: report' already exists in the database.
+2025-04-06 11:02:21.871 +02:00 [INF] Received HTTP response headers after 92.4235ms - 200
+2025-04-06 11:02:21.871 +02:00 [INF] End processing HTTP request after 92.6118ms - 200
+2025-04-06 11:02:21.956 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:02:21.956 +02:00 [INF] Article with title 'Protesters tee off against Trump and Musk in 'Hands Off!' rallies across the US' already exists in the database.
+2025-04-06 11:02:22.057 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:02:22.057 +02:00 [INF] Article with title 'Protesters tee off against Trump and Musk in 'Hands Off!' rallies across the US' already exists in the database.
+2025-04-06 11:02:22.126 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:22.126 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:22.153 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-06 11:02:22.154 +02:00 [INF] Article with title 'Chevron ordered to pay more than $740 million to restore Louisiana coast in landmark trial' already exists in the database.
+2025-04-06 11:02:22.154 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-06 11:02:23.094 +02:00 [INF] Received HTTP response headers after 968.1506ms - 201
+2025-04-06 11:02:23.096 +02:00 [INF] End processing HTTP request after 969.5358ms - 201
+2025-04-06 11:02:23.108 +02:00 [INF] Article posted: Trump’s tariff shock: Global economies brace for impact
+2025-04-06 11:02:23.109 +02:00 [INF] Start processing HTTP request GET https://ca-times.brightspotcdn.com/dims4/default/cf4c8c1/2147483647/strip/true/crop/3834x2013+0+272/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F48%2F3f4a0c564d17a74dd8cdfc8faed0%2F1500907-0402-me-port-tariffs-ajs-jpg-002.jpg
+2025-04-06 11:02:23.109 +02:00 [INF] Sending HTTP request GET https://ca-times.brightspotcdn.com/dims4/default/cf4c8c1/2147483647/strip/true/crop/3834x2013+0+272/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F48%2F3f4a0c564d17a74dd8cdfc8faed0%2F1500907-0402-me-port-tariffs-ajs-jpg-002.jpg
+2025-04-06 11:02:23.223 +02:00 [INF] Received HTTP response headers after 114.0675ms - 200
+2025-04-06 11:02:23.223 +02:00 [INF] End processing HTTP request after 114.7735ms - 200
+2025-04-06 11:02:23.362 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:23.362 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:24.231 +02:00 [INF] Received HTTP response headers after 869.2403ms - 201
+2025-04-06 11:02:24.232 +02:00 [INF] End processing HTTP request after 870.0651ms - 201
+2025-04-06 11:02:24.233 +02:00 [INF] Article posted: Tariff confusion reigns as Trump triggers biggest change to global trade in a century
+2025-04-06 11:02:24.234 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:24.234 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:24.467 +02:00 [INF] Received HTTP response headers after 233.3834ms - 201
+2025-04-06 11:02:24.468 +02:00 [INF] End processing HTTP request after 234.2083ms - 201
+2025-04-06 11:02:24.468 +02:00 [INF] Article posted: UNH, state colleges could lose tens of millions of dollars in budget cuts
+2025-04-06 11:02:24.469 +02:00 [INF] Start processing HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/04/265044.jpeg
+2025-04-06 11:02:24.469 +02:00 [INF] Sending HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/04/265044.jpeg
+2025-04-06 11:02:24.844 +02:00 [INF] Received HTTP response headers after 374.8837ms - 200
+2025-04-06 11:02:24.844 +02:00 [INF] End processing HTTP request after 375.7022ms - 200
+2025-04-06 11:02:25.355 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:25.355 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:26.353 +02:00 [INF] Received HTTP response headers after 997.8692ms - 201
+2025-04-06 11:02:26.354 +02:00 [INF] End processing HTTP request after 999.1477ms - 201
+2025-04-06 11:02:26.355 +02:00 [INF] Article posted: Trump tariffs threaten Japan auto sector
+2025-04-06 11:02:26.355 +02:00 [INF] Start processing HTTP request GET https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F04%2Fnewspress-collage-gxav81e50-1743714139057.jpg?quality%3D80%26strip%3Dall%261743699816=
+2025-04-06 11:02:26.355 +02:00 [INF] Sending HTTP request GET https://nypost.com/wp-content%2Fuploads%2Fsites%2F2%2F2025%2F04%2Fnewspress-collage-gxav81e50-1743714139057.jpg?quality%3D80%26strip%3Dall%261743699816=
+2025-04-06 11:02:26.461 +02:00 [INF] Received HTTP response headers after 105.2448ms - 200
+2025-04-06 11:02:26.461 +02:00 [INF] End processing HTTP request after 105.9645ms - 200
+2025-04-06 11:02:26.586 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:26.586 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:27.689 +02:00 [INF] Received HTTP response headers after 1102.6547ms - 201
+2025-04-06 11:02:27.689 +02:00 [INF] End processing HTTP request after 1103.3059ms - 201
+2025-04-06 11:02:27.706 +02:00 [INF] Article posted: Trump’s tariffs aim to reset global trade — and boost America’s workers
+2025-04-06 11:02:27.707 +02:00 [INF] Start processing HTTP request GET https://cdn.open-pr.com/L/4/L404758905_g.jpg
+2025-04-06 11:02:27.707 +02:00 [INF] Sending HTTP request GET https://cdn.open-pr.com/L/4/L404758905_g.jpg
+2025-04-06 11:02:27.938 +02:00 [INF] Received HTTP response headers after 231.3359ms - 200
+2025-04-06 11:02:27.939 +02:00 [INF] End processing HTTP request after 232.0235ms - 200
+2025-04-06 11:02:28.005 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:28.005 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:28.828 +02:00 [INF] Received HTTP response headers after 822.6152ms - 201
+2025-04-06 11:02:28.828 +02:00 [INF] End processing HTTP request after 823.0662ms - 201
+2025-04-06 11:02:28.829 +02:00 [INF] Article posted: Rail Gangways Market Estimated to Reach $961.1 million in 2032: 5.6% CAGR Growth Analysis
+2025-04-06 11:02:28.829 +02:00 [INF] Start processing HTTP request GET https://cdn.open-pr.com/L/4/L404711867_g.jpg
+2025-04-06 11:02:28.829 +02:00 [INF] Sending HTTP request GET https://cdn.open-pr.com/L/4/L404711867_g.jpg
+2025-04-06 11:02:28.875 +02:00 [INF] Received HTTP response headers after 45.4504ms - 200
+2025-04-06 11:02:28.875 +02:00 [INF] End processing HTTP request after 45.9834ms - 200
+2025-04-06 11:02:28.927 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:28.927 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:29.139 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-06 11:02:29.139 +02:00 [WRN] Failed to summarize article 'China hits back at U.S. tariffs with export restrictions on rare earths'
+2025-04-06 11:02:29.750 +02:00 [INF] Received HTTP response headers after 823.0714ms - 201
+2025-04-06 11:02:29.750 +02:00 [INF] End processing HTTP request after 823.5881ms - 201
+2025-04-06 11:02:29.751 +02:00 [INF] Article posted: Kitchen Appliances Market Size to Worth USD 353.96 Billion by 2033 | With a 4.82% CAGR
+2025-04-06 11:02:29.751 +02:00 [INF] Start processing HTTP request GET https://cdn.open-pr.com/L/4/L404832546_g.jpg
+2025-04-06 11:02:29.751 +02:00 [INF] Sending HTTP request GET https://cdn.open-pr.com/L/4/L404832546_g.jpg
+2025-04-06 11:02:29.800 +02:00 [INF] Received HTTP response headers after 48.4316ms - 200
+2025-04-06 11:02:29.800 +02:00 [INF] End processing HTTP request after 48.9123ms - 200
+2025-04-06 11:02:29.885 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:29.885 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:30.732 +02:00 [INF] Received HTTP response headers after 846.7817ms - 201
+2025-04-06 11:02:30.732 +02:00 [INF] End processing HTTP request after 847.2182ms - 201
+2025-04-06 11:02:30.732 +02:00 [INF] Article posted: Waste To Energy Market Expected To Reach USD 63.11 Bn by 2030, Growing at a CAGR of 8.68% from 2024 to 2030
+2025-04-06 11:02:30.733 +02:00 [INF] Start processing HTTP request GET https://media.zenfs.com/en/huffpost_uk_744/8705001bf4bab9a48fd580f5d823ea9e
+2025-04-06 11:02:30.733 +02:00 [INF] Sending HTTP request GET https://media.zenfs.com/en/huffpost_uk_744/8705001bf4bab9a48fd580f5d823ea9e
+2025-04-06 11:02:31.341 +02:00 [INF] Received HTTP response headers after 608.0798ms - 200
+2025-04-06 11:02:31.341 +02:00 [INF] End processing HTTP request after 608.8072ms - 200
+2025-04-06 11:02:31.502 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:31.502 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:32.515 +02:00 [INF] Received HTTP response headers after 1012.7008ms - 201
+2025-04-06 11:02:32.515 +02:00 [INF] End processing HTTP request after 1013.2733ms - 201
+2025-04-06 11:02:32.515 +02:00 [INF] Article posted: Minister Hits Back At Donald Trump's Claim Starmer Is 'Very Happy' With Tariffs
+2025-04-06 11:02:32.516 +02:00 [INF] Start processing HTTP request GET https://img.huffingtonpost.com/asset/67ef77951700001b00e1b927.jpeg
+2025-04-06 11:02:32.516 +02:00 [INF] Sending HTTP request GET https://img.huffingtonpost.com/asset/67ef77951700001b00e1b927.jpeg
+2025-04-06 11:02:32.756 +02:00 [INF] Received HTTP response headers after 240.2745ms - 200
+2025-04-06 11:02:32.756 +02:00 [INF] End processing HTTP request after 240.7758ms - 200
+2025-04-06 11:02:32.845 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:32.845 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:33.743 +02:00 [INF] Received HTTP response headers after 897.8193ms - 201
+2025-04-06 11:02:33.743 +02:00 [INF] End processing HTTP request after 898.2472ms - 201
+2025-04-06 11:02:33.744 +02:00 [INF] Article posted: Minister Hits Back At Donald Trump's Claim Starmer Is 'Very Happy' With Tariffs
+2025-04-06 11:02:33.744 +02:00 [INF] Start processing HTTP request GET https://cdn.open-pr.com/L/4/L404575968_g.jpg
+2025-04-06 11:02:33.744 +02:00 [INF] Sending HTTP request GET https://cdn.open-pr.com/L/4/L404575968_g.jpg
+2025-04-06 11:02:33.791 +02:00 [INF] Received HTTP response headers after 46.2787ms - 200
+2025-04-06 11:02:33.791 +02:00 [INF] End processing HTTP request after 46.8715ms - 200
+2025-04-06 11:02:33.836 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:33.836 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:34.611 +02:00 [INF] Received HTTP response headers after 774.5337ms - 201
+2025-04-06 11:02:34.611 +02:00 [INF] End processing HTTP request after 775.033ms - 201
+2025-04-06 11:02:34.611 +02:00 [INF] Article posted: Unparalleled Research on Cloud FinOps Market With Current and Future Growth Analysis by Forecast From 2025 to 2032 | AWS, Microsoft, IBM, Google, Oracle, Hitachi
+2025-04-06 11:02:34.612 +02:00 [INF] Start processing HTTP request GET https://cdn.open-pr.com/L/4/L404599237_g.jpg
+2025-04-06 11:02:34.612 +02:00 [INF] Sending HTTP request GET https://cdn.open-pr.com/L/4/L404599237_g.jpg
+2025-04-06 11:02:34.666 +02:00 [INF] Received HTTP response headers after 54.6229ms - 200
+2025-04-06 11:02:34.667 +02:00 [INF] End processing HTTP request after 55.0455ms - 200
+2025-04-06 11:02:34.713 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:34.713 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:35.504 +02:00 [INF] Received HTTP response headers after 790.8667ms - 201
+2025-04-06 11:02:35.505 +02:00 [INF] End processing HTTP request after 791.3216ms - 201
+2025-04-06 11:02:35.507 +02:00 [INF] Article posted: Healthcare Revenue Cycle Management Market Size and Outlook by Application, Type, and Geographic Scope
+2025-04-06 11:02:35.507 +02:00 [INF] Start processing HTTP request GET https://cdn.open-pr.com/L/4/L404750880_g.jpg
+2025-04-06 11:02:35.508 +02:00 [INF] Sending HTTP request GET https://cdn.open-pr.com/L/4/L404750880_g.jpg
+2025-04-06 11:02:35.562 +02:00 [INF] Received HTTP response headers after 53.6745ms - 200
+2025-04-06 11:02:35.562 +02:00 [INF] End processing HTTP request after 55.421ms - 200
+2025-04-06 11:02:35.652 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:35.652 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:36.216 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-06 11:02:36.217 +02:00 [WRN] Failed to summarize article 'How Trump's latest tariffs could affect your wallet'
+2025-04-06 11:02:36.409 +02:00 [INF] Received HTTP response headers after 757.084ms - 201
+2025-04-06 11:02:36.409 +02:00 [INF] End processing HTTP request after 757.4527ms - 201
+2025-04-06 11:02:36.410 +02:00 [INF] Article posted: Sorbitol Market Deep Research Report with Forecast by 2032 | American International Foods, Inc., ADM, Cargill Incorporated
+2025-04-06 11:02:36.410 +02:00 [INF] Start processing HTTP request GET https://riviera-maya-news.com/wp-content/uploads/2025/04/claudia-us-tariffs-.jpg
+2025-04-06 11:02:36.410 +02:00 [INF] Sending HTTP request GET https://riviera-maya-news.com/wp-content/uploads/2025/04/claudia-us-tariffs-.jpg
+2025-04-06 11:02:36.574 +02:00 [INF] Received HTTP response headers after 164.5097ms - 403
+2025-04-06 11:02:36.574 +02:00 [INF] End processing HTTP request after 164.8159ms - 403
+2025-04-06 11:02:36.578 +02:00 [ERR] Failed to download or compress image from https://riviera-maya-news.com/wp-content/uploads/2025/04/claudia-us-tariffs-.jpg
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 403 (Forbidden).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at MiniSocialPosterService.DownloadAndCompressImageAsync(String imageUrl) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/MiniSocialPosterService.cs:line 113
+2025-04-06 11:02:36.590 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:36.590 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:36.824 +02:00 [INF] Received HTTP response headers after 233.719ms - 201
+2025-04-06 11:02:36.825 +02:00 [INF] End processing HTTP request after 234.2617ms - 201
+2025-04-06 11:02:36.825 +02:00 [INF] Article posted: Sheinbaum says good relationship with U.S. resulted in preferential status
+2025-04-06 11:02:36.825 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:36.825 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:37.060 +02:00 [INF] Received HTTP response headers after 234.9672ms - 201
+2025-04-06 11:02:37.060 +02:00 [INF] End processing HTTP request after 235.4107ms - 201
+2025-04-06 11:02:37.061 +02:00 [INF] Article posted: Davy: Tariff threats will slow Irish economy but not derail it
+2025-04-06 11:02:37.061 +02:00 [INF] Start processing HTTP request GET https://www.staradvertiser.com/wp-content/uploads/2025/04/web1_2025-04-04T115321Z_1_LYNXNPEL330O3_RTROPTP_3_USA-TRUMP-CHINA-RAREEARTHS.JPG
+2025-04-06 11:02:37.061 +02:00 [INF] Sending HTTP request GET https://www.staradvertiser.com/wp-content/uploads/2025/04/web1_2025-04-04T115321Z_1_LYNXNPEL330O3_RTROPTP_3_USA-TRUMP-CHINA-RAREEARTHS.JPG
+2025-04-06 11:02:37.755 +02:00 [INF] Received HTTP response headers after 693.1086ms - 200
+2025-04-06 11:02:37.755 +02:00 [INF] End processing HTTP request after 693.9077ms - 200
+2025-04-06 11:02:37.955 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:37.956 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:38.715 +02:00 [INF] Received HTTP response headers after 759.2578ms - 201
+2025-04-06 11:02:38.715 +02:00 [INF] End processing HTTP request after 759.7489ms - 201
+2025-04-06 11:02:38.716 +02:00 [INF] Article posted: China hits back at U.S. tariffs with export restrictions on rare earths
+2025-04-06 11:02:38.717 +02:00 [INF] Start processing HTTP request GET https://media.tegna-media.com/assets/CCT/images/fe1eeedc-46b1-4229-9a86-eed0309eb59f/20250404T183326/fe1eeedc-46b1-4229-9a86-eed0309eb59f_750x422.jpg
+2025-04-06 11:02:38.717 +02:00 [INF] Sending HTTP request GET https://media.tegna-media.com/assets/CCT/images/fe1eeedc-46b1-4229-9a86-eed0309eb59f/20250404T183326/fe1eeedc-46b1-4229-9a86-eed0309eb59f_750x422.jpg
+2025-04-06 11:02:39.211 +02:00 [INF] Received HTTP response headers after 494.348ms - 200
+2025-04-06 11:02:39.211 +02:00 [INF] End processing HTTP request after 495.3915ms - 200
+2025-04-06 11:02:39.339 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:39.339 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:40.147 +02:00 [INF] Received HTTP response headers after 807.5311ms - 201
+2025-04-06 11:02:40.147 +02:00 [INF] End processing HTTP request after 807.918ms - 201
+2025-04-06 11:02:40.147 +02:00 [INF] Article posted: How Trump's latest tariffs could affect your wallet
+2025-04-06 11:02:40.147 +02:00 [INF] Start processing HTTP request GET https://media.tegna-media.com/assets/CCT/images/fe1eeedc-46b1-4229-9a86-eed0309eb59f/20250404T183326/fe1eeedc-46b1-4229-9a86-eed0309eb59f_750x422.jpg
+2025-04-06 11:02:40.147 +02:00 [INF] Sending HTTP request GET https://media.tegna-media.com/assets/CCT/images/fe1eeedc-46b1-4229-9a86-eed0309eb59f/20250404T183326/fe1eeedc-46b1-4229-9a86-eed0309eb59f_750x422.jpg
+2025-04-06 11:02:40.262 +02:00 [INF] Received HTTP response headers after 114.4221ms - 200
+2025-04-06 11:02:40.262 +02:00 [INF] End processing HTTP request after 114.809ms - 200
+2025-04-06 11:02:40.304 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:40.304 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:41.165 +02:00 [INF] Received HTTP response headers after 861.026ms - 201
+2025-04-06 11:02:41.165 +02:00 [INF] End processing HTTP request after 861.4392ms - 201
+2025-04-06 11:02:41.166 +02:00 [INF] Article posted: How Trump's latest tariffs could affect your wallet
+2025-04-06 11:02:41.166 +02:00 [INF] Start processing HTTP request GET https://media.tegna-media.com/assets/CCT/images/fe1eeedc-46b1-4229-9a86-eed0309eb59f/20250404T183326/fe1eeedc-46b1-4229-9a86-eed0309eb59f_750x422.jpg
+2025-04-06 11:02:41.166 +02:00 [INF] Sending HTTP request GET https://media.tegna-media.com/assets/CCT/images/fe1eeedc-46b1-4229-9a86-eed0309eb59f/20250404T183326/fe1eeedc-46b1-4229-9a86-eed0309eb59f_750x422.jpg
+2025-04-06 11:02:41.187 +02:00 [INF] Received HTTP response headers after 20.5124ms - 200
+2025-04-06 11:02:41.187 +02:00 [INF] End processing HTTP request after 20.8906ms - 200
+2025-04-06 11:02:41.222 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:41.222 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:42.167 +02:00 [INF] Received HTTP response headers after 944.5955ms - 201
+2025-04-06 11:02:42.167 +02:00 [INF] End processing HTTP request after 944.9613ms - 201
+2025-04-06 11:02:42.168 +02:00 [INF] Article posted: How Trump's latest tariffs could affect your wallet
+2025-04-06 11:02:42.168 +02:00 [INF] Start processing HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/06/265233.png
+2025-04-06 11:02:42.168 +02:00 [INF] Sending HTTP request GET https://www.qatar-tribune.com/watanqatartribune/uploads/images/2025/04/06/265233.png
+2025-04-06 11:02:42.658 +02:00 [INF] Received HTTP response headers after 490.0944ms - 200
+2025-04-06 11:02:42.659 +02:00 [INF] End processing HTTP request after 490.5517ms - 200
+2025-04-06 11:02:43.627 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-06 11:02:43.627 +02:00 [WRN] Failed to summarize article 'How Trump's latest tariffs could affect your wallet'
+2025-04-06 11:02:44.009 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:44.009 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:45.163 +02:00 [INF] Received HTTP response headers after 1153.2372ms - 201
+2025-04-06 11:02:45.163 +02:00 [INF] End processing HTTP request after 1153.6029ms - 201
+2025-04-06 11:02:45.163 +02:00 [INF] Article posted: US starts collecting Trump’s new 10% tariff on all imports
+2025-04-06 11:02:45.164 +02:00 [INF] Start processing HTTP request GET https://media.japantoday.com/img/store/f5/64/5bfe7008a6bc07a79242a89b58b279b15a7f/de5f84e8502caf69c1a702ddd5be0d59bb8c3488/_w850.jpeg
+2025-04-06 11:02:45.164 +02:00 [INF] Sending HTTP request GET https://media.japantoday.com/img/store/f5/64/5bfe7008a6bc07a79242a89b58b279b15a7f/de5f84e8502caf69c1a702ddd5be0d59bb8c3488/_w850.jpeg
+2025-04-06 11:02:46.642 +02:00 [INF] Received HTTP response headers after 1477.9145ms - 200
+2025-04-06 11:02:46.642 +02:00 [INF] End processing HTTP request after 1478.4317ms - 200
+2025-04-06 11:02:46.668 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:46.668 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:47.499 +02:00 [INF] Received HTTP response headers after 830.5295ms - 201
+2025-04-06 11:02:47.499 +02:00 [INF] End processing HTTP request after 830.7916ms - 201
+2025-04-06 11:02:47.499 +02:00 [INF] Article posted: New coal capacity hit 20-year low in 2024: report
+2025-04-06 11:02:47.499 +02:00 [INF] Start processing HTTP request GET https://bloximages.newyork1.vip.townnews.com/recorderonline.com/content/tncms/assets/v3/editorial/5/c0/5c05019f-a4fe-5fab-8d5f-50f3542e999a/67f15ade2ded6.image.jpg?crop=1766%2C927%2C0%2C122&order=crop%2Cresize&resize=1200%2C630
+2025-04-06 11:02:47.499 +02:00 [INF] Sending HTTP request GET https://bloximages.newyork1.vip.townnews.com/recorderonline.com/content/tncms/assets/v3/editorial/5/c0/5c05019f-a4fe-5fab-8d5f-50f3542e999a/67f15ade2ded6.image.jpg?crop=1766%2C927%2C0%2C122&order=crop%2Cresize&resize=1200%2C630
+2025-04-06 11:02:48.081 +02:00 [INF] Received HTTP response headers after 581.3917ms - 200
+2025-04-06 11:02:48.081 +02:00 [INF] End processing HTTP request after 581.6003ms - 200
+2025-04-06 11:02:48.234 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:48.234 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:49.308 +02:00 [INF] Received HTTP response headers after 1074.3756ms - 201
+2025-04-06 11:02:49.308 +02:00 [INF] End processing HTTP request after 1074.6381ms - 201
+2025-04-06 11:02:49.308 +02:00 [INF] Article posted: Protesters tee off against Trump and Musk in 'Hands Off!' rallies across the US
+2025-04-06 11:02:49.309 +02:00 [INF] Start processing HTTP request GET https://bloximages.newyork1.vip.townnews.com/guardonline.com/content/tncms/assets/v3/editorial/5/0d/50dea061-e6d0-56ea-95fa-424abaa937c8/67f0af1e55630.image.jpg?resize=300%2C199
+2025-04-06 11:02:49.309 +02:00 [INF] Sending HTTP request GET https://bloximages.newyork1.vip.townnews.com/guardonline.com/content/tncms/assets/v3/editorial/5/0d/50dea061-e6d0-56ea-95fa-424abaa937c8/67f0af1e55630.image.jpg?resize=300%2C199
+2025-04-06 11:02:49.477 +02:00 [INF] Received HTTP response headers after 168.822ms - 200
+2025-04-06 11:02:49.478 +02:00 [INF] End processing HTTP request after 169.7446ms - 200
+2025-04-06 11:02:49.510 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:49.511 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:50.415 +02:00 [INF] Received HTTP response headers after 904.3541ms - 201
+2025-04-06 11:02:50.415 +02:00 [INF] End processing HTTP request after 904.7959ms - 201
+2025-04-06 11:02:50.416 +02:00 [INF] Article posted: Protesters tee off against Trump and Musk in 'Hands Off!' rallies across the US
+2025-04-06 11:02:50.416 +02:00 [INF] Start processing HTTP request GET https://ca-times.brightspotcdn.com/dims4/default/edd5077/2147483647/strip/true/crop/5184x2722+0+61/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2e%2F3a%2F96c7ecba37cc6844a9c9aee8ddef%2F74ff2cb9c11f4f649945520c6d8dd016
+2025-04-06 11:02:50.416 +02:00 [INF] Sending HTTP request GET https://ca-times.brightspotcdn.com/dims4/default/edd5077/2147483647/strip/true/crop/5184x2722+0+61/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2e%2F3a%2F96c7ecba37cc6844a9c9aee8ddef%2F74ff2cb9c11f4f649945520c6d8dd016
+2025-04-06 11:02:50.462 +02:00 [INF] Received HTTP response headers after 46.3096ms - 200
+2025-04-06 11:02:50.463 +02:00 [INF] End processing HTTP request after 46.7905ms - 200
+2025-04-06 11:02:50.502 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:50.502 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-06 11:02:51.195 +02:00 [INF] Received HTTP response headers after 693.0526ms - 201
+2025-04-06 11:02:51.195 +02:00 [INF] End processing HTTP request after 693.49ms - 201
+2025-04-06 11:02:51.196 +02:00 [INF] Article posted: Chevron ordered to pay more than $740 million to restore Louisiana coast in landmark trial
+2025-04-06 11:02:51.515 +02:00 [INF] Executed DbCommand (112ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p19='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (DbType = Boolean), @p14='?' (DbType = DateTime), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p29='?' (DbType = Int32), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (DbType = Boolean), @p24='?' (DbType = DateTime), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p39='?' (DbType = Int32), @p30='?' (Size = 4000), @p31='?' (Size = 4000), @p32='?' (DbType = Boolean), @p33='?' (DbType = Boolean), @p34='?' (DbType = DateTime), @p35='?' (Size = 4000), @p36='?' (Size = 4000), @p37='?' (Size = 4000), @p38='?' (Size = 4000), @p49='?' (DbType = Int32), @p40='?' (Size = 4000), @p41='?' (Size = 4000), @p42='?' (DbType = Boolean), @p43='?' (DbType = Boolean), @p44='?' (DbType = DateTime), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (Size = 4000), @p48='?' (Size = 4000), @p59='?' (DbType = Int32), @p50='?' (Size = 4000), @p51='?' (Size = 4000), @p52='?' (DbType = Boolean), @p53='?' (DbType = Boolean), @p54='?' (DbType = DateTime), @p55='?' (Size = 4000), @p56='?' (Size = 4000), @p57='?' (Size = 4000), @p58='?' (Size = 4000), @p69='?' (DbType = Int32), @p60='?' (Size = 4000), @p61='?' (Size = 4000), @p62='?' (DbType = Boolean), @p63='?' (DbType = Boolean), @p64='?' (DbType = DateTime), @p65='?' (Size = 4000), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (Size = 4000), @p79='?' (DbType = Int32), @p70='?' (Size = 4000), @p71='?' (Size = 4000), @p72='?' (DbType = Boolean), @p73='?' (DbType = Boolean), @p74='?' (DbType = DateTime), @p75='?' (Size = 4000), @p76='?' (Size = 4000), @p77='?' (Size = 4000), @p78='?' (Size = 4000), @p89='?' (DbType = Int32), @p80='?' (Size = 4000), @p81='?' (Size = 4000), @p82='?' (DbType = Boolean), @p83='?' (DbType = Boolean), @p84='?' (DbType = DateTime), @p85='?' (Size = 4000), @p86='?' (Size = 4000), @p87='?' (Size = 4000), @p88='?' (Size = 4000), @p99='?' (DbType = Int32), @p90='?' (Size = 4000), @p91='?' (Size = 4000), @p92='?' (DbType = Boolean), @p93='?' (DbType = Boolean), @p94='?' (DbType = DateTime), @p95='?' (Size = 4000), @p96='?' (Size = 4000), @p97='?' (Size = 4000), @p98='?' (Size = 4000), @p109='?' (DbType = Int32), @p100='?' (Size = 4000), @p101='?' (Size = 4000), @p102='?' (DbType = Boolean), @p103='?' (DbType = Boolean), @p104='?' (DbType = DateTime), @p105='?' (Size = 4000), @p106='?' (Size = 4000), @p107='?' (Size = 4000), @p108='?' (Size = 4000), @p119='?' (DbType = Int32), @p110='?' (Size = 4000), @p111='?' (Size = 4000), @p112='?' (DbType = Boolean), @p113='?' (DbType = Boolean), @p114='?' (DbType = DateTime), @p115='?' (Size = 4000), @p116='?' (Size = 4000), @p117='?' (Size = 4000), @p118='?' (Size = 4000), @p129='?' (DbType = Int32), @p120='?' (Size = 4000), @p121='?' (Size = 4000), @p122='?' (DbType = Boolean), @p123='?' (DbType = Boolean), @p124='?' (DbType = DateTime), @p125='?' (Size = 4000), @p126='?' (Size = 4000), @p127='?' (Size = 4000), @p128='?' (Size = 4000), @p139='?' (DbType = Int32), @p130='?' (Size = 4000), @p131='?' (Size = 4000), @p132='?' (DbType = Boolean), @p133='?' (DbType = Boolean), @p134='?' (DbType = DateTime), @p135='?' (Size = 4000), @p136='?' (Size = 4000), @p137='?' (Size = 4000), @p138='?' (Size = 4000), @p149='?' (DbType = Int32), @p140='?' (Size = 4000), @p141='?' (Size = 4000), @p142='?' (DbType = Boolean), @p143='?' (DbType = Boolean), @p144='?' (DbType = DateTime), @p145='?' (Size = 4000), @p146='?' (Size = 4000), @p147='?' (Size = 4000), @p148='?' (Size = 4000), @p159='?' (DbType = Int32), @p150='?' (Size = 4000), @p151='?' (Size = 4000), @p152='?' (DbType = Boolean), @p153='?' (DbType = Boolean), @p154='?' (DbType = DateTime), @p155='?' (Size = 4000), @p156='?' (Size = 4000), @p157='?' (Size = 4000), @p158='?' (Size = 4000), @p169='?' (DbType = Int32), @p160='?' (Size = 4000), @p161='?' (Size = 4000), @p162='?' (DbType = Boolean), @p163='?' (DbType = Boolean), @p164='?' (DbType = DateTime), @p165='?' (Size = 4000), @p166='?' (Size = 4000), @p167='?' (Size = 4000), @p168='?' (Size = 4000), @p179='?' (DbType = Int32), @p170='?' (Size = 4000), @p171='?' (Size = 4000), @p172='?' (DbType = Boolean), @p173='?' (DbType = Boolean), @p174='?' (DbType = DateTime), @p175='?' (Size = 4000), @p176='?' (Size = 4000), @p177='?' (Size = 4000), @p178='?' (Size = 4000), @p189='?' (DbType = Int32), @p180='?' (Size = 4000), @p181='?' (Size = 4000), @p182='?' (DbType = Boolean), @p183='?' (DbType = Boolean), @p184='?' (DbType = DateTime), @p185='?' (Size = 4000), @p186='?' (Size = 4000), @p187='?' (Size = 4000), @p188='?' (Size = 4000), @p199='?' (DbType = Int32), @p190='?' (Size = 4000), @p191='?' (Size = 4000), @p192='?' (DbType = Boolean), @p193='?' (DbType = Boolean), @p194='?' (DbType = DateTime), @p195='?' (Size = 4000), @p196='?' (Size = 4000), @p197='?' (Size = 4000), @p198='?' (Size = 4000), @p209='?' (DbType = Int32), @p200='?' (Size = 4000), @p201='?' (Size = 4000), @p202='?' (DbType = Boolean), @p203='?' (DbType = Boolean), @p204='?' (DbType = DateTime), @p205='?' (Size = 4000), @p206='?' (Size = 4000), @p207='?' (Size = 4000), @p208='?' (Size = 4000), @p219='?' (DbType = Int32), @p210='?' (Size = 4000), @p211='?' (Size = 4000), @p212='?' (DbType = Boolean), @p213='?' (DbType = Boolean), @p214='?' (DbType = DateTime), @p215='?' (Size = 4000), @p216='?' (Size = 4000), @p217='?' (Size = 4000), @p218='?' (Size = 4000), @p229='?' (DbType = Int32), @p220='?' (Size = 4000), @p221='?' (Size = 4000), @p222='?' (DbType = Boolean), @p223='?' (DbType = Boolean), @p224='?' (DbType = DateTime), @p225='?' (Size = 4000), @p226='?' (Size = 4000), @p227='?' (Size = 4000), @p228='?' (Size = 4000), @p239='?' (DbType = Int32), @p230='?' (Size = 4000), @p231='?' (Size = 4000), @p232='?' (DbType = Boolean), @p233='?' (DbType = Boolean), @p234='?' (DbType = DateTime), @p235='?' (Size = 4000), @p236='?' (Size = 4000), @p237='?' (Size = 4000), @p238='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `Content` = @p1, `IsPosted` = @p2, `IsProcessed` = @p3, `PublishedAt` = @p4, `Source` = @p5, `ThumbnailUrl` = @p6, `Title` = @p7, `Url` = @p8
+WHERE `Id` = @p9;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p10, `Content` = @p11, `IsPosted` = @p12, `IsProcessed` = @p13, `PublishedAt` = @p14, `Source` = @p15, `ThumbnailUrl` = @p16, `Title` = @p17, `Url` = @p18
+WHERE `Id` = @p19;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p20, `Content` = @p21, `IsPosted` = @p22, `IsProcessed` = @p23, `PublishedAt` = @p24, `Source` = @p25, `ThumbnailUrl` = @p26, `Title` = @p27, `Url` = @p28
+WHERE `Id` = @p29;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p30, `Content` = @p31, `IsPosted` = @p32, `IsProcessed` = @p33, `PublishedAt` = @p34, `Source` = @p35, `ThumbnailUrl` = @p36, `Title` = @p37, `Url` = @p38
+WHERE `Id` = @p39;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p40, `Content` = @p41, `IsPosted` = @p42, `IsProcessed` = @p43, `PublishedAt` = @p44, `Source` = @p45, `ThumbnailUrl` = @p46, `Title` = @p47, `Url` = @p48
+WHERE `Id` = @p49;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p50, `Content` = @p51, `IsPosted` = @p52, `IsProcessed` = @p53, `PublishedAt` = @p54, `Source` = @p55, `ThumbnailUrl` = @p56, `Title` = @p57, `Url` = @p58
+WHERE `Id` = @p59;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p60, `Content` = @p61, `IsPosted` = @p62, `IsProcessed` = @p63, `PublishedAt` = @p64, `Source` = @p65, `ThumbnailUrl` = @p66, `Title` = @p67, `Url` = @p68
+WHERE `Id` = @p69;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p70, `Content` = @p71, `IsPosted` = @p72, `IsProcessed` = @p73, `PublishedAt` = @p74, `Source` = @p75, `ThumbnailUrl` = @p76, `Title` = @p77, `Url` = @p78
+WHERE `Id` = @p79;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p80, `Content` = @p81, `IsPosted` = @p82, `IsProcessed` = @p83, `PublishedAt` = @p84, `Source` = @p85, `ThumbnailUrl` = @p86, `Title` = @p87, `Url` = @p88
+WHERE `Id` = @p89;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p90, `Content` = @p91, `IsPosted` = @p92, `IsProcessed` = @p93, `PublishedAt` = @p94, `Source` = @p95, `ThumbnailUrl` = @p96, `Title` = @p97, `Url` = @p98
+WHERE `Id` = @p99;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p100, `Content` = @p101, `IsPosted` = @p102, `IsProcessed` = @p103, `PublishedAt` = @p104, `Source` = @p105, `ThumbnailUrl` = @p106, `Title` = @p107, `Url` = @p108
+WHERE `Id` = @p109;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p110, `Content` = @p111, `IsPosted` = @p112, `IsProcessed` = @p113, `PublishedAt` = @p114, `Source` = @p115, `ThumbnailUrl` = @p116, `Title` = @p117, `Url` = @p118
+WHERE `Id` = @p119;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p120, `Content` = @p121, `IsPosted` = @p122, `IsProcessed` = @p123, `PublishedAt` = @p124, `Source` = @p125, `ThumbnailUrl` = @p126, `Title` = @p127, `Url` = @p128
+WHERE `Id` = @p129;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p130, `Content` = @p131, `IsPosted` = @p132, `IsProcessed` = @p133, `PublishedAt` = @p134, `Source` = @p135, `ThumbnailUrl` = @p136, `Title` = @p137, `Url` = @p138
+WHERE `Id` = @p139;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p140, `Content` = @p141, `IsPosted` = @p142, `IsProcessed` = @p143, `PublishedAt` = @p144, `Source` = @p145, `ThumbnailUrl` = @p146, `Title` = @p147, `Url` = @p148
+WHERE `Id` = @p149;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p150, `Content` = @p151, `IsPosted` = @p152, `IsProcessed` = @p153, `PublishedAt` = @p154, `Source` = @p155, `ThumbnailUrl` = @p156, `Title` = @p157, `Url` = @p158
+WHERE `Id` = @p159;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p160, `Content` = @p161, `IsPosted` = @p162, `IsProcessed` = @p163, `PublishedAt` = @p164, `Source` = @p165, `ThumbnailUrl` = @p166, `Title` = @p167, `Url` = @p168
+WHERE `Id` = @p169;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p170, `Content` = @p171, `IsPosted` = @p172, `IsProcessed` = @p173, `PublishedAt` = @p174, `Source` = @p175, `ThumbnailUrl` = @p176, `Title` = @p177, `Url` = @p178
+WHERE `Id` = @p179;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p180, `Content` = @p181, `IsPosted` = @p182, `IsProcessed` = @p183, `PublishedAt` = @p184, `Source` = @p185, `ThumbnailUrl` = @p186, `Title` = @p187, `Url` = @p188
+WHERE `Id` = @p189;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p190, `Content` = @p191, `IsPosted` = @p192, `IsProcessed` = @p193, `PublishedAt` = @p194, `Source` = @p195, `ThumbnailUrl` = @p196, `Title` = @p197, `Url` = @p198
+WHERE `Id` = @p199;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p200, `Content` = @p201, `IsPosted` = @p202, `IsProcessed` = @p203, `PublishedAt` = @p204, `Source` = @p205, `ThumbnailUrl` = @p206, `Title` = @p207, `Url` = @p208
+WHERE `Id` = @p209;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p210, `Content` = @p211, `IsPosted` = @p212, `IsProcessed` = @p213, `PublishedAt` = @p214, `Source` = @p215, `ThumbnailUrl` = @p216, `Title` = @p217, `Url` = @p218
+WHERE `Id` = @p219;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p220, `Content` = @p221, `IsPosted` = @p222, `IsProcessed` = @p223, `PublishedAt` = @p224, `Source` = @p225, `ThumbnailUrl` = @p226, `Title` = @p227, `Url` = @p228
+WHERE `Id` = @p229;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p230, `Content` = @p231, `IsPosted` = @p232, `IsProcessed` = @p233, `PublishedAt` = @p234, `Source` = @p235, `ThumbnailUrl` = @p236, `Title` = @p237, `Url` = @p238
+WHERE `Id` = @p239;
+SELECT ROW_COUNT();
+2025-04-06 11:03:36.037 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-06 11:03:36.039 +02:00 [WRN] Failed to summarize article 'How Trump's latest tariffs could affect your wallet'

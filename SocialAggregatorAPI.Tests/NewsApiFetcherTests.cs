@@ -16,7 +16,7 @@ public class NewsApiFetcherTests
     public async Task FetchNewsDataApiNews_ShouldAddArticles_WhenValidResponseReceived()
     {
         // Arrange
-        var mockConfigReader = new Mock<INewsAggregationConfigReader>();
+        var mockConfigReader = new Mock<IAppConfigRepository>();
         mockConfigReader.Setup(c => c.GetSettings()).Returns(new NewsAggregationSettings
         {
             MaxArticlesPerFetch = 5,

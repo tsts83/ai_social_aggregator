@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -6,7 +7,6 @@ using Serilog;
 using SocialAggregatorAPI;
 using SocialAggregatorAPI.Data;
 using SocialAggregatorAPI.Helpers;
-using SocialAggregatorAPI.Models;
 using System.Text;
 
 public partial class Program
@@ -45,26 +45,39 @@ public partial class Program
         services.AddSingleton<JwtReader>();
 
         // Add authentication and authorization
-        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options =>
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(options =>
+        {
+            var serviceProvider = builder.Services.BuildServiceProvider();
+            var jwtReader = serviceProvider.GetRequiredService<JwtReader>();
+
+            options.TokenValidationParameters = new TokenValidationParameters
             {
-                var serviceProvider = builder.Services.BuildServiceProvider();
-                var jwtReader = serviceProvider.GetRequiredService<JwtReader>();
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = jwtReader.GetIssuer(),
+                ValidAudience = jwtReader.GetAudience(),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtReader.GetKey()))
+            };
+        })
+        .AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>("ApiKey", options => { });
 
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = jwtReader.GetIssuer(),
-                    ValidAudience = jwtReader.GetAudience(),
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtReader.GetKey()))
-                };
+        services.AddAuthorization(options =>
+        {
+            options.AddPolicy("ApiKeyOrJwt", policy =>
+            {
+                policy.AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme, "ApiKey");
+                policy.RequireAuthenticatedUser();
             });
-
-        services.AddAuthorization();
+        }); 
         services.AddControllers();
+
         services.AddEndpointsApiExplorer();
 
         // Add Swagger configuration
@@ -106,32 +119,61 @@ public partial class Program
             )
         );
 
-        // Load newsaggregation.json into the builder's configuration
-        builder.Configuration.AddJsonFile("newsaggregation.json", optional: false, reloadOnChange: true);
+        // Register your fetcher if it's used directly (optional, usually injected elsewhere)
+        builder.Services.AddScoped<NewsApiFetcher>();
 
-        // Bind to settings class
-        services.Configure<NewsAggregationSettings>(builder.Configuration.GetSection("NewsAggregation"));
+        // Register the MiniSocialPosterService as a hosted service
+        builder.Services.AddHostedService<MiniSocialPosterService>();
+        builder.Services.AddSingleton<IMiniSocialPosterService, MiniSocialPosterService>();
 
-        // Register the config service as a singleton
-        services.AddSingleton<NewsAggregationConfigReader>();
+        // Register the AppConfigProfile for AutoMapper
+        builder.Services.AddAutoMapper(typeof(AppConfigProfile));
 
         // Register IHttpClientFactory
         services.AddHttpClient();
 
+        // Register repositories and services
+        services.AddSingleton<IAppConfigRepository, AppConfigRepository>(); // Register your AppConfig repository
+        services.AddSingleton<IAppConfigService, AppConfigService>();
+
         // Register NewsFetcherService as a hosted service
         services.AddHostedService<NewsFetcherService>();
 
+        // Register NewsSummarizationService as a hosted service
+        services.AddHostedService<NewsSummarizationService>();
+
         builder.Services.AddHttpClient<IContentFetcher, NewsApiFetcher>();
         // Register the NewsApiFetcher
-        services.AddSingleton<NewsApiFetcher>();}
+        services.AddSingleton<NewsApiFetcher>();
+
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", builder =>
+            {
+                builder
+                    .AllowAnyOrigin() // You can restrict this to specific frontend URL for production
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+        });
+    }
+
 
     private static void ConfigureMiddleware(WebApplication app)
     {
         if (app.Environment.IsDevelopment())
         {
-            app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Social Aggregator API v1"));
+            app.UseDeveloperExceptionPage();
         }
+
+        app.UseRouting();
+        app.UseCors("AllowAll");
+        app.UseSwagger();
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Social Aggregator API v1");
+            c.RoutePrefix = string.Empty; // Makes Swagger available at "/"
+        });
 
         app.UseMiddleware<ErrorHandlingMiddleware>();
         app.UseAuthentication();

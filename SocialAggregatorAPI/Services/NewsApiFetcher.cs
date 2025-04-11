@@ -5,16 +5,15 @@ using SocialAggregatorAPI.Models;
 
 namespace SocialAggregatorAPI;
 
-
 public class NewsApiFetcher : IContentFetcher
 {
-    private readonly NewsAggregationSettings _settings;
+    private readonly AppSettings _settings;
     private readonly IConfiguration _config;
     private readonly ILogger<NewsApiFetcher> _logger;
 
-    public NewsApiFetcher(INewsAggregationConfigReader configReader, IConfiguration config, ILogger<NewsApiFetcher> logger)
+    public NewsApiFetcher(IAppConfigService settings, IConfiguration config, ILogger<NewsApiFetcher> logger)
     {
-        _settings = configReader.GetSettings();
+        _settings = settings.CurrentConfig;
         _config = config;
         _logger = logger;
     }
@@ -30,8 +29,8 @@ public class NewsApiFetcher : IContentFetcher
             throw new InvalidOperationException("API key for NewsData.io is not configured.");
         }
 
-        string language = _settings.Filters.Language;  // From newsaggregation.json
-        var keywords = _settings.Filters.Keywords;  // Keywords from newsaggregation.json
+        string language = _settings.NewsAggregation?.Filters?.Language ?? "en";  // From newsaggregation.json, default to "en"
+        var keywords = _settings.NewsAggregation?.Filters?.Keywords;  // Keywords from newsaggregation.json
 
         // Build the query string for 'q' by joining keywords with 'AND'
         string query = string.Join(" AND ", keywords);
@@ -52,11 +51,11 @@ public class NewsApiFetcher : IContentFetcher
         if (newsApiResponse?.Results == null || !newsApiResponse.Results.Any())
         {
             _logger.LogWarning("No articles found in NewsData.io response.");
-            return null;
+            return dbContext;
         }
 
         // Process articles
-        foreach (var article in newsApiResponse.Results.Take(_settings.MaxArticlesPerFetch))
+        foreach (var article in newsApiResponse.Results.Take(_settings.NewsAggregation.MaxArticlesPerFetch))
             {
                 // Check if content is null or empty
                 if (string.IsNullOrEmpty(article.Description))
@@ -78,7 +77,7 @@ public class NewsApiFetcher : IContentFetcher
                         Content = article.Description,
                         Source = "NewsDataAPI",
                         Url = article.SourceUrl,
-                        PublishedAt = DateTime.Parse(article.PubDate),
+                        PublishedAt = string.IsNullOrEmpty(article.PubDate) ? DateTime.MinValue : DateTime.Parse(article.PubDate),
                         ThumbnailUrl = article.ImageUrl  // Assuming this is the correct field for the thumbnail
                     });
 

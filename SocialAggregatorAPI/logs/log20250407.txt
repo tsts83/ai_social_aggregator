@@ -1,0 +1,365 @@
+2025-04-07 15:46:39.450 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 15:49:41.664 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 15:50:09.334 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 15:50:41.605 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 15:53:02.659 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 15:54:03.216 +02:00 [ERR] Error in MiniSocialPosterService
+System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at MiniSocialPosterService.AuthenticateAsync() in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/MiniSocialPosterService.cs:line 87
+   at MiniSocialPosterService.ExecuteAsync(CancellationToken stoppingToken) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/MiniSocialPosterService.cs:line 39
+2025-04-07 15:54:04.966 +02:00 [INF] News Fetcher Service is starting...
+2025-04-07 15:54:05.687 +02:00 [INF] NewsSummarizationService started.
+2025-04-07 15:54:09.928 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-07 15:54:09.950 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-07 15:54:09.950 +02:00 [INF] Hosting environment: Development
+2025-04-07 15:54:09.950 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-07 15:54:10.213 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-07 15:54:10.267 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-07 15:54:10.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 66.8712ms
+2025-04-07 15:54:10.281 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-07 22:09:27.143 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:10:48.323 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:12:34.855 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:13:53.062 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:14:50.183 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:16:14.175 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:19:04.127 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:19:18.057 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/auth/login
+2025-04-07 22:19:18.060 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/auth/login
+2025-04-07 22:19:18.102 +02:00 [INF] News Fetcher Service is starting...
+2025-04-07 22:19:18.316 +02:00 [INF] Received HTTP response headers after 254.6996ms - 404
+2025-04-07 22:19:18.319 +02:00 [INF] End processing HTTP request after 265.644ms - 404
+2025-04-07 22:19:22.091 +02:00 [WRN] Authentication failed with status code: NotFound
+2025-04-07 22:22:16.990 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:22:21.207 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:22:21.209 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:22:21.250 +02:00 [INF] News Fetcher Service is starting...
+2025-04-07 22:22:21.874 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-07 22:22:40.045 +02:00 [INF] Received HTTP response headers after 17487.8988ms - 200
+2025-04-07 22:22:41.644 +02:00 [INF] End processing HTTP request after 20440.258ms - 200
+2025-04-07 22:22:42.390 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:22:42.390 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:22:42.454 +02:00 [INF] NewsSummarizationService started.
+2025-04-07 22:22:49.335 +02:00 [INF] Received HTTP response headers after 6922.7492ms - 200
+2025-04-07 22:22:49.361 +02:00 [INF] End processing HTTP request after 6971.5244ms - 200
+2025-04-07 22:22:49.742 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-07 22:22:49.743 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-07 22:22:49.743 +02:00 [INF] Hosting environment: Development
+2025-04-07 22:22:49.744 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-07 22:22:50.026 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-07 22:22:50.088 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 62.959ms
+2025-04-07 22:22:50.089 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-07 22:22:50.271 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-07 22:22:50.271 +02:00 [INF] Executed DbCommand (144ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:22:50.271 +02:00 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-07 22:22:50.349 +02:00 [INF] Added new article: British PM, European officials discuss US-imposed tariffs' impacts
+2025-04-07 22:23:02.557 +02:00 [INF] Executed DbCommand (132ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:23:02.577 +02:00 [INF] Added new article: Twin parks, shared dreams: How Malaysia and China are building the future together
+2025-04-07 22:23:02.679 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:23:02.679 +02:00 [INF] Added new article: Dual Channel Loop Detector Market: Sales Volume, Size, Share, Price Development Trend Forecast Report 2025-2031
+2025-04-07 22:23:02.791 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:23:02.792 +02:00 [INF] Added new article: ‘The government just doesn’t get tourism’: VisitBritain chief outlines dismay with budget cuts
+2025-04-07 22:23:02.929 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:23:02.929 +02:00 [INF] Added new article: AIF 2025 to Unite Global Leaders to Discuss Security, Energy, and Economy
+2025-04-07 22:23:02.930 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-07 22:23:03.320 +02:00 [INF] Executed DbCommand (100ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = DateTime), @p23='?' (Size = 4000), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (Size = 4000), @p27='?' (Size = 4000), @p28='?' (Size = 4000), @p29='?' (DbType = Boolean), @p30='?' (DbType = Boolean), @p31='?' (DbType = DateTime), @p32='?' (Size = 4000), @p33='?' (Size = 4000), @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?' (Size = 4000), @p37='?' (Size = 4000), @p38='?' (DbType = Boolean), @p39='?' (DbType = Boolean), @p40='?' (DbType = DateTime), @p41='?' (Size = 4000), @p42='?' (Size = 4000), @p43='?' (Size = 4000), @p44='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-07 22:23:41.812 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-07 22:31:30.754 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:35:27.388 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:35:32.986 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:35:32.988 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:35:33.000 +02:00 [INF] News Fetcher Service is starting...
+2025-04-07 22:35:33.529 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-07 22:35:44.187 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:35:44.187 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:35:44.194 +02:00 [INF] NewsSummarizationService started.
+2025-04-07 22:35:48.172 +02:00 [INF] Received HTTP response headers after 11203.3759ms - 200
+2025-04-07 22:35:48.178 +02:00 [INF] End processing HTTP request after 15195.423ms - 200
+2025-04-07 22:35:48.629 +02:00 [INF] Received HTTP response headers after 4441.9772ms - 200
+2025-04-07 22:35:48.630 +02:00 [INF] End processing HTTP request after 4443.4743ms - 200
+2025-04-07 22:35:49.199 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-07 22:35:49.200 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-07 22:35:49.201 +02:00 [INF] Hosting environment: Development
+2025-04-07 22:35:49.201 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-07 22:35:49.419 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-07 22:35:49.459 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-07 22:35:49.464 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:35:49.482 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 63.8042ms
+2025-04-07 22:35:49.482 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-07 22:35:49.506 +02:00 [INF] Added new article: Tech stocks whipsaw in volatile trading session as Trump stands by tariffs
+2025-04-07 22:35:49.506 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-07 22:35:49.626 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:35:49.628 +02:00 [INF] Added new article: Fundamentals of gold remain strong, no panic selling amidst US tariff: WGC
+2025-04-07 22:35:49.628 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-07 22:35:49.916 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-07 22:37:20.238 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:37:21.042 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:37:21.044 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:37:21.054 +02:00 [INF] News Fetcher Service is starting...
+2025-04-07 22:37:21.535 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-07 22:37:24.764 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:37:24.764 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:37:24.770 +02:00 [INF] NewsSummarizationService started.
+2025-04-07 22:37:26.196 +02:00 [INF] Received HTTP response headers after 3725.9054ms - 200
+2025-04-07 22:37:26.204 +02:00 [INF] End processing HTTP request after 5165.1787ms - 200
+2025-04-07 22:37:26.672 +02:00 [INF] Received HTTP response headers after 1907.4631ms - 200
+2025-04-07 22:37:26.672 +02:00 [INF] End processing HTTP request after 1908.5985ms - 200
+2025-04-07 22:37:27.166 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-07 22:37:27.166 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-07 22:37:27.166 +02:00 [INF] Hosting environment: Development
+2025-04-07 22:37:27.167 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-07 22:37:27.320 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-07 22:37:27.379 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 60.4652ms
+2025-04-07 22:37:27.380 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-07 22:37:27.396 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-07 22:37:40.600 +02:00 [INF] Executed DbCommand (13,202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-07 22:37:40.656 +02:00 [INF] Executed DbCommand (13,221ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:37:40.668 +02:00 [INF] Start processing HTTP request GET https://media.nbcdfw.com/2025/04/108123562-17434316562025-03-31t020331z_477012827_rc20odabx6nt_rtrmadp_0_usa-election-wisconsin-musk.jpeg?quality=85&resize=320%2C180&strip=all
+2025-04-07 22:37:40.668 +02:00 [INF] Sending HTTP request GET https://media.nbcdfw.com/2025/04/108123562-17434316562025-03-31t020331z_477012827_rc20odabx6nt_rtrmadp_0_usa-election-wisconsin-musk.jpeg?quality=85&resize=320%2C180&strip=all
+2025-04-07 22:37:44.713 +02:00 [INF] Added new article: Government delivers support to UK car industry after pressure from manufacturers
+2025-04-07 22:37:44.850 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:37:44.851 +02:00 [INF] Article with title 'Tech stocks whipsaw in volatile trading session as Trump stands by tariffs' already exists in the database.
+2025-04-07 22:37:44.851 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-07 22:37:44.867 +02:00 [INF] Received HTTP response headers after 4199.3163ms - 200
+2025-04-07 22:37:44.868 +02:00 [INF] End processing HTTP request after 4199.6567ms - 200
+2025-04-07 22:38:00.229 +02:00 [INF] Executed DbCommand (14,917ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-07 22:38:00.923 +02:00 [INF] Summarized article 'Tech stocks whipsaw in volatile trading session as Trump stands by tariffs'
+2025-04-07 22:38:41.040 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:38:41.115 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:38:42.214 +02:00 [INF] Received HTTP response headers after 1088.8485ms - 500
+2025-04-07 22:38:42.216 +02:00 [INF] End processing HTTP request after 1176.4417ms - 500
+2025-04-07 22:38:48.596 +02:00 [INF] Summarized article 'Fundamentals of gold remain strong, no panic selling amidst US tariff: WGC'
+2025-04-07 22:39:12.541 +02:00 [INF] Start processing HTTP request GET https://static.theprint.in/wp-content/uploads/2025/04/ANI-20250407081442.jpg
+2025-04-07 22:39:12.592 +02:00 [INF] Sending HTTP request GET https://static.theprint.in/wp-content/uploads/2025/04/ANI-20250407081442.jpg
+2025-04-07 22:39:12.966 +02:00 [INF] Executed DbCommand (137ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `IsProcessed` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p3, `IsProcessed` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-04-07 22:39:13.386 +02:00 [INF] Received HTTP response headers after 745.4979ms - 200
+2025-04-07 22:39:13.386 +02:00 [INF] End processing HTTP request after 895.286ms - 200
+2025-04-07 22:39:38.909 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:39:38.911 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:39:39.981 +02:00 [INF] Received HTTP response headers after 1070.3082ms - 500
+2025-04-07 22:39:39.982 +02:00 [INF] End processing HTTP request after 1073.9397ms - 500
+2025-04-07 22:42:07.126 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-07 22:51:08.932 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-07 22:51:09.726 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:51:09.728 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-07 22:51:09.738 +02:00 [INF] News Fetcher Service is starting...
+2025-04-07 22:51:10.325 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-07 22:51:20.124 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:51:20.125 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-07 22:51:20.229 +02:00 [INF] NewsSummarizationService started.
+2025-04-07 22:51:20.229 +02:00 [INF] Received HTTP response headers after 10498.9552ms - 200
+2025-04-07 22:51:29.204 +02:00 [INF] End processing HTTP request after 19481.9875ms - 200
+2025-04-07 22:51:29.571 +02:00 [INF] Received HTTP response headers after 9446.3202ms - 200
+2025-04-07 22:51:29.571 +02:00 [INF] End processing HTTP request after 9447.4985ms - 200
+2025-04-07 22:51:31.222 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-07 22:51:31.223 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-07 22:51:31.223 +02:00 [INF] Hosting environment: Development
+2025-04-07 22:51:31.224 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-07 22:51:31.460 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-07 22:51:31.468 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-07 22:51:31.479 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-07 22:51:33.104 +02:00 [INF] Start processing HTTP request GET https://media.nbcdfw.com/2025/04/108123562-17434316562025-03-31t020331z_477012827_rc20odabx6nt_rtrmadp_0_usa-election-wisconsin-musk.jpeg?quality=85&resize=320%2C180&strip=all
+2025-04-07 22:51:33.104 +02:00 [INF] Sending HTTP request GET https://media.nbcdfw.com/2025/04/108123562-17434316562025-03-31t020331z_477012827_rc20odabx6nt_rtrmadp_0_usa-election-wisconsin-musk.jpeg?quality=85&resize=320%2C180&strip=all
+2025-04-07 22:51:40.542 +02:00 [INF] Received HTTP response headers after 7437.8396ms - 200
+2025-04-07 22:51:40.542 +02:00 [INF] End processing HTTP request after 7438.3695ms - 200
+2025-04-07 22:51:48.259 +02:00 [INF] Executed DbCommand (14,395ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:51:50.323 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 18095.121ms
+2025-04-07 22:51:50.422 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-07 22:51:50.469 +02:00 [INF] Added new article: Tariffs: Why was there a ‘bloodbath’ on Asian markets?
+2025-04-07 22:51:51.979 +02:00 [INF] Executed DbCommand (1,403ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-07 22:51:53.227 +02:00 [INF] Added new article: Endless CTO Amit Showcases Web3 Genesis Cloud at Hong Kong Web3 Festival 2025, Advancing the Future of Decentralized Technology
+2025-04-07 22:51:53.227 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-07 22:52:39.929 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:52:39.929 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:53:33.441 +02:00 [INF] Summarized article 'Government delivers support to UK car industry after pressure from manufacturers'
+2025-04-07 22:53:42.435 +02:00 [ERR] Failed to post article Tech stocks whipsaw in volatile trading session as Trump stands by tariffs
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at MiniSocialPosterService.PostToMiniSocialMediaAsync(NewsArticle article, String token, Byte[] imageBytes) in /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI/Services/MiniSocialPosterService.cs:line 156
+2025-04-07 22:54:21.076 +02:00 [INF] Start processing HTTP request GET https://static.theprint.in/wp-content/uploads/2025/04/ANI-20250407081442.jpg
+2025-04-07 22:54:21.076 +02:00 [INF] Sending HTTP request GET https://static.theprint.in/wp-content/uploads/2025/04/ANI-20250407081442.jpg
+2025-04-07 22:54:21.488 +02:00 [INF] Received HTTP response headers after 411.0363ms - 200
+2025-04-07 22:54:21.488 +02:00 [INF] End processing HTTP request after 411.8632ms - 200
+2025-04-07 22:54:21.488 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `IsProcessed` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+2025-04-07 22:54:29.936 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-07 22:54:41.092 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:54:41.092 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:54:42.376 +02:00 [INF] Received HTTP response headers after 1283.6645ms - 201
+2025-04-07 22:54:42.378 +02:00 [INF] End processing HTTP request after 1285.7142ms - 201
+2025-04-07 22:54:50.712 +02:00 [INF] Article posted: Fundamentals of gold remain strong, no panic selling amidst US tariff: WGC
+2025-04-07 22:55:38.593 +02:00 [INF] Start processing HTTP request GET https://i2-prod.lancs.live/incoming/article28166533.ece/ALTERNATES/s1200/1_GWR_NJL_241123nissan01.jpg
+2025-04-07 22:55:38.596 +02:00 [INF] Sending HTTP request GET https://i2-prod.lancs.live/incoming/article28166533.ece/ALTERNATES/s1200/1_GWR_NJL_241123nissan01.jpg
+2025-04-07 22:55:38.895 +02:00 [INF] Received HTTP response headers after 298.5227ms - 200
+2025-04-07 22:55:38.895 +02:00 [INF] End processing HTTP request after 302.598ms - 200
+2025-04-07 22:57:31.342 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:57:31.365 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-07 22:57:39.355 +02:00 [INF] Received HTTP response headers after 7988.1134ms - 500
+2025-04-07 22:57:39.356 +02:00 [INF] End processing HTTP request after 8014.1557ms - 500
+2025-04-07 22:58:22.845 +02:00 [INF] Executed DbCommand (34,323ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-07 22:58:28.009 +02:00 [INF] Executed DbCommand (127ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `Content` = @p1, `IsPosted` = @p2, `IsProcessed` = @p3, `PublishedAt` = @p4, `Source` = @p5, `ThumbnailUrl` = @p6, `Title` = @p7, `Url` = @p8
+WHERE `Id` = @p9;
+SELECT ROW_COUNT();
+2025-04-07 22:58:37.389 +02:00 [ERR] Failed to get summary: InternalServerError
+2025-04-07 22:58:37.389 +02:00 [WRN] Failed to summarize article 'Tariffs: Why was there a ‘bloodbath’ on Asian markets?'

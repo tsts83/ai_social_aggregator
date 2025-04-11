@@ -1,0 +1,82 @@
+2025-04-08 13:39:43.444 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-08 13:39:44.238 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-08 13:39:44.240 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-08 13:39:44.251 +02:00 [INF] News Fetcher Service is starting...
+2025-04-08 13:39:44.695 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-08 13:39:44.696 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-08 13:39:44.696 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-08 13:39:44.724 +02:00 [INF] NewsSummarizationService started.
+2025-04-08 13:39:52.507 +02:00 [INF] Received HTTP response headers after 8265.179ms - 200
+2025-04-08 13:39:52.511 +02:00 [INF] End processing HTTP request after 8276.3835ms - 200
+2025-04-08 13:39:59.649 +02:00 [INF] Received HTTP response headers after 14953.4257ms - 200
+2025-04-08 13:39:59.676 +02:00 [INF] End processing HTTP request after 14980.4163ms - 200
+2025-04-08 13:40:00.833 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-08 13:40:00.859 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-08 13:40:00.860 +02:00 [INF] Hosting environment: Development
+2025-04-08 13:40:00.860 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-08 13:40:00.920 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-08 13:40:00.920 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-08 13:40:00.951 +02:00 [INF] Executed DbCommand (121ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-08 13:40:03.854 +02:00 [INF] Added new article: ‘Little suns in the classroom’: Ukrainian city mourns children killed by Russian missile
+2025-04-08 13:40:03.913 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/ - null null
+2025-04-08 13:40:03.970 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/ - 404 0 null 57.8752ms
+2025-04-08 13:40:03.971 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5062/, Response status code: 404
+2025-04-08 13:40:03.971 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-08 13:40:03.972 +02:00 [INF] Added new article: ‘Little suns in the classroom’: Ukrainian city mourns children killed by Russian missile
+2025-04-08 13:40:03.972 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-08 13:40:04.229 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-08 13:42:11.457 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-08 13:42:44.950 +02:00 [INF] Summarized article '‘Little suns in the classroom’: Ukrainian city mourns children killed by Russian missile'
+2025-04-08 13:43:06.048 +02:00 [INF] Summarized article '‘Little suns in the classroom’: Ukrainian city mourns children killed by Russian missile'
+2025-04-08 13:43:06.291 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `IsProcessed` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p3, `IsProcessed` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-04-08 13:45:12.370 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-08 13:47:17.648 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-08 13:49:25.608 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-08 13:51:26.269 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')

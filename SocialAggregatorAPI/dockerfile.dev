@@ -2,19 +2,25 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS dev
 WORKDIR /app
 
-# Copy csproj and restore as distinct layers
+# Copy the project file and restore any dependencies (via restore)
 COPY ["SocialAggregatorAPI.csproj", "./"]
 RUN dotnet restore "./SocialAggregatorAPI.csproj"
 
-# Copy everything else
+# Copy everything else (this includes your source code)
 COPY . .
-
-# Expose your application port
-EXPOSE 8080
 
 # Install dotnet-watch tool (hot reload)
 RUN dotnet tool install --global dotnet-watch
 ENV PATH="$PATH:/root/.dotnet/tools"
+
+# Build the application
+RUN dotnet build "SocialAggregatorAPI.csproj" -c Debug -o /app/build
+
+# Expose the app port
+EXPOSE 8080
+
+# Set the working directory for the application inside the container
+WORKDIR /app
 
 # Run the app with dotnet watch for hot reload
 ENTRYPOINT ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:8080"]

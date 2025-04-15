@@ -1,20 +1,16 @@
 #!/bin/bash
 
 # Load env variables from .env file
-
 set -a
 source .env
 set +a
 
-docker run -it \
-  -p 8080:8080 \
-  -v ${PWD}:/app \
-  -e DEFAULT_CONNECTION \
-  -e JWT_KEY \
-  -e NEWSDATA_API_KEY \
-  -e HUGGINGFACE_API_KEY \
-  -e ADMIN_API_KEY \
-  -e MINIAPP_USER_PASSWORD \
-tsts83/socialaggregatorapi:dev
+# Build the Docker image using Dockerfile.dev
+docker build -f Dockerfile.dev -t tsts83/socialaggregatorapi:dev .
+
+# Run the container with hot reload
+docker run --env-file .env -it --rm -p 8080:8080 -v ${PWD}:/app tsts83/socialaggregatorapi:dev
+
+
 
     # --entrypoint /bin/bash \

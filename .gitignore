@@ -48,4 +48,4 @@ TestResult.xml
 nunit-*.xml
 
 # Env file
-env
+.env

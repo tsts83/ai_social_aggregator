@@ -7,30 +7,32 @@ namespace SocialAggregatorAPI;
 
 public class NewsApiFetcher : IContentFetcher
 {
-    private readonly AppSettings _settings;
     private readonly IConfiguration _config;
     private readonly ILogger<NewsApiFetcher> _logger;
+    private readonly IAppConfigService _appConfigService;
 
-    public NewsApiFetcher(IAppConfigService settings, IConfiguration config, ILogger<NewsApiFetcher> logger)
+    public NewsApiFetcher(IAppConfigService appConfigService, IConfiguration config, ILogger<NewsApiFetcher> logger)
     {
-        _settings = settings.CurrentConfig;
+        _appConfigService = appConfigService;
         _config = config;
         _logger = logger;
     }
 
     public async Task<AppDbContext> FetchNewsDataApiNews(AppDbContext dbContext, HttpClient httpClient)
     {
+        var settings = await _appConfigService.GetConfigAsync();
+
         _logger.LogInformation("Fetching news from NewsData.io...");
 
         // API Request URL
-        string? apiKey = _config["NewsDataApiKey"];
+        string? apiKey = _config["NewsDataApiKey"] ?? Environment.GetEnvironmentVariable("NEWSDATA_API_KEY");;
         if (string.IsNullOrEmpty(apiKey))
         {
             throw new InvalidOperationException("API key for NewsData.io is not configured.");
         }
 
-        string language = _settings.NewsAggregation?.Filters?.Language ?? "en";  // From newsaggregation.json, default to "en"
-        var keywords = _settings.NewsAggregation?.Filters?.Keywords;  // Keywords from newsaggregation.json
+        string language = settings.NewsAggregation?.Filters?.Language ?? "en";  // From newsaggregation.json, default to "en"
+        var keywords = settings.NewsAggregation?.Filters?.Keywords;  // Keywords from newsaggregation.json
 
         // Build the query string for 'q' by joining keywords with 'AND'
         string query = string.Join(" AND ", keywords);
@@ -55,7 +57,7 @@ public class NewsApiFetcher : IContentFetcher
         }
 
         // Process articles
-        foreach (var article in newsApiResponse.Results.Take(_settings.NewsAggregation.MaxArticlesPerFetch))
+        foreach (var article in newsApiResponse.Results.Take(settings.NewsAggregation.MaxArticlesPerFetch))
             {
                 // Check if content is null or empty
                 if (string.IsNullOrEmpty(article.Description))

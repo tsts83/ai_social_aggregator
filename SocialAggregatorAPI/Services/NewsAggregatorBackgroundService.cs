@@ -10,22 +10,23 @@ namespace SocialAggregatorAPI
         private readonly ILogger<NewsFetcherService> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly NewsApiFetcher _newsApiFetcher;
-        private readonly AppSettings _settings;
-
+        private readonly IAppConfigService _appConfigService;
         public NewsFetcherService(IServiceProvider serviceProvider, ILogger<NewsFetcherService> logger,
                                   IHttpClientFactory httpClientFactory,
                                   IAppConfigService appConfigService,
                                    NewsApiFetcher newsApiFetcher)
         {
-            _settings = appConfigService.CurrentConfig;
             _serviceProvider = serviceProvider;
             _logger = logger;
             _httpClientFactory = httpClientFactory;
             _newsApiFetcher = newsApiFetcher;
+            _appConfigService = appConfigService;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            var settings = await _appConfigService.GetConfigAsync();
+
             _logger.LogInformation("News Fetcher Service is starting...");
 
             while (!stoppingToken.IsCancellationRequested)
@@ -39,13 +40,15 @@ namespace SocialAggregatorAPI
                     _logger.LogError(ex, "Error occurred while fetching news.");
                 }
 
-                var fetchInterval = _settings.NewsAggregation?.FetchIntervalMinutes ?? 60;
+                var fetchInterval = settings.NewsAggregation?.FetchIntervalMinutes ?? 60;
                 await Task.Delay(TimeSpan.FromMinutes(fetchInterval), stoppingToken);
             }
         }
 
         public async Task FetchAndStoreNews()
         {
+            var settings = await _appConfigService.GetConfigAsync();
+
             using var scope = _serviceProvider.CreateScope();
             var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
@@ -65,7 +68,7 @@ namespace SocialAggregatorAPI
             var httpClient = _httpClientFactory.CreateClient();
             httpClient.DefaultRequestHeaders.Add("User-Agent", "MySocialAggregatorBot/1.0");
 
-            if (_settings.NewsAggregation?.SourcePreferences?.NewsDataAPI == true)
+            if (settings.NewsAggregation?.SourcePreferences?.NewsDataAPI == true)
             {
                 await _newsApiFetcher.FetchNewsDataApiNews(dbContext, httpClient);
             }

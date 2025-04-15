@@ -25,7 +25,7 @@ public class ApiKeyAuthenticationHandler : AuthenticationHandler<AuthenticationS
         }
 
         var providedApiKey = apiKeyHeaderValues.FirstOrDefault();
-        var configuredApiKey = _configuration["AdminApiKey"]; 
+        var configuredApiKey = _configuration["AdminApiKey"] ?? Environment.GetEnvironmentVariable("ADMIN_API_KEY"); 
 
         if (providedApiKey == configuredApiKey)
         {

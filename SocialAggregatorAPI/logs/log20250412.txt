@@ -1,0 +1,217 @@
+2025-04-12 22:23:02.540 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-12 22:23:18.904 +02:00 [INF] News Fetcher Service is starting...
+2025-04-12 22:23:25.692 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:23:25.695 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:23:26.278 +02:00 [INF] NewsSummarizationService started.
+2025-04-12 22:23:26.818 +02:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-12 22:23:26.824 +02:00 [INF] There are 6 unposted articles. Skipping news fetch.
+2025-04-12 22:23:26.944 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-12 22:23:27.037 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-12 22:23:27.038 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-12 22:23:27.038 +02:00 [INF] Hosting environment: Development
+2025-04-12 22:23:27.038 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-12 22:23:27.256 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/index.html - null null
+2025-04-12 22:23:27.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/index.html - 200 null text/html;charset=utf-8 61.9337ms
+2025-04-12 22:23:27.386 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/swagger-ui-bundle.js - null null
+2025-04-12 22:23:27.386 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/index.js - null null
+2025-04-12 22:23:27.412 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/index.js - 200 null application/javascript;charset=utf-8 74.8712ms
+2025-04-12 22:23:27.493 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-12 22:23:27.494 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/swagger-ui-bundle.js - 200 1466324 text/javascript 131.7621ms
+2025-04-12 22:23:27.580 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/swagger/v1/swagger.json - null null
+2025-04-12 22:23:27.635 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.0699ms
+2025-04-12 22:23:28.644 +02:00 [INF] Received HTTP response headers after 2946.2194ms - 400
+2025-04-12 22:23:28.645 +02:00 [INF] End processing HTTP request after 2955.9286ms - 400
+2025-04-12 22:23:28.647 +02:00 [WRN] Authentication failed with status code: BadRequest
+2025-04-12 22:23:28.647 +02:00 [WRN] Authentication failed. Skipping this cycle.
+2025-04-12 22:23:36.160 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5062/api/config - application/json 83
+2025-04-12 22:23:36.212 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:23:36.231 +02:00 [INF] Route matched with {action = "UpdateConfig", controller = "Config"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateConfig(AppConfigRow) on controller SocialAggregatorAPI.Controllers.ConfigController (SocialAggregatorAPI).
+2025-04-12 22:23:41.936 +02:00 [INF] App configuration refreshed at "2025-04-12T20:23:41.9363680Z"
+2025-04-12 22:23:42.970 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-04-12 22:23:42.973 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI) in 6739.5916ms
+2025-04-12 22:23:42.973 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:23:44.179 +02:00 [INF] Request finished HTTP/1.1 PUT https://localhost:5062/api/config - 200 0 null 8018.7963ms
+2025-04-12 22:23:50.540 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - null 0
+2025-04-12 22:23:54.338 +02:00 [INF] Executing endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:23:54.343 +02:00 [INF] Route matched with {action = "TriggerPost", controller = "SocialPoster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TriggerPostAsync() on controller Namespace.SocialAggregatorAPI.Controllers.SocialPosterController (SocialAggregatorAPI).
+2025-04-12 22:24:00.358 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:24:00.358 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:24:00.935 +02:00 [INF] Received HTTP response headers after 577.4968ms - 200
+2025-04-12 22:24:00.936 +02:00 [INF] End processing HTTP request after 578.5478ms - 200
+2025-04-12 22:24:09.559 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+ORDER BY `n`.`Id`
+LIMIT 1
+2025-04-12 22:24:09.601 +02:00 [INF] Start processing HTTP request GET https://e3.365dm.com/25/04/1920x1080/skynews-jordan-belfort-wolf_6882341.jpg?20250410220602=
+2025-04-12 22:24:09.601 +02:00 [INF] Sending HTTP request GET https://e3.365dm.com/25/04/1920x1080/skynews-jordan-belfort-wolf_6882341.jpg?20250410220602=
+2025-04-12 22:24:10.813 +02:00 [INF] Received HTTP response headers after 1211.9811ms - 200
+2025-04-12 22:24:10.815 +02:00 [INF] End processing HTTP request after 1213.6661ms - 200
+2025-04-12 22:24:11.074 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-12 22:24:11.074 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-12 22:24:12.198 +02:00 [INF] Received HTTP response headers after 1123.7597ms - 201
+2025-04-12 22:24:12.199 +02:00 [INF] End processing HTTP request after 1124.4327ms - 201
+2025-04-12 22:24:12.391 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `Content` = @p1, `IsPosted` = @p2, `IsProcessed` = @p3, `PublishedAt` = @p4, `Source` = @p5, `ThumbnailUrl` = @p6, `Title` = @p7, `Url` = @p8
+WHERE `Id` = @p9;
+SELECT ROW_COUNT();
+2025-04-12 22:24:12.400 +02:00 [INF] Article posted: 'Wolf of Wall Street' defends Trump over insider trading claims - as Japan stocks slump and gold hits new high
+2025-04-12 22:24:12.408 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-04-12 22:24:12.412 +02:00 [INF] Executed action Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI) in 18069.0462ms
+2025-04-12 22:24:12.413 +02:00 [INF] Executed endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:24:12.413 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - 200 null text/plain; charset=utf-8 21873.1293ms
+2025-04-12 22:24:48.723 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5062/api/config - application/json 86
+2025-04-12 22:24:48.731 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:24:48.731 +02:00 [INF] Route matched with {action = "UpdateConfig", controller = "Config"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateConfig(AppConfigRow) on controller SocialAggregatorAPI.Controllers.ConfigController (SocialAggregatorAPI).
+2025-04-12 22:24:51.564 +02:00 [INF] App configuration refreshed at "2025-04-12T20:24:51.5642610Z"
+2025-04-12 22:24:51.564 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-04-12 22:24:51.564 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI) in 2832.8073ms
+2025-04-12 22:24:51.565 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:24:51.565 +02:00 [INF] Request finished HTTP/1.1 PUT https://localhost:5062/api/config - 200 0 null 2841.5206ms
+2025-04-12 22:24:56.640 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - null 0
+2025-04-12 22:24:56.641 +02:00 [INF] Executing endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:24:56.641 +02:00 [INF] Route matched with {action = "TriggerPost", controller = "SocialPoster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TriggerPostAsync() on controller Namespace.SocialAggregatorAPI.Controllers.SocialPosterController (SocialAggregatorAPI).
+2025-04-12 22:25:09.440 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:25:09.440 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:25:09.692 +02:00 [INF] Received HTTP response headers after 251.0223ms - 400
+2025-04-12 22:25:09.692 +02:00 [INF] End processing HTTP request after 251.7325ms - 400
+2025-04-12 22:25:27.422 +02:00 [WRN] Authentication failed with status code: BadRequest
+2025-04-12 22:25:29.182 +02:00 [WRN] Authentication failed. Skipping this cycle.
+2025-04-12 22:25:29.183 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-04-12 22:25:29.183 +02:00 [INF] Executed action Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI) in 32541.7608ms
+2025-04-12 22:25:29.183 +02:00 [INF] Executed endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:25:29.184 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - 400 null text/plain; charset=utf-8 32543.1341ms
+2025-04-12 22:25:29.573 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-12 22:25:29.915 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-12 22:25:29.916 +02:00 [INF] There are 5 unposted articles. Skipping news fetch.
+2025-04-12 22:25:38.795 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5062/api/config - application/json 86
+2025-04-12 22:25:38.796 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:25:38.796 +02:00 [INF] Route matched with {action = "UpdateConfig", controller = "Config"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateConfig(AppConfigRow) on controller SocialAggregatorAPI.Controllers.ConfigController (SocialAggregatorAPI).
+2025-04-12 22:25:40.923 +02:00 [INF] App configuration refreshed at "2025-04-12T20:25:40.9238060Z"
+2025-04-12 22:25:40.925 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-04-12 22:25:40.925 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI) in 2128.4226ms
+2025-04-12 22:25:40.925 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:25:40.925 +02:00 [INF] Request finished HTTP/1.1 PUT https://localhost:5062/api/config - 200 0 null 2130.1144ms
+2025-04-12 22:25:45.213 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - null 0
+2025-04-12 22:25:45.214 +02:00 [INF] Executing endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:25:45.215 +02:00 [INF] Route matched with {action = "TriggerPost", controller = "SocialPoster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TriggerPostAsync() on controller Namespace.SocialAggregatorAPI.Controllers.SocialPosterController (SocialAggregatorAPI).
+2025-04-12 22:25:47.283 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:25:47.283 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:25:48.006 +02:00 [INF] Received HTTP response headers after 722.7805ms - 200
+2025-04-12 22:25:48.007 +02:00 [INF] End processing HTTP request after 723.2374ms - 200
+2025-04-12 22:26:14.131 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+ORDER BY `n`.`Id`
+LIMIT 1
+2025-04-12 22:26:17.074 +02:00 [INF] Start processing HTTP request GET https://i0.wp.com/cheknews.ca/wp-content/uploads/2025/04/CEMzH14K-720-e1744338252350.jpg?fit=720%2C406&ssl=1
+2025-04-12 22:26:17.074 +02:00 [INF] Sending HTTP request GET https://i0.wp.com/cheknews.ca/wp-content/uploads/2025/04/CEMzH14K-720-e1744338252350.jpg?fit=720%2C406&ssl=1
+2025-04-12 22:26:17.326 +02:00 [INF] Received HTTP response headers after 251.5025ms - 200
+2025-04-12 22:26:17.326 +02:00 [INF] End processing HTTP request after 251.7455ms - 200
+2025-04-12 22:26:18.218 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-12 22:26:18.218 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-12 22:26:19.005 +02:00 [INF] Received HTTP response headers after 787.3021ms - 201
+2025-04-12 22:26:19.006 +02:00 [INF] End processing HTTP request after 787.934ms - 201
+2025-04-12 22:26:23.008 +02:00 [INF] Executed DbCommand (85ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `Content` = @p1, `IsPosted` = @p2, `IsProcessed` = @p3, `PublishedAt` = @p4, `Source` = @p5, `ThumbnailUrl` = @p6, `Title` = @p7, `Url` = @p8
+WHERE `Id` = @p9;
+SELECT ROW_COUNT();
+2025-04-12 22:26:23.490 +02:00 [INF] Article posted: As Trump continues his tariff war, Canadian leaders take a stand
+2025-04-12 22:26:26.331 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-04-12 22:26:26.331 +02:00 [INF] Executed action Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI) in 41115.9056ms
+2025-04-12 22:26:26.331 +02:00 [INF] Executed endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:26:26.331 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - 200 null text/plain; charset=utf-8 41118.0385ms
+2025-04-12 22:26:53.295 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5062/api/config - application/json 83
+2025-04-12 22:26:53.297 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:26:53.297 +02:00 [INF] Route matched with {action = "UpdateConfig", controller = "Config"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateConfig(AppConfigRow) on controller SocialAggregatorAPI.Controllers.ConfigController (SocialAggregatorAPI).
+2025-04-12 22:26:55.181 +02:00 [INF] App configuration refreshed at "2025-04-12T20:26:55.1812000Z"
+2025-04-12 22:26:55.181 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-04-12 22:26:55.181 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI) in 1884.3695ms
+2025-04-12 22:26:55.183 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:26:55.183 +02:00 [INF] Request finished HTTP/1.1 PUT https://localhost:5062/api/config - 200 0 null 1887.989ms
+2025-04-12 22:26:59.343 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - null 0
+2025-04-12 22:26:59.344 +02:00 [INF] Executing endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:26:59.345 +02:00 [INF] Route matched with {action = "TriggerPost", controller = "SocialPoster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TriggerPostAsync() on controller Namespace.SocialAggregatorAPI.Controllers.SocialPosterController (SocialAggregatorAPI).
+2025-04-12 22:27:01.805 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:27:01.805 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-12 22:27:02.241 +02:00 [INF] Received HTTP response headers after 436.0357ms - 200
+2025-04-12 22:27:02.242 +02:00 [INF] End processing HTTP request after 436.8002ms - 200
+2025-04-12 22:27:02.868 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+ORDER BY `n`.`Id`
+LIMIT 1
+2025-04-12 22:27:02.869 +02:00 [INF] Start processing HTTP request GET https://i.brecorder.com/large/2025/04/110609114e5f4e7.jpg?r=060919
+2025-04-12 22:27:02.869 +02:00 [INF] Sending HTTP request GET https://i.brecorder.com/large/2025/04/110609114e5f4e7.jpg?r=060919
+2025-04-12 22:27:03.359 +02:00 [INF] Received HTTP response headers after 489.8051ms - 200
+2025-04-12 22:27:03.360 +02:00 [INF] End processing HTTP request after 490.8182ms - 200
+2025-04-12 22:27:03.500 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-12 22:27:03.500 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-12 22:27:04.367 +02:00 [INF] Received HTTP response headers after 866.4305ms - 201
+2025-04-12 22:27:04.367 +02:00 [INF] End processing HTTP request after 866.9352ms - 201
+2025-04-12 22:27:04.496 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = -1), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `Content` = @p1, `IsPosted` = @p2, `IsProcessed` = @p3, `PublishedAt` = @p4, `Source` = @p5, `ThumbnailUrl` = @p6, `Title` = @p7, `Url` = @p8
+WHERE `Id` = @p9;
+SELECT ROW_COUNT();
+2025-04-12 22:27:04.497 +02:00 [INF] Article posted: NPC calls Muslims states to take unanimous actions against Israel
+2025-04-12 22:27:04.497 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-04-12 22:27:04.498 +02:00 [INF] Executed action Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI) in 5152.6125ms
+2025-04-12 22:27:04.498 +02:00 [INF] Executed endpoint 'Namespace.SocialAggregatorAPI.Controllers.SocialPosterController.TriggerPostAsync (SocialAggregatorAPI)'
+2025-04-12 22:27:04.498 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:5062/api/SocialPoster/trigger - 200 null text/plain; charset=utf-8 5154.696ms
+2025-04-12 22:27:30.157 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-12 22:27:30.505 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-12 22:27:30.506 +02:00 [INF] Fetching and storing news...
+2025-04-12 22:27:30.512 +02:00 [INF] Fetching news from NewsData.io...
+2025-04-12 22:27:30.514 +02:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-12 22:27:30.514 +02:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-12 22:27:31.378 +02:00 [INF] Received HTTP response headers after 863.5062ms - 200
+2025-04-12 22:27:31.378 +02:00 [INF] End processing HTTP request after 864.1229ms - 200
+2025-04-12 22:27:31.551 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-12 22:27:31.579 +02:00 [INF] Added new article: Innovate city branding to elevate tourism excellence - WTCF Hong Kong Fragrant Hills Summit 2025 to kick off
+2025-04-12 22:27:31.579 +02:00 [INF] Skipping article with title 'China hits back at US and will raise tariffs on American goods from 84% to 125%' because description is null or empty.
+2025-04-12 22:27:31.579 +02:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-12 22:27:31.903 +02:00 [INF] Executed DbCommand (97ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-12 22:27:46.277 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5062/api/config - application/json 86
+2025-04-12 22:27:46.278 +02:00 [INF] Executing endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:27:46.278 +02:00 [INF] Route matched with {action = "UpdateConfig", controller = "Config"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateConfig(AppConfigRow) on controller SocialAggregatorAPI.Controllers.ConfigController (SocialAggregatorAPI).
+2025-04-12 22:27:50.352 +02:00 [INF] App configuration refreshed at "2025-04-12T20:27:50.3524080Z"
+2025-04-12 22:27:50.354 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-04-12 22:27:50.354 +02:00 [INF] Executed action SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI) in 4075.8114ms
+2025-04-12 22:27:50.354 +02:00 [INF] Executed endpoint 'SocialAggregatorAPI.Controllers.ConfigController.UpdateConfig (SocialAggregatorAPI)'
+2025-04-12 22:27:50.354 +02:00 [INF] Request finished HTTP/1.1 PUT https://localhost:5062/api/config - 200 0 null 4077.1666ms
+2025-04-12 22:34:43.455 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-12 22:34:44.273 +02:00 [INF] NewsSummarizationService started.
+2025-04-12 22:34:49.820 +02:00 [INF] News Fetcher Service is starting...

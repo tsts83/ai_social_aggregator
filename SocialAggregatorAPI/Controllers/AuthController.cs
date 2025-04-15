@@ -48,6 +48,7 @@ namespace SocialAggregatorAPI.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] User loginUser)
         {
+            Console.WriteLine($"Login attempt for user: {loginUser.Username}");
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == loginUser.Username);
             if (user == null || string.IsNullOrEmpty(user.Username) || !BCrypt.Net.BCrypt.Verify(loginUser.Password, user.PasswordHash))
                 return Unauthorized("Invalid credentials");
@@ -71,8 +72,6 @@ namespace SocialAggregatorAPI.Controllers
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(
-            issuer: jwtReader.GetIssuer(),
-            audience: jwtReader.GetAudience(),
             claims: claims,
             expires: DateTime.UtcNow.AddHours(2), 
             signingCredentials: creds

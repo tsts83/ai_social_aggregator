@@ -13,19 +13,19 @@ public class NewsSummarizationService : BackgroundService
     private readonly IServiceProvider _serviceProvider;
     private readonly IConfiguration _configuration;
     private readonly HttpClient _httpClient;
-    private readonly AppSettings _settings;
+    private readonly IAppConfigService _appConfigService;
 
     public NewsSummarizationService(
         ILogger<NewsSummarizationService> logger,
         IServiceProvider serviceProvider,
         IConfiguration configuration,
-        IAppConfigService settings)
+        IAppConfigService appConfigService)
     {
         _logger = logger;
         _serviceProvider = serviceProvider;
         _configuration = configuration;
         _httpClient = new HttpClient();
-        _settings = settings.CurrentConfig;
+        _appConfigService = appConfigService;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -79,11 +79,12 @@ public class NewsSummarizationService : BackgroundService
     }
 
     private async Task<string?> GenerateFunnySummaryAsync(string title, string content)
-    {
-        string apiKey = _configuration["HuggingFaceApiKey"];
+    {   
+        var settings = await _appConfigService.GetConfigAsync();
+        string apiKey = _configuration["HuggingFaceApiKey"] ?? Environment.GetEnvironmentVariable("HUGGINGFACE_API_KEY");
         if (string.IsNullOrEmpty(apiKey)) return null;
 
-        var prompt = _settings.AiPrompt
+        var prompt = settings.AiPrompt
             .Replace("{title}", title)
             .Replace("{content}", content);
 
@@ -97,7 +98,7 @@ public class NewsSummarizationService : BackgroundService
                     content = prompt
                 }
             },
-            model = _settings.AiMode,
+            model = settings.AiMode,
             stream = false
         };
 

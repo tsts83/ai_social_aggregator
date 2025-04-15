@@ -13,18 +13,16 @@ namespace SocialAggregatorAPI.Helpers
         public JwtReader(IConfiguration configuration)
         {
             // Access the JWT settings from the configuration
-            var jwtSettings = configuration.GetSection("Jwt");
+            var jwtKey = configuration["Jwt:Key"] ?? Environment.GetEnvironmentVariable("JWT_KEY");
 
             // Check if the settings exist; if not, throw an exception
-            if (jwtSettings["Key"] == null || jwtSettings["Issuer"] == null || jwtSettings["Audience"] == null)
+            if (jwtKey == null )
             {
                 throw new Exception("Jwt settings are not properly configured.");
             }
 
             // Set the properties based on the configuration values
-            Key = jwtSettings["Key"];
-            Issuer = jwtSettings["Issuer"];
-            Audience = jwtSettings["Audience"];
+            Key = jwtKey;
         }
 
         // Getter methods to access the values
@@ -39,7 +37,5 @@ namespace SocialAggregatorAPI.Helpers
 
             return key;
         }
-        public string GetIssuer() => Issuer ?? throw new InvalidOperationException("Issuer is not configured.");
-        public string GetAudience() => Audience ?? throw new InvalidOperationException("Audience is not configured.");
     }
 }

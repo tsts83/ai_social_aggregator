@@ -1,0 +1,93 @@
+2025-04-14 21:00:05.938 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-04-14 21:00:05.955 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-14 21:00:06.639 +00:00 [INF] Creating key {05ef704a-5371-414c-87d0-b96a03677d9b} with creation date 2025-04-14 21:00:06Z, activation date 2025-04-14 21:00:06Z, and expiration date 2025-07-13 21:00:06Z.
+2025-04-14 21:00:06.645 +00:00 [WRN] No XML encryptor configured. Key {05ef704a-5371-414c-87d0-b96a03677d9b} may be persisted to storage in unencrypted form.
+2025-04-14 21:00:06.649 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-05ef704a-5371-414c-87d0-b96a03677d9b.xml'.
+2025-04-14 21:00:06.660 +00:00 [INF] NewsSummarizationService started.
+2025-04-14 21:00:06.764 +00:00 [INF] News Fetcher Service is starting...
+2025-04-14 21:00:06.791 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-14 21:00:06.794 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-14 21:00:07.351 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-04-14 21:00:07.367 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-04-14 21:00:07.367 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-14 21:00:07.367 +00:00 [INF] Hosting environment: Development
+2025-04-14 21:00:07.368 +00:00 [INF] Content root path: /app
+2025-04-14 21:00:07.826 +00:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-14 21:00:07.838 +00:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-14 21:00:07.845 +00:00 [INF] Fetching and storing news...
+2025-04-14 21:00:07.848 +00:00 [INF] Fetching news from NewsData.io...
+2025-04-14 21:00:07.849 +00:00 [INF] Start processing HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-14 21:00:07.849 +00:00 [INF] Sending HTTP request GET https://newsdata.io/api/1/latest?apikey=pub_77929b4bd4ff204f4280530b6336df3731f24&q=Economy%20AND%20World%20News&language=en
+2025-04-14 21:00:09.905 +00:00 [INF] Received HTTP response headers after 3107.3724ms - 200
+2025-04-14 21:00:09.908 +00:00 [INF] End processing HTTP request after 3119.2553ms - 200
+2025-04-14 21:00:10.585 +00:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+ORDER BY `n`.`Id`
+LIMIT 1
+2025-04-14 21:00:10.598 +00:00 [INF] Start processing HTTP request GET https://bloximages.chicago2.vip.townnews.com/helenair.com/content/tncms/assets/v3/editorial/6/16/61613282-310e-5a95-b925-aa89576e7639/67fa2cefdb1f6.image.jpg?resize=594%2C500
+2025-04-14 21:00:10.598 +00:00 [INF] Sending HTTP request GET https://bloximages.chicago2.vip.townnews.com/helenair.com/content/tncms/assets/v3/editorial/6/16/61613282-310e-5a95-b925-aa89576e7639/67fa2cefdb1f6.image.jpg?resize=594%2C500
+2025-04-14 21:00:10.911 +00:00 [INF] Received HTTP response headers after 312.1923ms - 200
+2025-04-14 21:00:10.911 +00:00 [INF] End processing HTTP request after 313.1578ms - 200
+2025-04-14 21:00:11.067 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-14 21:00:11.067 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-14 21:00:11.414 +00:00 [INF] Summarized article 'Party chief spotlights close friendship between Vietnam and China'
+2025-04-14 21:00:12.226 +00:00 [INF] Received HTTP response headers after 1158.6722ms - 201
+2025-04-14 21:00:12.227 +00:00 [INF] End processing HTTP request after 1160.4171ms - 201
+2025-04-14 21:00:12.426 +00:00 [INF] Executed DbCommand (73ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `Content` = @p1, `IsPosted` = @p2, `IsProcessed` = @p3, `PublishedAt` = @p4, `Source` = @p5, `ThumbnailUrl` = @p6, `Title` = @p7, `Url` = @p8
+WHERE `Id` = @p9;
+SELECT ROW_COUNT();
+2025-04-14 21:00:12.433 +00:00 [INF] Article posted: Trump's changing tariffs bewilder US companies
+2025-04-14 21:00:15.338 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/index.html - null null
+2025-04-14 21:00:15.388 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/index.html - 200 null text/html;charset=utf-8 51.5952ms
+2025-04-14 21:00:15.412 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-14 21:00:15.412 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/index.js - null null
+2025-04-14 21:00:15.416 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/_framework/aspnetcore-browser-refresh.js - 200 13710 application/javascript; charset=utf-8 3.2155ms
+2025-04-14 21:00:15.419 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/index.js - 200 null application/javascript;charset=utf-8 7.2112ms
+2025-04-14 21:00:15.446 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - null null
+2025-04-14 21:00:15.481 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.9627ms
+2025-04-14 21:00:16.311 +00:00 [INF] Received HTTP response headers after 8460.954ms - 200
+2025-04-14 21:00:16.312 +00:00 [INF] End processing HTTP request after 8462.7263ms - 200
+2025-04-14 21:00:16.600 +00:00 [INF] Executed DbCommand (75ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-14 21:00:16.622 +00:00 [INF] Added new article: What Europe Overlooks About The Trump Administration's Defense Policy
+2025-04-14 21:00:16.748 +00:00 [INF] Executed DbCommand (54ms) [Parameters=[@__article_Title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE `n`.`Title` = @__article_Title_0
+LIMIT 1
+2025-04-14 21:00:16.752 +00:00 [INF] Added new article: Chinese exporters consider next step
+2025-04-14 21:00:16.753 +00:00 [INF] Fetched and stored articles from NewsData.io.
+2025-04-14 21:00:17.044 +00:00 [INF] Executed DbCommand (73ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (DbType = DateTime), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `NewsArticles` (`AiSummary`, `Content`, `IsPosted`, `IsProcessed`, `PublishedAt`, `Source`, `ThumbnailUrl`, `Title`, `Url`)
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+SELECT `Id`
+FROM `NewsArticles`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-04-14 21:00:19.246 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/index.html - null null
+2025-04-14 21:00:19.249 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/index.html - 200 null text/html;charset=utf-8 2.3787ms
+2025-04-14 21:00:19.266 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/index.js - null null
+2025-04-14 21:00:19.266 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-14 21:00:19.268 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/index.js - 200 null application/javascript;charset=utf-8 1.686ms
+2025-04-14 21:00:19.268 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/_framework/aspnetcore-browser-refresh.js - 200 13710 application/javascript; charset=utf-8 1.9768ms
+2025-04-14 21:00:19.302 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - null null
+2025-04-14 21:00:19.307 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.0601ms
+2025-04-14 21:00:25.021 +00:00 [INF] Application is shutting down...

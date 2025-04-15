@@ -14,6 +14,7 @@ public class MiniSocialPosterService : BackgroundService, IMiniSocialPosterServi
     private readonly IServiceScopeFactory _scopeFactory;
     private readonly IConfiguration _config;
     private readonly AppSettings _settings;
+    private readonly IAppConfigService _appConfigService;
     private string _message = string.Empty;
     private const string loginEndpoint = "/auth/login";
     private const string postEndpoint = "/posts";
@@ -21,11 +22,12 @@ public class MiniSocialPosterService : BackgroundService, IMiniSocialPosterServi
     public MiniSocialPosterService(
         IHttpClientFactory httpClientFactory,
         ILogger<MiniSocialPosterService> logger,
-        IAppConfigService settings,
+        IAppConfigService appConfigService,
         IConfiguration config,
         IServiceScopeFactory scopeFactory)
     {
-        _settings = settings.CurrentConfig;
+        _appConfigService = appConfigService;
+        _settings = appConfigService.CurrentConfig;
         _config = config;
         _httpClientFactory = httpClientFactory;
         _logger = logger;
@@ -34,6 +36,7 @@ public class MiniSocialPosterService : BackgroundService, IMiniSocialPosterServi
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        var settings = await _appConfigService.GetConfigAsync();
         while (!stoppingToken.IsCancellationRequested)
         {
             try
@@ -45,15 +48,16 @@ public class MiniSocialPosterService : BackgroundService, IMiniSocialPosterServi
                 _logger.LogError(ex, "Error in MiniSocialPosterService");
             }
 
-            var postIntervalMinutes = _settings.NewsAggregation?.PostSettings?.PostIntervalMinutes ?? 1; // Default to 1 minute if null
+            var postIntervalMinutes = settings.NewsAggregation?.PostSettings?.PostIntervalMinutes ?? 1; // Default to 1 minute if null
             await Task.Delay(TimeSpan.FromMinutes(postIntervalMinutes), stoppingToken);
         }
     }
 
     public async Task<string> PostNextUnpostedArticleAsync(CancellationToken cancellationToken = default)
     {
+        var settings = await _appConfigService.GetConfigAsync();
         // Check if the service is enabled
-        if (!_settings.NewsAggregation?.PostSettings?.PosterServiceOn ?? false)
+        if (!settings.NewsAggregation?.PostSettings?.PosterServiceOn ?? false)
         {
             _message =" Poster service is turned off, skipping posting.";
             _logger.LogInformation(_message);
@@ -109,13 +113,14 @@ public class MiniSocialPosterService : BackgroundService, IMiniSocialPosterServi
 
     private async Task<string?> AuthenticateAsync()
     {
+        var settings = await _appConfigService.GetConfigAsync();
         var client = _httpClientFactory.CreateClient();
 
         var baseUrl = _settings.SocialMiniAppBaseUrl ?? string.Empty;
         var response = await client.PostAsJsonAsync($"{baseUrl}{loginEndpoint}", new
         {
-            email = _settings.SocialMiniAppUser,
-            password = _config["miniAppUserPassword"]
+            email = settings.SocialMiniAppUser,
+            password = _config["miniAppUserPassword"] ?? Environment.GetEnvironmentVariable("MINIAPP_USER_PASSWORD")
         });
 
         if (!response.IsSuccessStatusCode)

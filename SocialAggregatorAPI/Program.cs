@@ -22,6 +22,8 @@ public partial class Program
         // Create the WebApplication builder and use Serilog
         var builder = WebApplication.CreateBuilder(args);
         builder.Host.UseSerilog();
+        builder.Logging.ClearProviders();
+        builder.Logging.AddConsole();
 
         // Register application services
         ConfigureServices(builder);
@@ -39,7 +41,7 @@ public partial class Program
     private static void ConfigureServices(WebApplicationBuilder builder)
     {
         var services = builder.Services;
-        var configuration = builder.Configuration;
+        var configuration = builder.Configuration.AddEnvironmentVariables().Build();
 
         // Register JwtReader as Singleton
         services.AddSingleton<JwtReader>();
@@ -61,8 +63,6 @@ public partial class Program
                 ValidateAudience = true,
                 ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
-                ValidIssuer = jwtReader.GetIssuer(),
-                ValidAudience = jwtReader.GetAudience(),
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtReader.GetKey()))
             };
         })
@@ -112,10 +112,11 @@ public partial class Program
             });
         });
 
-        // Configure the database connection
+        var connectionString = configuration.GetConnectionString("DefaultConnection") ?? Environment.GetEnvironmentVariable("MYSQL_CONNECTION_STRING");
+    
         services.AddDbContext<AppDbContext>(options =>
-            options.UseMySql(configuration.GetConnectionString("DefaultConnection"),
-                ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))
+            options.UseMySql(connectionString,
+                ServerVersion.AutoDetect(connectionString)
             )
         );
 

@@ -1127,3 +1127,59 @@ WHERE `Id` = @p9;
 SELECT ROW_COUNT();
 2025-04-15 20:53:27.626 +00:00 [INF] Article posted: CNBC Daily Open: Consumers are worried over the economy. The White House insists it’ll be fine
 2025-04-15 20:53:31.653 +00:00 [INF] Application is shutting down...
+2025-04-15 21:04:32.082 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-04-15 21:04:32.099 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-15 21:04:32.812 +00:00 [INF] Creating key {c1ea6ca8-a1f8-422f-a3c9-3f9a597f1619} with creation date 2025-04-15 21:04:32Z, activation date 2025-04-15 21:04:32Z, and expiration date 2025-07-14 21:04:32Z.
+2025-04-15 21:04:32.816 +00:00 [WRN] No XML encryptor configured. Key {c1ea6ca8-a1f8-422f-a3c9-3f9a597f1619} may be persisted to storage in unencrypted form.
+2025-04-15 21:04:32.818 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-c1ea6ca8-a1f8-422f-a3c9-3f9a597f1619.xml'.
+2025-04-15 21:04:32.828 +00:00 [INF] NewsSummarizationService started.
+2025-04-15 21:04:32.932 +00:00 [INF] News Fetcher Service is starting...
+2025-04-15 21:04:32.954 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-15 21:04:32.955 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-15 21:04:33.611 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-04-15 21:04:33.627 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-04-15 21:04:33.627 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-15 21:04:33.627 +00:00 [INF] Hosting environment: Development
+2025-04-15 21:04:33.628 +00:00 [INF] Content root path: /app
+2025-04-15 21:04:34.163 +00:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-15 21:04:34.163 +00:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-15 21:04:34.175 +00:00 [INF] There are 5 unposted articles. Skipping news fetch.
+2025-04-15 21:04:35.971 +00:00 [INF] Received HTTP response headers after 3013.2514ms - 200
+2025-04-15 21:04:35.973 +00:00 [INF] End processing HTTP request after 3020.8734ms - 200
+2025-04-15 21:04:36.636 +00:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+ORDER BY `n`.`Id`
+LIMIT 1
+2025-04-15 21:04:36.646 +00:00 [INF] Start processing HTTP request GET https://img.etimg.com/thumb/msid-120294329,width-1070,height-580,imgsize-30526,overlay-ettech/editionshow.jpg
+2025-04-15 21:04:36.647 +00:00 [INF] Sending HTTP request GET https://img.etimg.com/thumb/msid-120294329,width-1070,height-580,imgsize-30526,overlay-ettech/editionshow.jpg
+2025-04-15 21:04:36.812 +00:00 [INF] Received HTTP response headers after 164.5667ms - 200
+2025-04-15 21:04:36.813 +00:00 [INF] End processing HTTP request after 166.4849ms - 200
+2025-04-15 21:04:37.010 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-15 21:04:37.010 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-15 21:04:37.186 +00:00 [INF] Summarized article 'UK employers cuts jobs in run-up to employer tax hike'
+2025-04-15 21:04:38.035 +00:00 [INF] Received HTTP response headers after 1023.9049ms - 201
+2025-04-15 21:04:38.036 +00:00 [INF] End processing HTTP request after 1025.4211ms - 201
+2025-04-15 21:04:38.220 +00:00 [INF] Executed DbCommand (72ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `Content` = @p1, `IsPosted` = @p2, `IsProcessed` = @p3, `PublishedAt` = @p4, `Source` = @p5, `ThumbnailUrl` = @p6, `Title` = @p7, `Url` = @p8
+WHERE `Id` = @p9;
+SELECT ROW_COUNT();
+2025-04-15 21:04:38.225 +00:00 [INF] Article posted: Reliance eyes Flipkart veteran; Small towns seek wealth
+2025-04-15 21:04:39.865 +00:00 [INF] Summarized article ''Tough' Singapore election expected for non-Lee leader'
+2025-04-15 21:04:40.144 +00:00 [INF] Executed DbCommand (69ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `NewsArticles` SET `AiSummary` = @p0, `IsProcessed` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+
+UPDATE `NewsArticles` SET `AiSummary` = @p3, `IsProcessed` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2025-04-15 21:04:43.845 +00:00 [INF] Application is shutting down...

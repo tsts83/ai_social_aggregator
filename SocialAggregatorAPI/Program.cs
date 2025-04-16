@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -112,7 +113,17 @@ public partial class Program
             });
         });
 
-        var connectionString = configuration.GetConnectionString("DefaultConnection") ?? Environment.GetEnvironmentVariable("MYSQL_CONNECTION_STRING");
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+        
+        if (string.IsNullOrWhiteSpace(connectionString))
+        {
+            connectionString = Environment.GetEnvironmentVariable("DEFAULT_CONNECTION");
+            Log.Information("Using connection string from env var: {ConnectionString}", connectionString?.Replace("Password=", "Password=*****"));
+        }
+        else
+        {
+            Log.Information("Using connection string from config: {ConnectionString}", connectionString?.Replace("Password=", "Password=*****"));
+        }
     
         services.AddDbContext<AppDbContext>(options =>
             options.UseMySql(connectionString,

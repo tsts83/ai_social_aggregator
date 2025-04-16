@@ -1,23 +1,26 @@
-# Use the official .NET 8 SDK as base (for building and running)
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS dev
+# Use the official .NET 8 runtime as a base image
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-
-# Copy the project file and restore any dependencies (via restore)
-COPY ["SocialAggregatorAPI.csproj", "./"]
-RUN dotnet restore "./SocialAggregatorAPI.csproj"
-
-# Copy everything else (this includes your source code)
-COPY . .
-
-# Install dotnet-watch tool (hot reload)
-RUN dotnet tool install --global dotnet-watch
-ENV PATH="$PATH:/root/.dotnet/tools"
-
-# Build the application
-RUN dotnet build "SocialAggregatorAPI.csproj" -c Debug -o /app/build
-
-# Expose the app port
 EXPOSE 8080
 
-# Set the working directory for the application inside the container
+# Build stage
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+# Copy the project file and restore dependencies
+COPY ["SocialAggregatorAPI.csproj", "./"]
+RUN dotnet restore "SocialAggregatorAPI.csproj"
+
+# Copy the rest of the app code
+COPY . .
+
+# Publish the app
+RUN dotnet publish "SocialAggregatorAPI.csproj" -c Release -o /app/publish
+
+# Final stage
+FROM base AS final
 WORKDIR /app
+COPY --from=build /app/publish .
+
+# Start the app
+ENTRYPOINT ["dotnet", "SocialAggregatorAPI.dll"]

@@ -1,0 +1,103 @@
+2025-04-17 06:56:01.164 +00:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-17 06:56:01.279 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-04-17 06:56:01.280 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-17 06:56:02.030 +00:00 [INF] Creating key {3435bf44-ed7c-4f4e-ab18-8f18be6a2f55} with creation date 2025-04-17 06:56:02Z, activation date 2025-04-17 06:56:02Z, and expiration date 2025-07-16 06:56:02Z.
+2025-04-17 06:56:02.034 +00:00 [WRN] No XML encryptor configured. Key {3435bf44-ed7c-4f4e-ab18-8f18be6a2f55} may be persisted to storage in unencrypted form.
+2025-04-17 06:56:02.037 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-3435bf44-ed7c-4f4e-ab18-8f18be6a2f55.xml'.
+2025-04-17 06:56:02.047 +00:00 [INF] NewsSummarizationService started.
+2025-04-17 06:56:02.173 +00:00 [INF] News Fetcher Service is starting...
+2025-04-17 06:56:02.203 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-17 06:56:02.205 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-17 06:56:02.827 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-04-17 06:56:02.844 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-04-17 06:56:02.845 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 06:56:02.846 +00:00 [INF] Hosting environment: Development
+2025-04-17 06:56:02.846 +00:00 [INF] Content root path: /app
+2025-04-17 06:56:03.309 +00:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-17 06:56:03.314 +00:00 [INF] There are 6 unposted articles. Skipping news fetch.
+2025-04-17 06:56:03.354 +00:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-17 06:56:04.785 +00:00 [INF] Received HTTP response headers after 2577.2891ms - 200
+2025-04-17 06:56:04.787 +00:00 [INF] End processing HTTP request after 2585.9551ms - 200
+2025-04-17 06:56:05.377 +00:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+ORDER BY `n`.`Id`
+LIMIT 1
+2025-04-17 06:56:05.390 +00:00 [INF] Start processing HTTP request GET https://cdn.open-pr.com/L/4/L416401484_g.jpg
+2025-04-17 06:56:05.391 +00:00 [INF] Sending HTTP request GET https://cdn.open-pr.com/L/4/L416401484_g.jpg
+2025-04-17 06:56:05.552 +00:00 [INF] Received HTTP response headers after 161.5272ms - 200
+2025-04-17 06:56:05.554 +00:00 [INF] End processing HTTP request after 163.7706ms - 200
+2025-04-17 06:56:05.901 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-17 06:56:05.904 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/posts
+2025-04-17 06:56:06.752 +00:00 [INF] Received HTTP response headers after 842.9788ms - 500
+2025-04-17 06:56:06.753 +00:00 [INF] End processing HTTP request after 851.46ms - 500
+2025-04-17 06:56:06.754 +00:00 [WRN] Failed to post article: Mobile Advertising Market Set for Explosive Surge Through 2032
+2025-04-17 06:56:06.855 +00:00 [INF] Summarized article 'Mobile Advertising Market Set for Explosive Surge Through 2032'
+2025-04-17 06:56:10.336 +00:00 [INF] Summarized article 'False Base Station Market Size, Share Growth Status, Emerging Technology, Key Players, Industry Challenges, and Forecast till 2032 | L3Harris Technologies, Septier Communication, Kavit Electronics Industries Ltd'
+2025-04-17 06:56:10.955 +00:00 [INF] Application is shutting down...
+2025-04-17 20:08:03.626 +00:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-17 20:08:03.707 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-04-17 20:08:03.708 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-17 20:09:29.855 +00:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-17 20:09:29.932 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-04-17 20:09:29.932 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-17 20:09:30.650 +00:00 [INF] Creating key {41f62e0d-405b-4c88-bdba-dd086d5ce89f} with creation date 2025-04-17 20:09:30Z, activation date 2025-04-17 20:09:30Z, and expiration date 2025-07-16 20:09:30Z.
+2025-04-17 20:09:30.654 +00:00 [WRN] No XML encryptor configured. Key {41f62e0d-405b-4c88-bdba-dd086d5ce89f} may be persisted to storage in unencrypted form.
+2025-04-17 20:09:30.656 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-41f62e0d-405b-4c88-bdba-dd086d5ce89f.xml'.
+2025-04-17 20:09:30.664 +00:00 [INF] NewsSummarizationService started.
+2025-04-17 20:09:30.780 +00:00 [INF] News Fetcher Service is starting...
+2025-04-17 20:09:30.803 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-17 20:09:30.805 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-17 20:09:31.406 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-04-17 20:09:31.423 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-04-17 20:09:31.423 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 20:09:31.423 +00:00 [INF] Hosting environment: Development
+2025-04-17 20:09:31.423 +00:00 [INF] Content root path: /app
+2025-04-17 20:09:31.854 +00:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-17 20:09:31.854 +00:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-17 20:09:31.861 +00:00 [INF] There are 6 unposted articles. Skipping news fetch.
+2025-04-17 20:09:33.684 +00:00 [INF] Received HTTP response headers after 2875.6215ms - 200
+2025-04-17 20:09:33.687 +00:00 [INF] End processing HTTP request after 2885.552ms - 200
+2025-04-17 20:09:34.205 +00:00 [INF] Application is shutting down...
+2025-04-17 20:16:50.109 +00:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-17 20:16:50.192 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-04-17 20:16:50.193 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-17 20:21:18.255 +00:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-17 20:21:18.337 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-04-17 20:21:18.337 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-17 20:21:18.357 +00:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-17 20:21:18.984 +00:00 [INF] Creating key {176afa4c-8eb6-4b74-958c-ffd05f267d3c} with creation date 2025-04-17 20:21:18Z, activation date 2025-04-17 20:21:18Z, and expiration date 2025-07-16 20:21:18Z.
+2025-04-17 20:21:18.989 +00:00 [WRN] No XML encryptor configured. Key {176afa4c-8eb6-4b74-958c-ffd05f267d3c} may be persisted to storage in unencrypted form.
+2025-04-17 20:21:18.990 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-176afa4c-8eb6-4b74-958c-ffd05f267d3c.xml'.
+2025-04-17 20:21:18.998 +00:00 [INF] NewsSummarizationService started.
+2025-04-17 20:21:19.102 +00:00 [INF] News Fetcher Service is starting...
+2025-04-17 20:21:19.126 +00:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-17 20:21:19.128 +00:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-17 20:21:19.724 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-04-17 20:21:19.742 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-04-17 20:21:19.742 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 20:21:19.742 +00:00 [INF] Hosting environment: Development
+2025-04-17 20:21:19.742 +00:00 [INF] Content root path: /app
+2025-04-17 20:21:20.171 +00:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-17 20:21:20.171 +00:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-17 20:21:20.182 +00:00 [INF] There are 6 unposted articles. Skipping news fetch.
+2025-04-17 20:21:21.636 +00:00 [INF] Application is shutting down...

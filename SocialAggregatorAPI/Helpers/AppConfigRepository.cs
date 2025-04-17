@@ -3,6 +3,7 @@ namespace SocialAggregatorAPI;
 using System.Data;
 using Dapper;
 using MySqlConnector;
+using Serilog;
 
 public class AppConfigRepository : IAppConfigRepository
 {
@@ -10,7 +11,18 @@ public class AppConfigRepository : IAppConfigRepository
 
     public AppConfigRepository(IConfiguration configuration)
     {
-        _dbConnection = new MySqlConnection(configuration.GetConnectionString("DefaultConnection"));
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+        
+        if (string.IsNullOrWhiteSpace(connectionString))
+        {
+            connectionString = Environment.GetEnvironmentVariable("DEFAULT_CONNECTION");
+            Log.Information("Using connection string from env var: {ConnectionString}", connectionString?.Replace("Password=", "Password=*****"));
+        }
+        else
+        {
+            Log.Information("Using connection string from config: {ConnectionString}", connectionString?.Replace("Password=", "Password=*****"));
+        }
+        _dbConnection = new MySqlConnection(connectionString);
     }
 
     public async Task<IEnumerable<AppConfig>> GetAllConfigsAsync()

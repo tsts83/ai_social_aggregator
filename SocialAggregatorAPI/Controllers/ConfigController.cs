@@ -17,7 +17,8 @@ public class ConfigController : ControllerBase
 
     public ConfigController(IConfiguration configuration, IAppConfigService appConfigService)
     {
-        _dbConnection = new MySqlConnection(configuration.GetConnectionString("DefaultConnection"));
+        var connectionString = GetParams.GetConnectionString(configuration);
+        _dbConnection = new MySqlConnection(connectionString);
         _appConfigService = appConfigService ?? throw new ArgumentNullException(nameof(appConfigService));
     }
 

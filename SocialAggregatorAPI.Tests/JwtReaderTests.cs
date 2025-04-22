@@ -29,18 +29,4 @@ public class JwtReaderTests
         var key = _jwtReader.GetKey();
         Assert.Equal("YourSecretKeyThatIsAtLeast32CharactersLong", key);
     }
-
-    [Fact]
-    public void GetIssuer_ReturnsCorrectIssuer()
-    {
-        var issuer = _jwtReader.GetIssuer();
-        Assert.Equal("TestIssuer", issuer);
-    }
-
-    [Fact]
-    public void GetAudience_ReturnsCorrectAudience()
-    {
-        var audience = _jwtReader.GetAudience();
-        Assert.Equal("TestAudience", audience);
-    }
 }

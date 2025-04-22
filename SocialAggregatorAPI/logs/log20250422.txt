@@ -1,0 +1,26 @@
+2025-04-22 10:59:36.866 +02:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-22 10:59:37.111 +02:00 [INF] User profile is available. Using '/Users/sandortoth/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-22 10:59:38.963 +02:00 [INF] Using connection string from config: Server=mysql-1a4c0f28-tsts83-a097.j.aivencloud.com;Port=21891;Database=defaultdb;User=avnadmin;Password=*****AVNS_YFkX92vlvo9pi7CvFVF;SslMode=Required;
+2025-04-22 10:59:39.701 +02:00 [INF] NewsSummarizationService started.
+2025-04-22 10:59:42.646 +02:00 [INF] News Fetcher Service is starting...
+2025-04-22 10:59:47.548 +02:00 [INF] Start processing HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-22 10:59:47.551 +02:00 [INF] Sending HTTP request POST https://mini-social-media-demo.vercel.app/api/auth/login
+2025-04-22 10:59:48.276 +02:00 [INF] Now listening on: https://localhost:5062
+2025-04-22 10:59:48.276 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-22 10:59:48.277 +02:00 [INF] Hosting environment: Development
+2025-04-22 10:59:48.277 +02:00 [INF] Content root path: /Users/sandortoth/Repositories/social-media-auto-poster/SocialAggregatorAPI
+2025-04-22 10:59:48.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/swagger-ui-standalone-preset.js - null null
+2025-04-22 10:59:48.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/swagger-ui-bundle.js - null null
+2025-04-22 10:59:48.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5062/swagger-ui.css - null null
+2025-04-22 10:59:48.716 +02:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`AiSummary`, `n`.`Content`, `n`.`IsPosted`, `n`.`IsProcessed`, `n`.`PublishedAt`, `n`.`Source`, `n`.`ThumbnailUrl`, `n`.`Title`, `n`.`Url`
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsProcessed`) AND (`n`.`Content` <> '')
+2025-04-22 10:59:48.716 +02:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `NewsArticles` AS `n`
+WHERE NOT (`n`.`IsPosted`)
+2025-04-22 10:59:48.926 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-22 10:59:48.926 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-22 10:59:48.928 +02:00 [INF] Fetching and storing news...
+2025-04-22 10:59:48.958 +02:00 [INF] Fetching news from NewsData.io...

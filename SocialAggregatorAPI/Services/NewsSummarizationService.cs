@@ -5,7 +5,6 @@ using System.Text;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using SocialAggregatorAPI.Data;
-using SocialAggregatorAPI.Models;
 
 public class NewsSummarizationService : BackgroundService
 {

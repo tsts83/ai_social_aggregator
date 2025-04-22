@@ -1,95 +1,156 @@
-// namespace SocialAggregatorAPI.Tests;
+namespace SocialAggregatorAPI.Tests;
 
-// using System.Net;
-// using System.Text.Json;
-// using Microsoft.EntityFrameworkCore;
-// using Microsoft.Extensions.Configuration;
-// using Microsoft.Extensions.Logging;
-// using Moq;
-// using Moq.Protected;
-// using SocialAggregatorAPI.Data;
-// using SocialAggregatorAPI.Models;
+using System.Net;
+using System.Text.Json;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Moq;
+using SocialAggregatorAPI;
+using SocialAggregatorAPI.Data;
+using SocialAggregatorAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
-// public class NewsApiFetcherTests
-// {
-//     [Fact]
-//     public async Task FetchNewsDataApiNews_ShouldAddArticles_WhenValidResponseReceived()
-//     {
-//         // Arrange
-//         var mockConfigReader = new Mock<IAppConfigRepository>();
-//         mockConfigReader.Setup(c => c.GetSettings()).Returns(new NewsAggregationSettings
-//         {
-//             MaxArticlesPerFetch = 5,
-//             Filters = new FilterSettings
-//             {
-//                 Language = "en",
-//                 Keywords = new List<string> { "AI", "Blockchain" }
-//             }
-//         });
+public class NewsApiFetcherTests
+{
+    private readonly Mock<IConfiguration> _configMock = new();
+    private readonly Mock<IAppConfigService> _appConfigServiceMock = new();
+    private readonly Mock<ILogger<NewsApiFetcher>> _loggerMock = new();
 
-//         var inMemorySettings = new Dictionary<string, string> {
-//             { "NewsDataApiKey", "dummy_api_key" }
-//         };
+    private AppDbContext CreateInMemoryDbContext()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+            .UseInMemoryDatabase(databaseName: $"TestDb_{Guid.NewGuid()}")
+            .Options;
+        return new AppDbContext(options);
+    }
 
-//         var configuration = new ConfigurationBuilder()
-//             .AddInMemoryCollection(inMemorySettings)
-//             .Build();
+    private HttpClient CreateMockHttpClient(object responseObject)
+    {
+        var messageHandler = new MockHttpMessageHandler(responseObject);
+        return new HttpClient(messageHandler);
+    }
 
-//         var mockLogger = new Mock<ILogger<NewsApiFetcher>>();
+    private class MockHttpMessageHandler : HttpMessageHandler
+    {
+        private readonly object _responseObject;
 
-//         // Fake JSON response
-//         var fakeApiResponse = new NewsDataResponse
-//         {
-//             Results = new List<NewsDataArticle>
-//             {
-//                 new NewsDataArticle
-//                 {
-//                     Title = "AI & Blockchain Revolution",
-//                     Description = "A brief look into how AI and blockchain are changing tech.",
-//                     SourceUrl = "https://example.com/article",
-//                     PubDate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss"),
-//                     ImageUrl = "https://example.com/image.jpg"
-//                 }
-//             }
-//         };
+        public MockHttpMessageHandler(object responseObject)
+        {
+            _responseObject = responseObject;
+        }
 
-//         var json = JsonSerializer.Serialize(fakeApiResponse);
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            var json = JsonSerializer.Serialize(_responseObject);
+            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(json)
+            };
+            return Task.FromResult(response);
+        }
+    }
 
-//         var handler = new Mock<HttpMessageHandler>();
-//         handler.Protected()
-//             .Setup<Task<HttpResponseMessage>>("SendAsync",
-//                 ItExpr.IsAny<HttpRequestMessage>(),
-//                 ItExpr.IsAny<CancellationToken>())
-//             .ReturnsAsync(new HttpResponseMessage
-//             {
-//                 StatusCode = HttpStatusCode.OK,
-//                 Content = new StringContent(json)
-//             });
+    [Fact]
+    public async Task FetchNewsDataApiNews_AddsArticlesToDatabase()
+    {
+        // Arrange
+        var config = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string?>
+        {
+            { "NewsDataApiKey", "test-key" }
+        }).Build();
 
-//         var httpClient = new HttpClient(handler.Object);
+        var settings = new AppSettings
+        {
+            NewsAggregation = new NewsAggregationConfig
+            {
+                Filters = new FiltersConfig
+                {
+                    Language = "en",
+                    Keywords = new List<string> { "test", "ai" }
+                },
+                MaxArticlesPerFetch = 5
+            }
+        };
 
-//         // Use a shared in-memory database name
-//         var options = new DbContextOptionsBuilder<AppDbContext>()
-//             .UseInMemoryDatabase("SharedTestDb")  // This ensures both contexts use the same DB
-//             .Options;
+        _appConfigServiceMock.Setup(a => a.GetConfigAsync()).ReturnsAsync(settings);
 
-//         var dbContext = new AppDbContext(options);
-//         var fetcher = new NewsApiFetcher(mockConfigReader.Object, configuration, mockLogger.Object);
+        var newsResponse = new NewsDataResponse
+        {
+            Results = new List<NewsDataArticle>
+            {
+                new NewsDataArticle
+                {
+                    Title = "Test Article",
+                    Description = "This is a test article.",
+                    SourceUrl = "http://example.com",
+                    PubDate = DateTime.UtcNow.ToString("o"),
+                    ImageUrl = "http://example.com/image.jpg"
+                }
+            }
+        };
 
-//         // Act
-//         var updatedDbContext = await fetcher.FetchNewsDataApiNews(dbContext, httpClient);
-//         await dbContext.SaveChangesAsync();
+        var httpClient = CreateMockHttpClient(newsResponse);
+        var dbContext = CreateInMemoryDbContext();
 
+        var fetcher = new NewsApiFetcher(_appConfigServiceMock.Object, config, _loggerMock.Object);
 
-//         // Assert
-//         Assert.NotNull(updatedDbContext);  // Ensure the context is not null
-//         var articles = await updatedDbContext.NewsArticles.ToListAsync();  // Ensure we get all articles added
-//         Assert.Single(articles);  // Assert that exactly one article is present
+        // Act
+        var article = await fetcher.FetchNewsDataApiNews(dbContext, httpClient);
 
-//         var article = articles.First();
-//         Assert.Equal("AI & Blockchain Revolution", article.Title);  // Validate title
-//         Assert.Equal("A brief look into how AI and blockchain are changing tech.", article.Content);  // Validate content
-//         Assert.Equal("NewsDataAPI", article.Source);  // Validate source
-//         Assert.Equal("https://example.com/article", article.Url);  // Validate URL
-//     }
-// }
+        // Assert
+        Assert.NotNull(article);
+        Assert.Equal("Test Article", article.NewsArticles.Local.First().Title);
+        Assert.Equal("NewsDataAPI", article.NewsArticles.Local.First().Source);
+        Assert.Equal("This is a test article.", article.NewsArticles.Local.First().Content);
+    }
+
+        [Fact]
+    public async Task FetchNewsDataApiNews_DescriptionEmpty_NoArticlesToDatabase()
+    {
+        // Arrange
+        var config = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string?>
+        {
+            { "NewsDataApiKey", "test-key" }
+        }).Build();
+
+        var settings = new AppSettings
+        {
+            NewsAggregation = new NewsAggregationConfig
+            {
+                Filters = new FiltersConfig
+                {
+                    Language = "en",
+                    Keywords = new List<string> { "test", "ai" }
+                },
+                MaxArticlesPerFetch = 5
+            }
+        };
+
+        _appConfigServiceMock.Setup(a => a.GetConfigAsync()).ReturnsAsync(settings);
+
+        var newsResponse = new NewsDataResponse
+        {
+            Results = new List<NewsDataArticle>
+            {
+                new NewsDataArticle
+                {
+                    Title = "Test Article",
+                    SourceUrl = "http://example.com",
+                    PubDate = DateTime.UtcNow.ToString("o"),
+                    ImageUrl = "http://example.com/image.jpg"
+                }
+            }
+        };
+
+        var httpClient = CreateMockHttpClient(newsResponse);
+        var dbContext = CreateInMemoryDbContext();
+
+        var fetcher = new NewsApiFetcher(_appConfigServiceMock.Object, config, _loggerMock.Object);
+
+        // Act
+        var article = await fetcher.FetchNewsDataApiNews(dbContext, httpClient);
+
+        // Assert
+        Assert.Equal(0,article.NewsArticles.Local.Count);
+    }
+}

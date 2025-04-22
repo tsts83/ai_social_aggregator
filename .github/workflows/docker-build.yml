@@ -1,24 +1,47 @@
-name: Build & Push Docker image to Docker Hub
+name: Test, Build & Push Docker Image
 
 on:
   push:
-    branches: [ main ]  # or 'dev' or any branch you want
+    branches: [ main ]
 
 jobs:
-  build-and-push:
+  test-and-build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Log in to Docker Hub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
 
-    - name: Build Docker image with tags
-      run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/socialaggregatorapi:dev ./SocialAggregatorAPI
-        docker tag tsts83/socialaggregatorapi:dev tsts83/socialaggregatorapi:latest
-    
-    - name: Push Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/socialaggregatorapi:latest
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Run tests with coverage
+        run: |
+          dotnet test ./SocialAggregatorAPI.Tests/SocialAggregatorAPI.Tests.csproj \
+            --collect:"XPlat Code Coverage" \
+            --results-directory ./TestResults
+
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./TestResults/**/coverage.cobertura.xml
+          format: cobertura
+
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build Docker images with tags
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/socialaggregatorapi:dev ./SocialAggregatorAPI
+          docker tag ${{ secrets.DOCKER_USERNAME }}/socialaggregatorapi:dev ${{ secrets.DOCKER_USERNAME }}/socialaggregatorapi:latest
+
+      - name: Push Docker images
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/socialaggregatorapi:dev
+          docker push ${{ secrets.DOCKER_USERNAME }}/socialaggregatorapi:latest

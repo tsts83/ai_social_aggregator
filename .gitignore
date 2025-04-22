@@ -49,3 +49,7 @@ nunit-*.xml
 
 # Env file
 .env
+
+# Logs
+log*.txt
+logs/

@@ -177,6 +177,7 @@ public partial class Program
             c.RoutePrefix = string.Empty; // Makes Swagger available at "/"
         });
 
+        app.MapGet("/health", () => Results.Ok("Healthy"));
         app.UseMiddleware<ErrorHandlingMiddleware>();
         app.UseAuthentication();
         app.UseAuthorization();

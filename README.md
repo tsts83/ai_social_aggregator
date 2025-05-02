@@ -1,5 +1,7 @@
 # 📰 Social News Aggregator
 
+[.NET Build & Test][https://github.com/tsts83/social-media-auto-poster/actions]
+
 A .NET-based microservice that fetches news from external APIs, processes them using an AI model via Hugging Face, and delivers concise summaries to a social media-style frontend platform ("Sandor's Book").
 
 ---
@@ -17,7 +19,29 @@ A .NET-based microservice that fetches news from external APIs, processes them u
 
 ## 🚀 Architecture Overview
 
-NewsAPI ---> [SocialNewsAggregator] ---> HuggingFace AI | +--> MySQL (Aiven) | +--> Sandor's Book (React frontend on Vercel)
+                +--------------+         
+                |  NewsData.io |         
+                +------+-------+         
+                       |                    
+                       v                    
+        +---------------------------+       
+        |  SocialNewsAggregator     |       
+        |   (.NET microservice)     |       
+        +-----------+---------------+       
+                    |                                    
+      +-------------+--------------+                      
+      |                            |                      
+      v                            v                      
++------------+             +---------------+              
+| HuggingFace|             | MySQL (Aiven) |              
+|   (AI)     |             +---------------+              
++------------+                                    
+                    |                                    
+                    v                                    
+          +---------------------+                         
+          |  Sandor's Book      |                         
+          |  (React, Node @ Vercel)   |                         
+          +---------------------+        
 
 ## 🧰 Tech Stack
 
@@ -90,4 +114,18 @@ The project is docker containerized. To run the project locally, run
 ./run.sh
 ```
 ---
+
+# 🚀 Deploying to AWS Elastic Beanstalk (Docker)
+
+Ensure AWS CLI and EB CLI are installed and configured (eb init, eb create):
+
+```bash
+# Build Docker image and zip for Elastic Beanstalk
+eb init -p docker social-news-aggregator
+eb create social-news-env
+eb deploy
+```
+
+Ensure your .elasticbeanstalk/config.yml and Dockerrun.aws.json (if needed) are set up correctly.
+Secrets (API keys, DB connections) should be stored in AWS SSM Parameter Store and referenced in .ebextensions config using ARNs.
 

@@ -4,8 +4,6 @@
 ✅ ASP.NET Core Web API – Main backend
 ✅ Entity Framework Core – Database ORM
 ✅ xUnit – Unit testing
-✅ MediatR – For clean architecture
-✅ Refit – For consuming external APIs
 ✅ Serilog – Logging
 ✅ Hangfire (Free) – Background job scheduling
 

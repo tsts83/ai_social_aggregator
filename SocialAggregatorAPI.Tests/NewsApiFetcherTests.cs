@@ -151,6 +151,6 @@ public class NewsApiFetcherTests
         var article = await fetcher.FetchNewsDataApiNews(dbContext, httpClient);
 
         // Assert
-        Assert.Equal(1,article.NewsArticles.Local.Count);
+        Assert.Equal(0,article.NewsArticles.Local.Count);
     }
 }

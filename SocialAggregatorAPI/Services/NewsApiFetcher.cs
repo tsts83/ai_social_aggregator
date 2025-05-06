@@ -69,6 +69,7 @@ public class NewsApiFetcher : IContentFetcher
             Content = result.Description,
             Source = "NewsDataAPI",
             Url = result.SourceUrl,
+            ThumbnailUrl = result.ImageUrl,
             PublishedAt = DateTime.TryParse(result.PubDate, out var parsed) ? parsed : DateTime.UtcNow
         }) ?? new List<NewsArticle>();
 
@@ -77,9 +78,9 @@ public class NewsApiFetcher : IContentFetcher
 
     private async Task<AppDbContext> ConsumeFromKafka(AppDbContext dbContext)
     {
-        _logger.LogInformation("📡 Consuming news from Kafka...");
+        _logger.LogInformation("📡 Starting Kafka consumption...");
 
-        var kafkaSettings = _config.GetSection("NewsAggregation:Kafka");
+        var kafkaSettings = _config.GetSection("Kafka");
         var config = new ConsumerConfig
         {
             BootstrapServers = kafkaSettings["BootstrapServers"],
@@ -89,31 +90,69 @@ public class NewsApiFetcher : IContentFetcher
 
         using var consumer = new ConsumerBuilder<Ignore, string>(config).Build();
         consumer.Subscribe(kafkaSettings["Topic"]);
+        _logger.LogInformation($"✅ Subscribed to Kafka topic: {kafkaSettings["Topic"]}");
 
         var cancellationTokenSource = new CancellationTokenSource(TimeSpan.FromSeconds(10));
         var articles = new List<NewsArticle>();
+        int messageCount = 0;
 
         try
         {
             while (!cancellationTokenSource.IsCancellationRequested)
             {
-                var result = consumer.Consume(cancellationTokenSource.Token);
-                var message = result.Message.Value;
+                _logger.LogInformation("⏳ Waiting for Kafka message...");
 
-                var item = JsonSerializer.Deserialize<KafkaNewsMessage>(message, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-                if (item is not null && !string.IsNullOrEmpty(item.Title) && !string.IsNullOrEmpty(item.Link))
+                var result = consumer.Consume(cancellationTokenSource.Token);
+
+                if (result == null)
                 {
-                    articles.Add(new NewsArticle
+                    _logger.LogWarning("⚠️ No message received.");
+                    continue;
+                }
+
+                _logger.LogInformation($"📥 Message received from Kafka: {result.Message.Value}");
+
+                var item = JsonSerializer.Deserialize<KafkaNewsMessage>(
+                    result.Message.Value,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                if (item != null &&
+                    !string.IsNullOrEmpty(item.Title) &&
+                    !string.IsNullOrEmpty(item.Link) &&
+                    !string.IsNullOrEmpty(item.Description))
+                {
+                    var article = new NewsArticle
                     {
                         Title = item.Title,
-                        Content = item.Description, 
-                        ThumbnailUrl = item.ImageUrl,
+                        Content = item.Description,
+                        ThumbnailUrl = item.Image_url,
                         Source = "NewsDataAPI",
                         Url = item.Link,
                         PublishedAt = DateTime.TryParse(item.PubDate, out var parsed) ? parsed : DateTime.UtcNow
-                    });
+                    };
+
+                    articles.Add(article);
+                    messageCount++;
+
+                    _logger.LogInformation($"✅ Added article {messageCount}: {article.Title}");
+
+                    // Keep only the latest 10
+                    if (articles.Count > 10)
+                    {
+                        var removed = articles[0].Title;
+                        articles.RemoveAt(0);
+                        _logger.LogInformation($"♻️ Removed oldest article to keep list size: {removed}");
+                    }
+                }
+                else
+                {
+                    _logger.LogWarning("⚠️ Skipping invalid or incomplete Kafka message.");
                 }
             }
+        }
+        catch (OperationCanceledException)
+        {
+            _logger.LogInformation("⏹️ Kafka consume timed out after 10 seconds.");
         }
         catch (ConsumeException ex)
         {
@@ -121,11 +160,15 @@ public class NewsApiFetcher : IContentFetcher
         }
         finally
         {
+            _logger.LogInformation("📴 Closing Kafka consumer.");
             consumer.Close();
         }
 
+        _logger.LogInformation($"📦 Total articles fetched from Kafka: {articles.Count}");
         return await ProcessArticles(dbContext, articles);
     }
+
+
 
     private async Task<AppDbContext> ProcessArticles(AppDbContext dbContext, IEnumerable<NewsArticle> articles)
     {
@@ -138,15 +181,31 @@ public class NewsApiFetcher : IContentFetcher
                 continue;  // Skip this article and move to the next
             }
 
-            var exists = await dbContext.NewsArticles.AnyAsync(a => a.Title == article.Title);
-            if (!exists)
+            // Check if ImageUrl is null or empty
+            if (string.IsNullOrEmpty(article.ThumbnailUrl))
+            {
+                _logger.LogInformation($"Skipping article with title '{article.Title}' because image URL is null or empty.");
+                continue;  // Skip this article and move to the next
+            }
+
+            // Check if article already exists in the database
+            var existingTitles = await dbContext.NewsArticles
+                .Select(article => article.Title)
+                .ToListAsync();
+
+            var isDuplicate = existingTitles.Any(existing =>
+                article.Title.Contains(existing, StringComparison.OrdinalIgnoreCase) ||
+                existing.Contains(article.Title, StringComparison.OrdinalIgnoreCase));
+
+            if (!isDuplicate)
             {
                 dbContext.NewsArticles.Add(article);
+                existingTitles.Add(article.Title); // update memory cache
                 _logger.LogInformation($"✅ Added article from {article.Source}: {article.Title}");
             }
             else
             {
-                _logger.LogInformation($"ℹ️ Skipped duplicate article: {article.Title}");
+                _logger.LogInformation($"ℹ️ Skipped duplicate (fuzzy match): {article.Title}");
             }
         }
 

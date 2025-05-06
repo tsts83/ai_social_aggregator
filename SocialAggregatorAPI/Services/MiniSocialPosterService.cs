@@ -186,14 +186,30 @@ public class MiniSocialPosterService : BackgroundService, IMiniSocialPosterServi
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var baseUrl = _settings.SocialMiniAppBaseUrl ?? string.Empty;
-            var response = await client.PostAsync($"{baseUrl}{postEndpoint}", multipart);
+            var postUrl = $"{baseUrl}{postEndpoint}";
 
-            return response.IsSuccessStatusCode;
+            _logger.LogInformation("📤 Posting article '{ArticleTitle}' to Mini Social Media at {PostUrl}", article.Title, postUrl);
+
+            var response = await client.PostAsync(postUrl, multipart);
+
+            if (response.IsSuccessStatusCode)
+            {
+                _logger.LogInformation("✅ Successfully posted article '{ArticleTitle}'", article.Title);
+                return true;
+            }
+            else
+            {
+                var responseBody = await response.Content.ReadAsStringAsync();
+                _logger.LogWarning("❌ Failed to post article '{ArticleTitle}'. StatusCode: {StatusCode}, Response: {ResponseBody}",
+                    article.Title, (int)response.StatusCode, responseBody);
+                return false;
+            }
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Failed to post article {ArticleTitle}", article.Title);
+            _logger.LogError(ex, "🚨 Exception while posting article '{ArticleTitle}'", article.Title);
             return false;
         }
     }
+
 }

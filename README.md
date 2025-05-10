@@ -18,7 +18,7 @@ A .NET-based microservice that fetches news from external APIs, processes them u
 ---
 
 ## 🚀 Architecture Overview
-
+```
                 +--------------+         
                 |  NewsData.io |         
                 +------+-------+         
@@ -42,7 +42,7 @@ A .NET-based microservice that fetches news from external APIs, processes them u
           |  Sandor's Book      |                         
           |  (React, Node @ Vercel)   |                         
           +---------------------+        
-
+```
 ## 🧰 Tech Stack
 
 - **Backend:** C#, .NET
